@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import useFetch from 'use-http';
 
-// const url = window.location.href + 'item/628';
 const url = 'http://jsonplaceholder.typicode.com/posts/1';
 
 const product = ({ id, title, body }) => (
@@ -9,25 +8,40 @@ const product = ({ id, title, body }) => (
     <h1>
       name: {id} - {title}
     </h1>
-    <img alt="vaso cactus" src="http://pungilandia.com/Promozioni/img/vaso10_1.jpg" />
+    <img
+      alt="vaso cactus"
+      src="http://pungilandia.com/Promozioni/img/vaso10_1.jpg"
+    />
     <div>size: {body}</div>
     <div>price</div>
   </section>
 );
 
-export function Product() {
-  const options = {
-    // accepts all `fetch` options
-    data: [], // default for `data` will be an array instead of undefined
-  };
+const Product = () => {
+  const [item, setItem] = useState([]);
 
-  const { loading, error, data } = useFetch(url, options, []); // onMount (GET by default)
+  const [request, response] = useFetch(url);
+
+  // componentDidMount
+  const mounted = useRef(false);
+  useEffect(() => {
+    if (mounted.current) return;
+    mounted.current = true;
+    initializeItem();
+  });
+
+  async function initializeItem() {
+    const initialItem= await request.get();
+    if (response.ok) setItem(initialItem);
+  }
 
   return (
     <>
-      {error && 'Error!'}
-      {loading && 'Loading...'}
-      {product(data)}
+      {request.error && 'Error!'}
+      {request.loading && 'Loading...'}
+      {product(item)}
     </>
   );
 }
+
+export default Product;
