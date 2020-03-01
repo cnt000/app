@@ -10,7 +10,7 @@ const product = ({ id, title, body }) => (
     </h1>
     <img
       alt="vaso cactus"
-      src="https://pungilandia.com/Promozioni/img/vaso10_1.jpg"
+      src="http://pungilandia.com/Promozioni/img/vaso10_1.jpg"
     />
     <div>size: {body}</div>
     <div>price</div>
