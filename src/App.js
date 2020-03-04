@@ -1,6 +1,7 @@
 import React from 'react';
 import { Counter } from './features/counter/Counter';
 import Product from './features/product/Product';
+import ProductList from './features/product-list/ProductList';
 
 import './App.scss';
 
@@ -12,6 +13,10 @@ function App() {
       </header>
       <div>
         <Product />
+      </div>
+      <br />
+      <div>
+        <ProductList />
       </div>
     </div>
   );

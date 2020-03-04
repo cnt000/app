@@ -2,23 +2,22 @@ import React, { useState, useRef, useEffect } from 'react';
 import useFetch from 'use-http';
 
 const domain = process.env.REACT_APP_API_DOMAIN;
-const url = `${domain}/item/628`;
+const url = `${domain}/search/0`;
 
-const product = ({ name, image, size, price, addToCartLink }) => (
+const productList = ({ name, href, image, price, add, page }) => (
   <section>
-    <h1>name: {name}</h1>
     <img alt={name} src={image} />
     <br />
-    <div>size: {size}</div>
+    <a href={href}>name: {name}</a>
+    <br />
     <div>price: {price}</div>
-    <br />
-    <a href={addToCartLink}>Add</a>
-    <br />
+    <a href={add}>Add</a>
+    {page}
   </section>
 );
 
-const Product = () => {
-  const [item, setItem] = useState([]);
+const ProductList = () => {
+  const [itemList, setItemList] = useState([]);
 
   const [request, response] = useFetch(url);
 
@@ -27,21 +26,21 @@ const Product = () => {
   useEffect(() => {
     if (mounted.current) return;
     mounted.current = true;
-    initializeItem();
+    initializeItemList();
   });
 
-  async function initializeItem() {
+  async function initializeItemList() {
     const initialItem = await request.get();
-    if (response.ok) setItem(initialItem);
+    if (response.ok) setItemList(initialItem);
   }
 
   return (
     <>
       {request.error && 'Error!'}
       {request.loading && 'Loading...'}
-      {product(item)}
+      {itemList.map(productList)}
     </>
   );
-};
+}
 
-export default Product;
+export default ProductList;
