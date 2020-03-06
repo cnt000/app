@@ -5,7 +5,7 @@ const domain = process.env.REACT_APP_API_DOMAIN;
 const url = `${domain}/item/628`;
 
 const product = ({ name, image, size, price, addToCartLink }) => (
-  <section>
+  <section>{domain}
     <h1>name: {name}</h1>
     <img alt={name} src={image} />
     <br />
