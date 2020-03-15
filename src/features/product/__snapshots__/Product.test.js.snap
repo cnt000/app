@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  "domain: ",
+  "http://localhost:8080",
+  <section>
+    <h1>
+      name: 
+    </h1>
+    <img />
+    <br />
+    <div>
+      size: 
+    </div>
+    <div>
+      price: 
+    </div>
+    <br />
+    <a>
+      Add
+    </a>
+    <br />
+  </section>,
+]
+`;
