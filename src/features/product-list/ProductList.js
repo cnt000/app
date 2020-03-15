@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import useFetch from 'use-http';
 
 const domain = process.env.REACT_APP_API_DOMAIN;
-const url = `${domain}/search/0`;
+const url = `${domain}/api/v1/search/0`;
 
 const productList = ({ name, href, image, price, add, page }) => (
   <section>
