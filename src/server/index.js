@@ -6,7 +6,11 @@ fastify.register(require('fastify-static'), {
 });
 
 fastify.get('/', function(req, reply) {
-  reply.sendFile('index.html'); // serving path.join(__dirname, 'public', 'myHtml.html') directly
+  reply.sendFile('index.html');
+});
+
+fastify.get('/styleguide', function(req, reply) {
+  reply.sendFile('styleguide/index.html');
 });
 
 const start = async () => {
