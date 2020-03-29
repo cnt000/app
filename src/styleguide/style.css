@@ -137,7 +137,7 @@ body {
   display: grid;
   grid-gap: 0.1vw;
   grid-template-columns: 9rem 1fr;
-  grid-template-rows: 3rem 1fr 5rem;
+  grid-template-rows: 3.2rem 1fr 5rem;
   grid-template-areas:
     'header  header'
     'content  content'
@@ -222,18 +222,18 @@ body {
 
 .footer {
   grid-area: footer;
-  background-color: beige;
   padding: 0.5rem;
-  font-size: 12px;
   text-align: center;
 }
 
 .footer__contactus {
+  font-size: 14px;
   margin-top: 0.4em;
 }
 
 .footer address {
-  margin-top: 0.2rem;
+  font-size: 12px;
+  margin-top: 0.4rem;
   font-weight: 300;
 }
 
