@@ -148,9 +148,8 @@ body {
 .header {
   grid-area: header;
   display: grid;
-  grid-template-columns: 3rem 1fr 3rem;
+  grid-template-columns: 2.6rem 1fr 3rem;
   grid-gap: 0.3rem;
-  padding: 0.2rem 0.4rem 0 0.4rem;
 }
 
 .header__burger {
@@ -168,7 +167,8 @@ body {
   border: 0;
   background-image: url('menu.svg');
   background-repeat: no-repeat;
-  background-size: 2.4rem 3.2rem;
+  background-size: 2.3rem 3.3rem;
+  margin-left: 0.4rem;
 }
 
 .header__logo {
@@ -217,8 +217,9 @@ body {
   text-indent: -9999px;
   width: 3rem;
   height: 2.4rem;
-  background-size: 3.8rem 2.1rem;
+  background-size: 2.8rem 2.2rem;
   margin-top: 0.5rem;
+  margin-right: 0.4rem;
 }
 
 .footer {
