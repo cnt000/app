@@ -17,12 +17,13 @@
     "use-http": "^0.2.9"
   },
   "scripts": {
-    "start": "node src/server/index.js",
+    "start": "npm run styleguide:copy && node src/server/index.js",
     "start:client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "styleguide": "while true; do cp -R src/styleguide build/;date ; sleep 5; done;"
+    "styleguide:copy": "cp -R src/styleguide build/",
+    "styleguide": "while true; do npm run styleguide:copy;date ; sleep 5; done;"
   },
   "eslintConfig": {
     "extends": "react-app"
