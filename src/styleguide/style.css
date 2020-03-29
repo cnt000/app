@@ -128,52 +128,117 @@ table {
   border-spacing: 0;
 }
 
+*:focus {
+  outline: 0.2rem solid azure;
+}
+
 body {
   height: 100vh;
   display: grid;
   grid-gap: 0.1vw;
   grid-template-columns: 9rem 1fr;
-  grid-template-rows: 3rem 1fr 3rem;
+  grid-template-rows: 3rem 1fr 5rem;
   grid-template-areas:
     'header  header'
     'content  content'
     'footer  footer';
+  font-family: 'Roboto', sans-serif;
 }
 
-header {
+.header {
   grid-area: header;
-  background-color: azure;
   display: grid;
-  grid-template-columns: 3rem 1fr;
-  padding: 0.4rem;
+  grid-template-columns: 3rem 1fr 3rem;
+  grid-gap: 0.3rem;
+  padding-top: 0.2rem;
 }
 
-header h1 {
-  font-size: 22px;
-}
-
-header .title {
-  text-align: center;
-}
-
-header .title p {
-  font-size: 16px;
-}
-
-.burger {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-image: url('menu.svg');
+.header__burger {
+  webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  background-color: transparent;
+  text-decoration: none;
+  color: initial;
+  cursor: pointer;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  margin-top : -2px;
+  padding: 0;
+  border: 0;
+  background-image: url('menu.svg');
+  background-repeat: no-repeat;
+  margin: 0.3rem;
 }
 
-footer {
+.header__logo {
+  padding-top: 0.1rem;
+}
+
+.header__content {
+  text-align: left;
+  display: flex;
+}
+
+.header__content h1 {
+  font-size: 32px;
+}
+
+.header__content p {
+  font-size: 16px;
+}
+
+.header__title {
+  padding: 0 0.4rem;
+  font-family: 'Caveat Brush', sans-serif;
+  line-height: 0.9;
+}
+
+.header__logo img {
+  width: auto;
+  height: 42px;
+}
+
+.header__cart {
+  appearance: button;
+  background-color: transparent;
+  text-decoration: none;
+  color: initial;
+  cursor: pointer;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  background-image: url('cart.svg');
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: -9999px;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-size: 2rem 2rem;
+  margin: 0.6rem;
+}
+
+.footer {
   grid-area: footer;
   background-color: beige;
+  padding: 0.5rem;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer__contactus {
+  margin-top: 0.4em;
+}
+
+.footer address {
+  margin-top: 0.2rem;
+  font-weight: 300;
+}
+
+.footer__laws {
+ display: none;
 }
 
 nav {
@@ -198,10 +263,10 @@ main {
   nav {
     display: block;
   }
-  header {
+  .header {
     grid-template-columns: auto;
   }
-  .burger {
+  .header__burger {
     display: none;
   }
 }

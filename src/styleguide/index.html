@@ -17,16 +17,24 @@
     <meta name="REVISIT-AFTER" content="1 days" />
     <link rel="apple-touch-icon" href="styleguide/logo192.png" />
     <link rel="stylesheet" href="/styleguide/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Pungilandia piante grasse, strane ed insolite</title>
   </head>
   <body>
-    <header>
-      <a href="/" class="burger">menu</a>
-      <div class="title">
-        <h1>Pungilandia</h1>
-        <p>Piante grasse, strane ed insolite</p>
+    <header class="header">
+      <button class="header__burger">menu</button>
+      <div class="header__content">
+        <div class="header__logo"><img src="/styleguide/logo.png" /></div>
+        <div class="header__title">
+          <h1>Pungilandia</h1>
+          <p>Piante grasse, strane ed insolite</p>
+        </div>
       </div>
+      <button class="header__cart">cart</button>
     </header>
     <nav>
       <ul>
@@ -58,11 +66,16 @@
         <img src="image.png" alt="section example" />
       </section>
     </main>
-    <footer>
+    <footer class="footer">
+      <p class="footer__contactus">
+        <a href="mailto:info@pungilandia.com">Contatti</a> - <span class="footer__copyright">Copyright © 2020 All rights reserved.</span>
+      </p>
       <address>
-        Postal Address: Door No.00, Street, City, State, Country.
+        Azienda Agricola Pungilandia<br />Rocchi Domenico Via Isonzo 11, 65123 Pescara P.IVA 01203140684 CF RCCDNC59R30I712B Iscrizione REA Pescara Nr.97422
       </address>
-      <p>Copyright © 2018 All rights reserved.</p>
+      <p class="footer__laws">Azienda in possesso Registro di Detenzione di Specie Vegetali Incluse Negli Allegati CITES A e B
+      del Regolamento (CE) 338/97 del Consiglio del 9 Dicembre 1996 e Successive Modifiche e Attuazioni.
+      Registro N.000001/2001 VAB</p>
     </footer>
   </body>
 </html>
