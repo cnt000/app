@@ -23,10 +23,20 @@
     />
 
     <title>Pungilandia piante grasse, strane ed insolite</title>
+
+    <script type="module">
+      const menu = document.querySelector('.menu');
+      document.querySelector('.header__burger').addEventListener('click',
+        () => menu.classList.add("open")
+      );
+      document.querySelector('.menu__close').addEventListener('click',
+        () => menu.classList.remove("open")
+      );
+    </script>
   </head>
   <body>
     <header class="header">
-      <button class="header__burger">menu</button>
+      <button class="header__burger">apri il menu</button>
       <div class="header__content">
         <div class="header__logo"><img src="/styleguide/logo.png" /></div>
         <div class="header__title">
@@ -34,22 +44,36 @@
           <p>Piante grasse, strane ed insolite</p>
         </div>
       </div>
-      <button class="header__cart">cart</button>
+      <button class="header__cart">vai al carrello</button>
     </header>
-    <nav>
-      <ul>
+    <nav class="menu">
+      <div class="menu__header"><button class="menu__close">chiudi il menu</button></div>
+      <ul class="menu__entries">
         <li>
-          <a href="https://www.bitdegree.org/tag/gamified/">Gamified Courses</a>
+          <a href="https://www.bitdegree.org/tag/gamified/">Chi siamo</a>
         </li>
-        <li><a href="https://www.bitdegree.org/tutorials/">Tutorials</a></li>
+        <li><a href="https://www.bitdegree.org/tutorials/">Lista piante</a></li>
         <li>
           <a
             href="https://www.bitdegree.org/course/learn-solidity-space-doggos/"
-            >Space doggo courses</a
+            >Novità</a
           >
         </li>
         <li>
-          <a href="https://www.bitdegree.org/tag/game-dev/">Game Dev Courses</a>
+          <a href="https://www.bitdegree.org/tag/game-dev/">Prodotti speciali</a>
+        </li>
+                <li>
+          <a href="https://www.bitdegree.org/tag/gamified/">Consigli per coltivare</a>
+        </li>
+        <li><a href="https://www.bitdegree.org/tutorials/">Ordini</a></li>
+        <li>
+          <a
+            href="https://www.bitdegree.org/course/learn-solidity-space-doggos/"
+            >Foto-Show</a
+          >
+        </li>
+        <li>
+          <a href="https://www.bitdegree.org/tag/game-dev/">E-mail</a>
         </li>
       </ul>
     </nav>
@@ -65,13 +89,77 @@
         <p>The section tag can contain any elements.</p>
         <img src="image.png" alt="section example" />
       </section>
+       <article>
+        <h1>Fun Fact</h1>
+        <p>
+          Fun fact: most of the fun facts on the Internet are not actually fun.
+        </p>
+      </article>
+      <section>
+        <h1>Section Heading</h1>
+        <p>The section tag can contain any elements.</p>
+        <img src="image.png" alt="section example" />
+      </section>
+       <article>
+        <h1>Fun Fact</h1>
+        <p>
+          Fun fact: most of the fun facts on the Internet are not actually fun.
+        </p>
+      </article>
+      <section>
+        <h1>Section Heading</h1>
+        <p>The section tag can contain any elements.</p>
+        <img src="image.png" alt="section example" />
+      </section>
+       <article>
+        <h1>Fun Fact</h1>
+        <p>
+          Fun fact: most of the fun facts on the Internet are not actually fun.
+        </p>
+      </article>
+      <section>
+        <h1>Section Heading</h1>
+        <p>The section tag can contain any elements.</p>
+        <img src="image.png" alt="section example" />
+      </section>
+       <article>
+        <h1>Fun Fact</h1>
+        <p>
+          Fun fact: most of the fun facts on the Internet are not actually fun.
+        </p>
+      </article>
+      <section>
+        <h1>Section Heading</h1>
+        <p>The section tag can contain any elements.</p>
+        <img src="image.png" alt="section example" />
+      </section> <article>
+        <h1>Fun Fact</h1>
+        <p>
+          Fun fact: most of the fun facts on the Internet are not actually fun.
+        </p>
+      </article>
+      <section>
+        <h1>Section Heading</h1>
+        <p>The section tag can contain any elements.</p>
+        <img src="image.png" alt="section example" />
+      </section> <article>
+        <h1>Fun Fact</h1>
+        <p>
+          Fun fact: most of the fun facts on the Internet are not actually fun.
+        </p>
+      </article>
+      <section>
+        <h1>Section Heading</h1>
+        <p>The section tag can contain any elements.</p>
+        <img src="image.png" alt="section example" />
+      </section>
     </main>
     <footer class="footer">
       <p>
-        <a class="footer__contactus" href="mailto:info@pungilandia.com">Contatti</a> - <span class="footer__copyright">Copyright © 2020 All rights reserved.</span>
+        <span class="footer__copyright">Copyright © 2020</span> - <a class="footer__privacy" href="#">Privacy</a> - <a class="footer__contactus" href="mailto:info@pungilandia.com">Contatti</a>
       </p>
       <address>
-        Azienda Agricola Pungilandia Rocchi Domenico Via Isonzo 11, 65123 Pescara P.IVA 01203140684 CF RCCDNC59R30I712B Iscrizione REA Pescara Nr.97422
+        Azienda Agricola Pungilandia Rocchi Domenico<br />Via Isonzo 11, 65123 Pescara P.IVA 01203140684 CF RCCDNC59R30I712B Iscrizione REA Pescara Nr.97422
       </address>
       <p class="footer__laws">Azienda in possesso Registro di Detenzione di Specie Vegetali Incluse Negli Allegati CITES A e B
       del Regolamento (CE) 338/97 del Consiglio del 9 Dicembre 1996 e Successive Modifiche e Attuazioni.

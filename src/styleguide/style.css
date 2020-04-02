@@ -135,7 +135,6 @@ table {
 body {
   height: 100vh;
   display: grid;
-  grid-gap: 0.1vw;
   grid-template-columns: 9rem 1fr;
   grid-template-rows: 3.2rem 1fr 5rem;
   grid-template-areas:
@@ -149,7 +148,6 @@ body {
   grid-area: header;
   display: grid;
   grid-template-columns: 2.6rem 1fr 3rem;
-  grid-gap: 0.3rem;
 }
 
 .header__burger {
@@ -229,7 +227,7 @@ body {
 }
 
 .footer__contactus {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 0.4em;
 }
 
@@ -249,10 +247,58 @@ body {
  display: none;
 }
 
-nav {
+.menu {
   grid-area: sidebar;
   background-color: bisque;
-  display: none;
+  width: 14rem;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -14rem;
+  transition: left 0.4s;
+  display: grid;
+  grid-template-rows: 3.2rem 1fr;
+  grid-template-areas:
+    'header'
+    'entries';
+}
+
+.menu.open {
+  left: 0;
+}
+
+.menu__header {
+  background-color: azure;
+}
+
+.menu__entries li {
+  padding: 0.6rem 0;
+  text-align: center;
+  font-family: 'Caveat Brush', sans-serif;
+  font-size: 20px;
+  text-shadow: 2px 2px 16px #333;
+}
+
+.menu__close {
+  appearance: button;
+  background-color: transparent;
+  text-decoration: none;
+  color: initial;
+  cursor: pointer;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  background-image: url('close.svg');
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: -9999px;
+  width: 3rem;
+  height: 2.4rem;
+  background-size: 2.8rem 2.2rem;
+  margin-top: 0.5rem;
+  margin-right: 0.4rem;
 }
 
 main {
@@ -263,14 +309,21 @@ main {
 
 @media only screen and (min-width: 1025px) {
   body {
+    grid-template-rows: 3.2rem 1fr 7rem;
     grid-template-areas:
       'header  header'
       'sidebar  content'
       'footer  footer';
   }
-  nav {
-    display: block;
+  .menu {
+    position: static;
+    width: auto;
+    left: 0;
   }
+  .menu__header {
+    display: none;
+  }
+
   .header {
     grid-template-columns: auto;
   }
@@ -279,5 +332,7 @@ main {
   }
   .footer__laws {
     display: block;
+    margin-top: 0.4rem;
+    width: 60%;
   }
 }
