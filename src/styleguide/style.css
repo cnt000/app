@@ -267,10 +267,6 @@ body {
   left: 0;
 }
 
-.menu__header {
-  background-color: azure;
-}
-
 .menu__entries li {
   padding: 0.6rem 0;
   text-align: center;
@@ -318,12 +314,11 @@ main {
   .menu {
     position: static;
     width: auto;
-    left: 0;
+    height: auto;
   }
   .menu__header {
     display: none;
   }
-
   .header {
     grid-template-columns: auto;
   }
