@@ -297,10 +297,26 @@ body {
   margin-right: 0.4rem;
 }
 
-main {
+#content {
   grid-area: content;
   background-color: cornsilk;
   padding: 0.4rem;
+}
+
+.page__products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page__products article {
+  width: 50%;
+  text-align: center;
+}
+
+.page__header {
+  display: flex;
+  justify-content: space-around;
+  height: 4rem;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -329,5 +345,8 @@ main {
     display: block;
     margin-top: 0.4rem;
     width: 60%;
+  }
+  .page__products article {
+    width: 25%;
   }
 }
