@@ -231,7 +231,8 @@ body {
   margin-top: 0.4em;
 }
 
-.footer address, .footer__laws {
+.footer address,
+.footer__laws {
   font-size: 12px;
   margin-top: 0.4rem;
   line-height: 1.2;
@@ -244,7 +245,7 @@ body {
 }
 
 .footer__laws {
- display: none;
+  display: none;
 }
 
 .menu {
@@ -297,10 +298,24 @@ body {
   margin-right: 0.4rem;
 }
 
-#content {
+.plp-content {
   grid-area: content;
   background-color: cornsilk;
   padding: 0.4rem;
+}
+
+.pdp-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page__main-image {
+  width: 80%;
+}
+
+.page__main-image img {
+  width: 100%;
 }
 
 .page__products {
@@ -310,13 +325,24 @@ body {
 
 .page__products article {
   width: 50%;
+  height: 14rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.page__products article button {
+  width: 6rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
 }
 
 .page__header {
   display: flex;
   justify-content: space-around;
   height: 4rem;
+  line-height: 4rem;
 }
 
 @media only screen and (min-width: 1025px) {
