@@ -338,11 +338,22 @@ body {
   margin-bottom: 4rem;
 }
 
-.page__header {
+.page-header {
   display: flex;
-  justify-content: space-around;
-  height: 4rem;
-  line-height: 4rem;
+  justify-content: space-between;
+  height: 3rem;
+}
+
+.page-header div {
+  line-height: 1.4rem;
+}
+
+.page-header__title {
+  font-size: 22px;
+}
+
+.page-header__cercapiante span {
+  margin-left: -1.5rem;
 }
 
 @media only screen and (min-width: 1025px) {
