@@ -167,6 +167,7 @@ body {
   background-repeat: no-repeat;
   background-size: 2.3rem 3.3rem;
   margin-left: 0.4rem;
+  height: 100%;
 }
 
 .header__logo {
@@ -218,6 +219,7 @@ body {
   background-size: 2.8rem 2.2rem;
   margin-top: 0.5rem;
   margin-right: 0.4rem;
+  height: 100%;
 }
 
 .footer {
@@ -323,16 +325,19 @@ body {
   flex-wrap: wrap;
 }
 
-.page__products article {
+.product {
   width: 50%;
-  height: 14rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.page__products article button {
+.product__name {
+  margin: 1.2rem 0;
+}
+
+.product__addtocart {
   width: 6rem;
   margin: 0 auto;
   margin-bottom: 4rem;
@@ -342,18 +347,20 @@ body {
   display: flex;
   justify-content: space-between;
   height: 3rem;
-}
-
-.page-header div {
-  line-height: 1.4rem;
+  margin: 1rem auto;
 }
 
 .page-header__title {
-  font-size: 22px;
+  font-size: 32px;
+  font-family: 'Caveat Brush', sans-serif;
 }
 
 .page-header__cercapiante span {
   margin-left: -1.5rem;
+}
+
+.product__image {
+  width: 8rem;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -373,7 +380,7 @@ body {
     display: none;
   }
   .header {
-    grid-template-columns: auto;
+    grid-template-columns: 3rem 1fr 3rem;
   }
   .header__burger {
     display: none;
@@ -385,5 +392,30 @@ body {
   }
   .page__products article {
     width: 25%;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    margin: 1rem auto;
+  }
+
+  .page-header__cercapiante {
+    position: absolute;
+    right: 1rem;
+  }
+
+  .menu__entries {
+    margin-top: 1rem;
+  }
+
+  .page-header__left {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .product__image {
+    width: 12rem;
   }
 }
