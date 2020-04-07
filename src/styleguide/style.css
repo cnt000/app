@@ -340,7 +340,7 @@ body {
 .product__addtocart {
   width: 6rem;
   margin: 0 auto;
-  margin-bottom: 4rem;
+  margin: 1rem auto 2rem auto;
 }
 
 .page-header {
