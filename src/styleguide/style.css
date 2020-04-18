@@ -132,6 +132,34 @@ table {
   outline: 0.2rem solid azure;
 }
 
+:root {
+  --orange: #fea249;
+  --green: #11770a;
+  --light-green: #205018;
+  --black: #060a05;
+  /*
+    as is colors
+    #000000
+    #0000ee
+    #008000
+    #008200
+    #808080
+    #cccccc
+    #dadada
+    #f0f0f0
+    #ff9933
+    #ffffff
+  */
+}
+/*
+  generateContrastColors({
+    colorKeys: ["#008000","#008200","#ff9933"],
+    base: "#ffffff",
+    ratios: [2,5.73,9.5,20],
+    colorspace: "CAM02"
+  });
+*/
+
 body {
   height: 100vh;
   display: grid;
@@ -252,22 +280,24 @@ body {
 
 .menu {
   grid-area: sidebar;
-  background-color: bisque;
   width: 14rem;
   height: 100vh;
   position: absolute;
   top: 0;
-  left: -14rem;
+  left: calc(-14rem - 2px);
   transition: left 0.4s;
   display: grid;
   grid-template-rows: 3.2rem 1fr;
   grid-template-areas:
     'header'
     'entries';
+  background: white;
+  border-right: 2px dotted black;
 }
 
 .menu.open {
   left: 0;
+  position: fixed;
 }
 
 .menu__entries li {
@@ -276,6 +306,14 @@ body {
   font-family: 'Caveat Brush', sans-serif;
   font-size: 20px;
   text-shadow: 2px 2px 16px #333;
+}
+
+.menu__entries a,
+.menu__entries a:hover,
+.menu__entries a:visited {
+ text-decoration: none;
+ letter-spacing: 1px;
+ color: darkgreen;
 }
 
 .menu__close {
@@ -295,14 +333,13 @@ body {
   text-indent: -9999px;
   width: 3rem;
   height: 2.4rem;
-  background-size: 2.8rem 2.2rem;
-  margin-top: 0.5rem;
+  background-size: 3.1rem 1.9rem;
+  margin-top: 0.7rem;
   margin-right: 0.4rem;
 }
 
 .plp-content {
   grid-area: content;
-  background-color: cornsilk;
   padding: 0.4rem;
 }
 
@@ -313,12 +350,15 @@ body {
 }
 
 .page__main-image {
-  width: 90%;
   margin: 1rem 0;
 }
 
 .page__main-image img {
   width: 100%;
+}
+
+.page__product-info {
+  text-align: center;
 }
 
 .page__products {
@@ -337,7 +377,7 @@ body {
 .product__name {
   margin: 0.6rem auto;
   width: 80%;
-  line-height: 1.2;;
+  line-height: 1.2;
 }
 
 .product__addtocart {
@@ -359,10 +399,6 @@ body {
   font-family: 'Caveat Brush', sans-serif;
 }
 
-.page-header__cercapiante span {
-  margin-left: -1.5rem;
-}
-
 .product__image {
   width: 90%;
 }
@@ -381,6 +417,17 @@ body {
 
 .pdp-content .product__price {
   font-size: 16px;
+}
+
+.page-header__cercapiante img {
+  width: 2.6rem;
+  opacity: 0.8;
+}
+
+.page-header__cercapiante span {
+  margin-left: -2.5rem;
+  position: relative;
+  text-shadow: 1px 1px 2px white, 0 0 0.2em whitesmoke;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -414,16 +461,23 @@ body {
     width: 25%;
   }
 
+  .page__product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
   .page-header {
     display: flex;
     justify-content: space-between;
     height: 3rem;
-    margin: 1rem auto;
+    margin: 0.6rem auto;
   }
 
   .page-header__cercapiante {
     position: absolute;
     right: 1rem;
+    line-height: 3.4;
   }
 
   .menu__entries {
@@ -433,5 +487,10 @@ body {
   .page-header__left {
     margin: 0 auto;
     text-align: center;
+  }
+
+  .pdp-content {
+    display: grid;
+    grid-template-columns: 10px 1fr 30%;
   }
 }
