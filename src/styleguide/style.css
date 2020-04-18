@@ -293,6 +293,7 @@ body {
     'entries';
   background: white;
   border-right: 2px dotted black;
+  z-index: 2;
 }
 
 .menu.open {
@@ -430,6 +431,21 @@ body {
   text-shadow: 1px 1px 2px white, 0 0 0.2em whitesmoke;
 }
 
+.overlay {
+  display: none;
+}
+
+.menu.open + .overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  z-index: 1;
+}
+
 @media only screen and (min-width: 1025px) {
   body {
     grid-template-rows: 3.2rem 1fr 7rem;
@@ -442,6 +458,7 @@ body {
     position: static;
     width: auto;
     height: auto;
+    z-index: 1;
   }
   .menu__header {
     display: none;
