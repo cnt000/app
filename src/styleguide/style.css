@@ -446,6 +446,23 @@ body {
   z-index: 1;
 }
 
+.page-content h2 {
+  font-size: 28px;
+  padding: 1em;
+}
+
+.page-content h3 {
+  font-size: 22px;
+  padding: 1em;
+}
+
+.page-content p {
+  font-size: 16px;
+  padding: 1em;
+  line-height: 1.4;
+  text-align: justify;
+}
+
 @media only screen and (min-width: 1025px) {
   body {
     grid-template-rows: 3.2rem 1fr 7rem;
