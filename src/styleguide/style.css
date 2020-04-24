@@ -312,9 +312,9 @@ body {
 .menu__entries a,
 .menu__entries a:hover,
 .menu__entries a:visited {
- text-decoration: none;
- letter-spacing: 1px;
- color: darkgreen;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: darkgreen;
 }
 
 .menu__close {
@@ -446,21 +446,62 @@ body {
   z-index: 1;
 }
 
-.page-content h2 {
-  font-size: 28px;
+.page-content {
   padding: 1em;
 }
 
+.page-content b {
+  font-weight: 700;
+}
+
+.page-content h2 {
+  color: #7e3407;
+  font-size: 28px;
+  padding: 0.6em 0;
+  text-shadow: gray 2px 1px 1px;
+}
+
 .page-content h3 {
+  color: #7e3407;
   font-size: 22px;
-  padding: 1em;
+  padding: 0.4em 0;
+  text-shadow: gray 2px 1px 1px;
 }
 
 .page-content p {
   font-size: 16px;
-  padding: 1em;
   line-height: 1.4;
   text-align: justify;
+  padding-bottom: 1.2em;
+}
+
+.author-box {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.author-box img {
+  width: 6em;
+  height: 6em;
+  margin-left: auto;
+}
+
+.author-box span {
+  font-size: 14px;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-left: 5px solid #ff6633;
+  display: block;
+  margin: 6px 10px 0 0;
+  float: left;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -526,5 +567,9 @@ body {
   .pdp-content {
     display: grid;
     grid-template-columns: 10px 1fr 30%;
+  }
+
+  .page-content p {
+    text-align: left;
   }
 }
