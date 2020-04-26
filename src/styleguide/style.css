@@ -133,32 +133,26 @@ table {
 }
 
 :root {
-  --orange: #fea249;
-  --green: #11770a;
-  --light-green: #205018;
-  --black: #060a05;
-  /*
-    as is colors
-    #000000
-    #0000ee
-    #008000
-    #008200
-    #808080
-    #cccccc
-    #dadada
-    #f0f0f0
-    #ff9933
-    #ffffff
-  */
+  /* as is colors */
+  --black: #000000;
+  --ochre: #e8dc7b;
+  --brown: #7e3407;
+  --orange: #ff6633;
+  --light-orange: #ffbc00;
+  --green: #008000;
+  --green2: #008200;
+  --white: #ffffff;
 }
-/*
-  generateContrastColors({
-    colorKeys: ["#008000","#008200","#ff9933"],
-    base: "#ffffff",
-    ratios: [2,5.73,9.5,20],
-    colorspace: "CAM02"
-  });
-*/
+
+a,
+a:visited {
+  color: var(--green);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--orange);
+}
 
 body {
   height: 100vh;
@@ -206,14 +200,17 @@ body {
   text-align: left;
   display: flex;
   margin: 0 auto;
+  color: var(--brown);
 }
 
 .header__content h1 {
   font-size: 32px;
+  text-shadow: 2px 2px 16px #333;
 }
 
 .header__content p {
   font-size: 16px;
+  text-shadow: 2px 2px 16px #333;
 }
 
 .header__title {
@@ -291,8 +288,9 @@ body {
   grid-template-areas:
     'header'
     'entries';
-  background: white;
-  border-right: 2px dotted black;
+  background: var(--ochre);
+  border-right: 2px dotted;
+  border-image: linear-gradient(180deg, var(--green), var(--orange) 30em) 20;
   z-index: 2;
 }
 
@@ -310,11 +308,14 @@ body {
 }
 
 .menu__entries a,
-.menu__entries a:hover,
 .menu__entries a:visited {
   text-decoration: none;
   letter-spacing: 1px;
-  color: darkgreen;
+  color: var(--green);
+}
+
+.menu__entries a:hover {
+  color: var(--white);
 }
 
 .menu__close {
@@ -396,8 +397,9 @@ body {
 }
 
 .page-header__title {
-  font-size: 32px;
   font-family: 'Caveat Brush', sans-serif;
+  font-size: 32px;
+  color: var(--green);
 }
 
 .product__image {
@@ -428,7 +430,7 @@ body {
 .page-header__cercapiante span {
   margin-left: -2.5rem;
   position: relative;
-  text-shadow: 1px 1px 2px white, 0 0 0.2em whitesmoke;
+  text-shadow: 1px 1px 2px var(--white), 0 0 0.2em whitesmoke;
 }
 
 .overlay {
@@ -455,14 +457,14 @@ body {
 }
 
 .page-content h2 {
-  color: #7e3407;
+  color: var(--brown);
   font-size: 28px;
   padding: 0.6em 0;
   text-shadow: gray 2px 1px 1px;
 }
 
 .page-content h3 {
-  color: #7e3407;
+  color: var(--brown);
   font-size: 22px;
   padding: 0.4em 0;
   text-shadow: gray 2px 1px 1px;
@@ -498,7 +500,7 @@ body {
   height: 0px;
   border-bottom: 5px solid transparent;
   border-top: 5px solid transparent;
-  border-left: 5px solid #ff6633;
+  border-left: 5px solid var(--orange);
   display: block;
   margin: 6px 10px 0 0;
   float: left;
@@ -506,17 +508,19 @@ body {
 
 @media only screen and (min-width: 1025px) {
   body {
-    grid-template-rows: 3.2rem 1fr 7rem;
+    grid-template-rows: 9rem 1fr 7rem;
+    grid-template-columns: 12rem 1fr;
     grid-template-areas:
-      'header  header'
+      'sidebar  header'
       'sidebar  content'
-      'footer  footer';
+      'sidebar  footer';
   }
   .menu {
     position: static;
     width: auto;
     height: auto;
     z-index: 1;
+    padding-top: 2em;
   }
   .menu__header {
     display: none;
@@ -532,6 +536,13 @@ body {
     margin-top: 0.4rem;
     width: 60%;
   }
+  .header__logo img {
+    height: 115px;
+  }
+  .page-header__title {
+    font-size: 50px;
+  }
+
   .page__products article {
     width: 25%;
   }
@@ -545,8 +556,18 @@ body {
   .page-header {
     display: flex;
     justify-content: space-between;
-    height: 3rem;
+    height: 5rem;
     margin: 0.6rem auto;
+  }
+
+  .header__content h1 {
+    font-size: 86px;
+    text-shadow: 2px 2px 16px #333;
+  }
+
+  .header__content p {
+    font-size: 42px;
+    text-shadow: 2px 2px 16px #333;
   }
 
   .page-header__cercapiante {
@@ -555,13 +576,17 @@ body {
     line-height: 3.4;
   }
 
+  .plp-content {
+    grid-area: content;
+    padding: 2rem;
+  }
+
   .menu__entries {
     margin-top: 1rem;
   }
 
   .page-header__left {
-    margin: 0 auto;
-    text-align: center;
+    text-align: left;
   }
 
   .pdp-content {
