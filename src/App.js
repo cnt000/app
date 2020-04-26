@@ -1,9 +1,9 @@
 import React from 'react';
 import { Counter } from './features/counter/Counter';
 import Product from './features/product/Product';
-import Header from './layout/Header';
-import Footer from './layout/Footer';
-import Menu from './layout/Menu';
+import Header from './layout/Header/Header';
+import Footer from './layout/Footer/Footer';
+import Menu from './layout/Menu/Menu';
 import ProductList from './features/product-list/ProductList';
 
 import './App.scss';
