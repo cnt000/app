@@ -142,6 +142,7 @@ table {
   --green: #008000;
   --green2: #008200;
   --white: #ffffff;
+  --grey: #ccc;
 }
 
 a,
@@ -205,12 +206,12 @@ body {
 
 .header__content h1 {
   font-size: 32px;
-  text-shadow: 2px 2px 16px #333;
+  text-shadow: 2px 2px 16px var(--grey);
 }
 
 .header__content p {
   font-size: 16px;
-  text-shadow: 2px 2px 16px #333;
+  text-shadow: 2px 2px 16px var(--grey);
 }
 
 .header__title {
@@ -304,7 +305,7 @@ body {
   text-align: center;
   font-family: 'Caveat Brush', sans-serif;
   font-size: 20px;
-  text-shadow: 2px 2px 16px #333;
+  text-shadow: 2px 2px 16px var(--grey);
 }
 
 .menu__entries a,
@@ -430,7 +431,7 @@ body {
 .page-header__cercapiante span {
   margin-left: -2.5rem;
   position: relative;
-  text-shadow: 1px 1px 2px var(--white), 0 0 0.2em whitesmoke;
+  text-shadow: 1px 1px 2px var(--white), 0 0 0.2em var(--grey);
 }
 
 .overlay {
@@ -460,14 +461,14 @@ body {
   color: var(--brown);
   font-size: 28px;
   padding: 0.6em 0;
-  text-shadow: gray 2px 1px 1px;
+  text-shadow: var(--grey) 2px 1px 1px;
 }
 
 .page-content h3 {
   color: var(--brown);
   font-size: 22px;
   padding: 0.4em 0;
-  text-shadow: gray 2px 1px 1px;
+  text-shadow: var(--grey) 2px 1px 1px;
 }
 
 .page-content p {
@@ -562,12 +563,12 @@ body {
 
   .header__content h1 {
     font-size: 86px;
-    text-shadow: 2px 2px 16px #333;
+    text-shadow: 2px 2px 16px var(--grey);
   }
 
   .header__content p {
     font-size: 42px;
-    text-shadow: 2px 2px 16px #333;
+    text-shadow: 2px 2px 16px var(--grey);
   }
 
   .page-header__cercapiante {
