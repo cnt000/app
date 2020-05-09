@@ -17,7 +17,7 @@
   overflow: hidden;
   padding: 0;
   border: 0;
-  /* background-image: url('menu.svg'); */
+  background-image: url('../../images/menu.svg');
   background-repeat: no-repeat;
   background-size: 2.3rem 3.3rem;
   margin-left: 0.4rem;
@@ -67,7 +67,7 @@
   overflow: hidden;
   padding: 0;
   border: 0;
-  /* background-image: url('cart.svg'); */
+  background-image: url('../../images/cart.svg');
   background-repeat: no-repeat;
   display: block;
   text-indent: -9999px;

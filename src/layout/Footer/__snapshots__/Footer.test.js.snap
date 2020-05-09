@@ -1,9 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
-  <h1>
-    Footer
-  </h1>
-</div>
+<footer
+  class="footer"
+>
+  <p>
+    <span
+      class="copyright"
+    >
+      Copyright © 2020
+    </span>
+     -
+    <a
+      class="privacy"
+      href="http://www.pungilandia.com"
+    >
+      Privacy
+    </a>
+     
+    -
+    <a
+      class="contactus"
+      href="mailto:info@pungilandia.com"
+    >
+      Contatti
+    </a>
+  </p>
+  <address>
+    Azienda Agricola Pungilandia Rocchi Domenico
+    <br />
+    Via Isonzo 11, 65123 Pescara P.IVA 01203140684 CF RCCDNC59R30I712B Iscrizione REA Pescara Nr.97422
+  </address>
+  <p
+    class="laws"
+  >
+    Azienda in possesso Registro di Detenzione di Specie Vegetali Incluse Negli Allegati CITES A e B del Regolamento (CE) 338/97 del Consiglio del 9 Dicembre 1996 e Successive Modifiche e Attuazioni. Registro N.000001/2001 VAB
+  </p>
+</footer>
 `;

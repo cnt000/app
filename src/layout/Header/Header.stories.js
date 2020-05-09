@@ -4,7 +4,7 @@ import Header from './Header';
 
 export default {
   component: Header,
-  title: 'Header',
+  title: 'Header'
 };
 
 const labels = {
@@ -15,7 +15,3 @@ const labels = {
 };
 
 export const Default = () => <Header {...labels} />;
-
-export const Desktop = () => <Header {...labels} />;
-
-export const Tablet = () => <Header {...labels} />;

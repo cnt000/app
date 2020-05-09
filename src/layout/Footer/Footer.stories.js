@@ -8,11 +8,3 @@ export default {
 };
 
 export const Default = () => <Footer />;
-
-export const Desktop = () => (
-  <Footer />
-);
-
-export const Tablet = () => (
-  <Footer />
-);
