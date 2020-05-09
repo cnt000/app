@@ -8,8 +8,16 @@ import ProductList from './features/product-list/ProductList';
 
 import './App.scss';
 
+const labels = {
+  openMenuLabel: 'apri il menu',
+  title: 'Pungilandia',
+  titleDescription: 'Piante grasse, strane ed insolite',
+  goToCartLabel: 'vai al carrello',
+};
+
 const App = () => (
   <div className="App">
+    <Header {...labels} />
     <div>Pungilandia Test App</div>
     <Header />
     <Menu />

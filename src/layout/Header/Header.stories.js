@@ -7,12 +7,15 @@ export default {
   title: 'Header',
 };
 
-export const Default = () => <Header />;
+const labels = {
+  openMenuLabel: 'apri il menu',
+  title: 'Pungilandia',
+  titleDescription: 'Piante grasse, strane ed insolite',
+  goToCartLabel: 'vai al carrello',
+};
 
-export const Desktop = () => (
-  <Header />
-);
+export const Default = () => <Header {...labels} />;
 
-export const Tablet = () => (
-  <Header />
-);
+export const Desktop = () => <Header {...labels} />;
+
+export const Tablet = () => <Header {...labels} />;

@@ -1,9 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<header>
-  <h1>
-    Header
-  </h1>
+<header
+  className="header"
+>
+  <div>
+    <button
+      className="burger"
+    />
+  </div>
+  <div
+    className="content"
+  >
+    <div
+      className="logo"
+    >
+      <img
+        alt="pungilandia logo"
+        src="logo.png"
+      />
+    </div>
+    <div
+      className="title"
+    >
+      <h1 />
+      <p />
+    </div>
+  </div>
+  <div>
+    <button
+      className="cart"
+    />
+  </div>
 </header>
 `;

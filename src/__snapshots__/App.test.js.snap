@@ -4,13 +4,80 @@ exports[`renders correctly 1`] = `
 <div
   className="App"
 >
+  <header
+    className="header"
+  >
+    <div>
+      <button
+        className="burger"
+      >
+        apri il menu
+      </button>
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="logo"
+      >
+        <img
+          alt="pungilandia logo"
+          src="logo.png"
+        />
+      </div>
+      <div
+        className="title"
+      >
+        <h1>
+          Pungilandia
+        </h1>
+        <p>
+          Piante grasse, strane ed insolite
+        </p>
+      </div>
+    </div>
+    <div>
+      <button
+        className="cart"
+      >
+        vai al carrello
+      </button>
+    </div>
+  </header>
   <div>
     Pungilandia Test App
   </div>
-  <header>
-    <h1>
-      Header
-    </h1>
+  <header
+    className="header"
+  >
+    <div>
+      <button
+        className="burger"
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="logo"
+      >
+        <img
+          alt="pungilandia logo"
+          src="logo.png"
+        />
+      </div>
+      <div
+        className="title"
+      >
+        <h1 />
+        <p />
+      </div>
+    </div>
+    <div>
+      <button
+        className="cart"
+      />
+    </div>
   </header>
   <header>
     <h1>
