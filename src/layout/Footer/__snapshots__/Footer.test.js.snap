@@ -2,17 +2,17 @@
 
 exports[`renders correctly 1`] = `
 <footer
-  class="footer"
+  className="footer"
 >
   <p>
     <span
-      class="copyright"
+      className="copyright"
     >
       Copyright © 2020
     </span>
      -
     <a
-      class="privacy"
+      className="privacy"
       href="http://www.pungilandia.com"
     >
       Privacy
@@ -20,7 +20,7 @@ exports[`renders correctly 1`] = `
      
     -
     <a
-      class="contactus"
+      className="contactus"
       href="mailto:info@pungilandia.com"
     >
       Contatti
@@ -32,7 +32,7 @@ exports[`renders correctly 1`] = `
     Via Isonzo 11, 65123 Pescara P.IVA 01203140684 CF RCCDNC59R30I712B Iscrizione REA Pescara Nr.97422
   </address>
   <p
-    class="laws"
+    className="laws"
   >
     Azienda in possesso Registro di Detenzione di Specie Vegetali Incluse Negli Allegati CITES A e B del Regolamento (CE) 338/97 del Consiglio del 9 Dicembre 1996 e Successive Modifiche e Attuazioni. Registro N.000001/2001 VAB
   </p>

@@ -8,11 +8,3 @@ export default {
 };
 
 export const Default = () => <Menu />;
-
-export const Desktop = () => (
-  <Menu />
-);
-
-export const Tablet = () => (
-  <Menu />
-);

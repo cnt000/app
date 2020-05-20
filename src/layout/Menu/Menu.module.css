@@ -1,0 +1,97 @@
+.menu {
+  grid-area: sidebar;
+  width: 14rem;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: calc(-14rem - 2px);
+  transition: left 0.4s;
+  display: grid;
+  grid-template-rows: 3.2rem 1fr;
+  grid-template-areas:
+    'header'
+    'entries';
+  background: var(--ochre);
+  border-right: 2px dotted;
+  border-image: linear-gradient(180deg, var(--green), var(--orange) 30em) 20;
+  z-index: 2;
+}
+
+.menu.open {
+  left: 0;
+  position: fixed;
+}
+
+.menu .entries li {
+  padding: 0.6rem 0;
+  text-align: center;
+  font-family: 'Caveat Brush', sans-serif;
+  font-size: 20px;
+  text-shadow: 2px 2px 16px var(--grey);
+}
+
+.menu .entries a,
+.menu .entries a:visited {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: var(--green);
+}
+
+.menu .entries a:hover {
+  color: var(--white);
+}
+
+.menu .close {
+  appearance: button;
+  background-color: transparent;
+  text-decoration: none;
+  color: initial;
+  cursor: pointer;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  background-image: url('../../images/close.svg');
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: -9999px;
+  width: 3rem;
+  height: 2.4rem;
+  background-size: 3.1rem 1.9rem;
+  margin-top: 0.7rem;
+  margin-right: 0.4rem;
+}
+
+.overlay {
+  display: none;
+}
+
+.menu.open + .overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 1025px) {
+  .menu {
+    position: static;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    padding-top: 2em;
+  }
+
+  .menu header {
+    display: none;
+  }
+
+  .menu .entries {
+    margin-top: 1rem;
+  }
+}
