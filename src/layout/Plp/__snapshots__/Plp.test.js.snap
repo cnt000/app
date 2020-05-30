@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<main
+  role="main"
+>
+  <div
+    className="page-header"
+  >
+    <div
+      className="left"
+    >
+      <h2
+        className="title"
+      >
+        Le nostre piante
+      </h2>
+      <span
+        className="lastmodified"
+      >
+        02/04/2020
+      </span>
+    </div>
+    <div
+      className="cercapiante"
+    >
+      <a
+        href="#"
+        title="cerca piante"
+      >
+        <img
+          alt="cerca piante"
+          src="http://www.pungilandia.com/php/images/lo/cotyl_mediop.jpg"
+        />
+        <span>
+          il cerca piante
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    className="products"
+  >
+    <article
+      className="product"
+    >
+      <a
+        className="image-container"
+        href="#"
+      >
+        <img
+          alt="Adromischus  clavifolius"
+          className="image"
+          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Adromischus clavifolius Ų 24
+        </h1>
+        <div>
+          € 9,00
+        </div>
+      </a>
+      <button
+        className="addtocart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+  </div>
+</main>
+`;

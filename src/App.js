@@ -1,10 +1,11 @@
 import React from 'react';
 import { Counter } from './features/counter/Counter';
-import Product from './features/product/Product';
 import Header from './layout/Header/Header';
-import Footer from './layout/Footer/Footer';
 import Menu from './layout/Menu/Menu';
-import ProductList from './features/product-list/ProductList';
+import Plp from './layout/Plp/Plp';
+import Pdp from './layout/Pdp/Pdp';
+import Article from './layout/Article/Article';
+import Footer from './layout/Footer/Footer';
 
 import './App.scss';
 
@@ -18,18 +19,12 @@ const labels = {
 const App = () => (
   <div className="App">
     <Header {...labels} />
-    <div>Pungilandia Test App</div>
-    <Header />
     <Menu />
-    <Counter />
-    <div>
-      <Product />
-    </div>
-    <br />
-    <div>
-      <ProductList />
-    </div>
+    <Plp />
+    <Pdp />
+    <Article />
     <Footer />
+    <Counter />
   </div>
 );
 

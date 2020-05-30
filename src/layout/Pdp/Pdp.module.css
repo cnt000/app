@@ -1,0 +1,21 @@
+.pdp-content .name,
+.pdp-content .dimension,
+.pdp-content .price,
+.pdp-content .addtocart {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.pdp-content .name {
+  font-size: 22px;
+}
+
+.pdp-content .price {
+  font-size: 16px;
+}
+@media only screen and (min-width: 1025px) {
+ .pdp-content {
+    display: grid;
+    grid-template-columns: 10px 1fr 30%;
+  }
+}

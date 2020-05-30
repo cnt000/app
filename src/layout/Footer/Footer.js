@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './Footer.module.css';
 
-const Footer = () => (
+const Footer = ({ copyright, privacy, contact, company, companyAddress, disclaimer }) => (
   <footer className={styles.footer}>
     <p>
-      <span className={styles.copyright}>Copyright © 2020</span> -
+      <span className={styles.copyright}>{copyright}</span> -
       <a className={styles.privacy} href="http://www.pungilandia.com">
         Privacy
       </a>{' '}

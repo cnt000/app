@@ -1,0 +1,57 @@
+.page__product-info {
+  text-align: center;
+}
+
+.page__products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.product__name {
+  margin: 0.6rem auto;
+  width: 80%;
+  line-height: 1.2;
+}
+
+.product__addtocart {
+  margin: 0 auto;
+  margin: 1rem auto 2rem auto;
+  width: 50%;
+  height: 2rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  margin: 1rem auto;
+}
+
+.page-header__title {
+  font-family: 'Caveat Brush', sans-serif;
+  font-size: 32px;
+  color: var(--green);
+}
+
+.product .image {
+  width: 90%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .plp-content {
+    grid-area: content;
+    padding: 2rem;
+  }
+
+  .page-header__left {
+    text-align: left;
+  }
+}
