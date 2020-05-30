@@ -5,14 +5,14 @@ import { Provider } from 'react-redux';
 import store from './store';
 import App from './App';
 
-// test('renders `Test App` name', () => {
-//   const { getByText } = render(
-//     <Provider store={store}>
-//       <App />
-//     </Provider>,
-//   );
-//   expect(getByText(/Test App/i)).toBeInTheDocument();
-// });
+test('renders `Test App` name', () => {
+  const { getByText } = render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+  );
+  expect(getByText(/Test App/i)).toBeInTheDocument();
+});
 
 it('renders correctly', () => {
   const tree = renderer

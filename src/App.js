@@ -1,31 +1,26 @@
 import React from 'react';
 import { Counter } from './features/counter/Counter';
-import Header from './layout/Header/Header';
-import Menu from './layout/Menu/Menu';
-import Plp from './layout/Plp/Plp';
-import Pdp from './layout/Pdp/Pdp';
-import Article from './layout/Article/Article';
-import Footer from './layout/Footer/Footer';
+import Product from './features/product/Product';
+import ProductList from './features/product-list/ProductList';
 
 import './App.scss';
 
-const labels = {
-  openMenuLabel: 'apri il menu',
-  title: 'Pungilandia',
-  titleDescription: 'Piante grasse, strane ed insolite',
-  goToCartLabel: 'vai al carrello',
-};
-
-const App = () => (
-  <div className="App">
-    <Header {...labels} />
-    <Menu />
-    <Plp />
-    <Pdp />
-    <Article />
-    <Footer />
-    <Counter />
-  </div>
-);
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Test App</h1>
+        <Counter />
+      </header>
+      <div>
+        <Product />
+      </div>
+      <br />
+      <div>
+        <ProductList />
+      </div>
+    </div>
+  );
+}
 
 export default App;
