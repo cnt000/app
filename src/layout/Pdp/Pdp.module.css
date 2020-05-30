@@ -1,20 +1,39 @@
-.pdp-content .name,
-.pdp-content .dimension,
-.pdp-content .price,
-.pdp-content .addtocart {
+.pdpContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name,
+.dimension,
+.price,
+.addtocart {
   margin-top: 0;
   margin-bottom: 0.8rem;
 }
 
-.pdp-content .name {
+.name {
   font-size: 22px;
 }
 
-.pdp-content .price {
+.price {
   font-size: 16px;
 }
+
+.mainImage {
+  margin: 1rem 0;
+}
+
+.mainImage img {
+  width: 100%;
+}
+
+.productInfo {
+  text-align: center;
+}
+
 @media only screen and (min-width: 1025px) {
- .pdp-content {
+ .pdpContent {
     display: grid;
     grid-template-columns: 10px 1fr 30%;
   }
