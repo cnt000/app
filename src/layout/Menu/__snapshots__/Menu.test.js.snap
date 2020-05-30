@@ -3,7 +3,7 @@
 exports[`renders correctly 1`] = `
 Array [
   <nav
-    className="menu"
+    className="menu "
   >
     <div
       className="header"

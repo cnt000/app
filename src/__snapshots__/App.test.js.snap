@@ -45,7 +45,7 @@ exports[`renders correctly 1`] = `
     </div>
   </header>
   <nav
-    className="menu"
+    className="menu "
   >
     <div
       className="header"
@@ -224,9 +224,7 @@ exports[`renders correctly 1`] = `
       </div>
       <button
         className="addtoCart"
-      >
-        Aggiungi al carrello
-      </button>
+      />
     </div>
   </main>
   <main
@@ -392,35 +390,25 @@ exports[`renders correctly 1`] = `
     <p>
       <span
         className="copyright"
-      >
-        Copyright © 2020
-      </span>
+      />
        -
+       
       <a
         className="privacy"
-        href="http://www.pungilandia.com"
-      >
-        Privacy
-      </a>
+      />
        
       -
+       
       <a
         className="contactus"
-        href="mailto:info@pungilandia.com"
-      >
-        Contatti
-      </a>
+      />
     </p>
     <address>
-      Azienda Agricola Pungilandia Rocchi Domenico
       <br />
-      Via Isonzo 11, 65123 Pescara P.IVA 01203140684 CF RCCDNC59R30I712B Iscrizione REA Pescara Nr.97422
     </address>
     <p
       className="laws"
-    >
-      Azienda in possesso Registro di Detenzione di Specie Vegetali Incluse Negli Allegati CITES A e B del Regolamento (CE) 338/97 del Consiglio del 9 Dicembre 1996 e Successive Modifiche e Attuazioni. Registro N.000001/2001 VAB
-    </p>
+    />
   </footer>
   <div>
     <div

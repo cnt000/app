@@ -1,6 +1,7 @@
 .menu {
   grid-area: sidebar;
   width: 14rem;
+  max-width: 14rem;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -17,7 +18,7 @@
   z-index: 2;
 }
 
-.menu.open {
+.open {
   left: 0;
   position: fixed;
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Menu.module.css';
 
-const Menu = () => (
+const Menu = ({ isOpen }) => (
   <>
-    <nav className={styles.menu}>
+    <nav className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
       <div className={styles.header}>
         <button className={styles.close}>chiudi il menu</button>
       </div>

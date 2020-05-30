@@ -7,4 +7,4 @@ export default {
   title: 'Menu',
 };
 
-export const Default = () => <Menu />;
+export const Default = () => <Menu isOpen={true} />;

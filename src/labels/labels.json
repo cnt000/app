@@ -7,6 +7,9 @@
   "privacy": "privacy",
   "contact": "contatti",
   "company": "Azienda Agricola Pungilandia Rocchi Domenico",
-  "companyAddress": "Via Isonzo 11, 65123 Pescara P.IVA 01203140684 CF RCCDNC59R30I712B<br>Iscrizione REA Pescara Nr.97422",
-  "disclaimer": "Azienda in possesso Registro di Detenzione di Specie Vegetali Incluse<br>Negli Allegati CITES A e B del Regolamento (CE) 338/97 del Consiglio del 9<br>Dicembre 1996 e Successive Modifiche e Attuazioni. Registro N.000001/2001<br>VAB"
+  "companyAddress": "Via Isonzo 11, 65123 Pescara P.IVA 01203140684 CF RCCDNC59R30I712B\nIscrizione REA Pescara Nr.97422",
+  "disclaimer": "Azienda in possesso Registro di Detenzione di Specie Vegetali Incluse\nNegli Allegati CITES A e B del Regolamento (CE) 338/97 del Consiglio del 9\nDicembre 1996 e Successive Modifiche e Attuazioni. Registro N.000001/2001\nVAB",
+  "mailToLink": "mailto:info@pungilandia.com",
+  "privacyLink": "http://www.pungilandia.com",
+  "addToCart": "Aggiungi al carrello"
 }
