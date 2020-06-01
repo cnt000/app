@@ -11,5 +11,11 @@
   "disclaimer": "Azienda in possesso Registro di Detenzione di Specie Vegetali Incluse\nNegli Allegati CITES A e B del Regolamento (CE) 338/97 del Consiglio del 9\nDicembre 1996 e Successive Modifiche e Attuazioni. Registro N.000001/2001\nVAB",
   "mailToLink": "mailto:info@pungilandia.com",
   "privacyLink": "http://www.pungilandia.com",
-  "addToCart": "Aggiungi al carrello"
+  "addToCart": "Aggiungi al carrello",
+  "searchPlants": "Cerca piante",
+  "searchPlantsImage": "http://www.pungilandia.com/php/images/lo/cotyl_mediop.jpg",
+  "hintsFromPungilandiaTitle": "I Consigli di Pungilandia",
+  "articleBy": "A cura del dott. Mimmo Rocchi",
+  "articleContent": "consigliColtivazione.md",
+  "mimmoImage": "http://www.pungilandia.com/media/MIMMO.JPG"
 }

@@ -7,7 +7,7 @@
 .name,
 .dimension,
 .price,
-.addtocart {
+.addToCart {
   margin-top: 0;
   margin-bottom: 0.8rem;
 }
@@ -21,15 +21,25 @@
 }
 
 .mainImage {
-  margin: 1rem 0;
+  margin: 1rem auto;
+  text-align: center;
 }
 
 .mainImage img {
   width: 100%;
+  max-width: 500px;
 }
 
 .productInfo {
   text-align: center;
+  margin: 1rem 0;
+}
+
+.addToCart {
+  margin: 0 auto;
+  margin: 1rem auto 2rem auto;
+  width: 50%;
+  height: 2rem;
 }
 
 @media only screen and (min-width: 1025px) {

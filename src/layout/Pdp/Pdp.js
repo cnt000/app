@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Pdp.module.css';
 
 const Pdp = ({ productName, productImage, vaseDiameter, price, addToCart }) => (
-  <main classNameName={styles.pdpContent} role="main">
+  <main className={styles.pdpContent} role="main">
     <div className={styles.header}></div>
     <div className={styles.mainImage}>
       <img src={productImage} alt={productName} />
@@ -11,7 +11,7 @@ const Pdp = ({ productName, productImage, vaseDiameter, price, addToCart }) => (
       <h2 className={styles.name}>{productName}</h2>
       <div className={styles.dimension}>{vaseDiameter}</div>
       <div className={styles.price}>{price}</div>
-      <button className={styles.addtoCart}>{addToCart}</button>
+      <button className={styles.addToCart}>{addToCart}</button>
     </div>
   </main>
 );

@@ -2,16 +2,17 @@
 
 exports[`renders correctly 1`] = `
 <main
+  className="plpContent"
   role="main"
 >
   <div
-    className="page-header"
+    className="pageHeader"
   >
     <div
       className="left"
     >
       <h2
-        className="title"
+        className="left"
       >
         Le nostre piante
       </h2>
@@ -25,7 +26,7 @@ exports[`renders correctly 1`] = `
       className="cercapiante"
     >
       <a
-        href="#"
+        href="/search"
         title="cerca piante"
       >
         <img
@@ -45,8 +46,8 @@ exports[`renders correctly 1`] = `
       className="product"
     >
       <a
-        className="image-container"
-        href="#"
+        className="imageContainer"
+        href="/item"
       >
         <img
           alt="Adromischus  clavifolius"
@@ -63,7 +64,304 @@ exports[`renders correctly 1`] = `
         </div>
       </a>
       <button
-        className="addtocart"
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/item"
+      >
+        <img
+          alt="Adromischus  clavifolius"
+          className="image"
+          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Adromischus clavifolius Ų 24
+        </h1>
+        <div>
+          € 9,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/item"
+      >
+        <img
+          alt="Adromischus  clavifolius"
+          className="image"
+          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Adromischus clavifolius Ų 24
+        </h1>
+        <div>
+          € 9,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/item"
+      >
+        <img
+          alt="Adromischus  clavifolius"
+          className="image"
+          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Adromischus clavifolius Ų 24
+        </h1>
+        <div>
+          € 9,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/item"
+      >
+        <img
+          alt="Adromischus  clavifolius"
+          className="image"
+          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Adromischus clavifolius Ų 24
+        </h1>
+        <div>
+          € 9,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/item"
+      >
+        <img
+          alt="Adromischus  clavifolius"
+          className="image"
+          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Adromischus clavifolius Ų 24
+        </h1>
+        <div>
+          € 9,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/item"
+      >
+        <img
+          alt="Adromischus  clavifolius"
+          className="image"
+          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Adromischus clavifolius Ų 24
+        </h1>
+        <div>
+          € 9,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/item"
+      >
+        <img
+          alt="Adromischus  clavifolius"
+          className="image"
+          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Adromischus clavifolius Ų 24
+        </h1>
+        <div>
+          € 9,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/item"
+      >
+        <img
+          alt="Adromischus  clavifolius"
+          className="image"
+          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Adromischus clavifolius Ų 24
+        </h1>
+        <div>
+          € 9,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/item"
+      >
+        <img
+          alt="Adromischus  clavifolius"
+          className="image"
+          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Adromischus clavifolius Ų 24
+        </h1>
+        <div>
+          € 9,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/item"
+      >
+        <img
+          alt="Adromischus  clavifolius"
+          className="image"
+          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Adromischus clavifolius Ų 24
+        </h1>
+        <div>
+          € 9,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/item"
+      >
+        <img
+          alt="Adromischus  clavifolius"
+          className="image"
+          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Adromischus clavifolius Ų 24
+        </h1>
+        <div>
+          € 9,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
       >
         Aggiungi al carrello
       </button>

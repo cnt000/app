@@ -1,0 +1,69 @@
+
+.pageContent {
+  padding: 1em;
+}
+
+.pageContent b {
+  font-weight: 700;
+}
+
+.pageContent h2 {
+  color: var(--brown);
+  font-size: 28px;
+  padding: 0.6em 0;
+  text-shadow: var(--grey) 2px 1px 1px;
+}
+
+.pageContent h3 {
+  color: var(--brown);
+  font-size: 22px;
+  padding: 0.4em 0;
+  text-shadow: var(--grey) 2px 1px 1px;
+}
+
+.pageContent p {
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: justify;
+  padding-bottom: 1.2em;
+}
+
+.authorBox {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.authorBox img {
+  width: 6em;
+  height: 6em;
+  margin-left: auto;
+}
+
+.authorBox span {
+  font-size: 14px;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-left: 5px solid var(--orange);
+  display: block;
+  margin: 6px 10px 0 0;
+  float: left;
+}
+
+@media only screen and (min-width: 1025px) {
+  .header__content p {
+    font-size: 42px;
+    text-shadow: 2px 2px 16px var(--grey);
+  }
+
+  .pageContent p {
+    text-align: left;
+  }
+}

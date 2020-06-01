@@ -1,36 +1,42 @@
 import React from 'react';
-import styles from './Plp.modules.css';
+import styles from './Plp.module.css';
 
-const Plp = () => (
+const Product = ({ productName, productImage, price, addToCart }) => (
+  <article className={styles.product}>
+    <a href="/item" className={styles.imageContainer}>
+      <img className={styles.image} src={productImage} alt={productName} />
+      <h1 className={styles.name}>{productName}</h1>
+      <div>{price}</div>
+    </a>
+    <button className={styles.addToCart}>{addToCart}</button>
+  </article>
+);
+
+const Plp = ({
+  productName,
+  productImage,
+  price,
+  addToCart,
+  searchPlants,
+  searchPlantsImage,
+}) => (
   <main className={styles.plpContent} role="main">
-    <div className="page-header">
-      <div className="left">
-        <h2 className="title">Le nostre piante</h2>
-        <span className="lastmodified">02/04/2020</span>
+    <div className={styles.pageHeader}>
+      <div className={styles.left}>
+        <h2 className={styles.left}>Le nostre piante</h2>
+        <span className={styles.lastmodified}>02/04/2020</span>
       </div>
-      <div className="cercapiante">
-        <a href="#" title="cerca piante">
-          <img
-            src="http://www.pungilandia.com/php/images/lo/cotyl_mediop.jpg"
-            alt="cerca piante"
-          />
-          <span>il cerca piante</span>
+      <div className={styles.cercapiante}>
+        <a href="/search" title={searchPlants}>
+          <img src={searchPlantsImage} alt={searchPlants} />
+          <span>{searchPlants}</span>
         </a>
       </div>
     </div>
-    <div className="products">
-      <article className="product">
-        <a href="#" className="image-container">
-          <img
-            className="image"
-            src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
-            alt="Adromischus  clavifolius"
-          />
-          <h1 className="name">Adromischus clavifolius Ų 24</h1>
-          <div>€ 9,00</div>
-        </a>
-        <button className="addtocart">Aggiungi al carrello</button>
-      </article>
+    <div className={styles.products}>
+      {Array(12)
+        .fill(' ')
+        .map((_) => Product({ productName, productImage, price, addToCart }))}
     </div>
   </main>
 );
