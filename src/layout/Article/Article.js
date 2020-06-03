@@ -14,7 +14,7 @@ const Article = ({
         <img src={mimmoImage} alt="" />
         <span>{articleBy}</span>
       </div>
-      {articleContent}
+      <div dangerouslySetInnerHTML={{__html: articleContent}}></div>
     </div>
   </main>
 );

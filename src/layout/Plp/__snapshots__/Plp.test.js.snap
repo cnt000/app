@@ -27,15 +27,9 @@ exports[`renders correctly 1`] = `
     >
       <a
         href="/search"
-        title="cerca piante"
       >
-        <img
-          alt="cerca piante"
-          src="http://www.pungilandia.com/php/images/lo/cotyl_mediop.jpg"
-        />
-        <span>
-          il cerca piante
-        </span>
+        <img />
+        <span />
       </a>
     </div>
   </div>
@@ -50,24 +44,16 @@ exports[`renders correctly 1`] = `
         href="/item"
       >
         <img
-          alt="Adromischus  clavifolius"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
         />
         <h1
           className="name"
-        >
-          Adromischus clavifolius Ų 24
-        </h1>
-        <div>
-          € 9,00
-        </div>
+        />
+        <div />
       </a>
       <button
         className="addToCart"
-      >
-        Aggiungi al carrello
-      </button>
+      />
     </article>
     <article
       className="product"
@@ -77,24 +63,16 @@ exports[`renders correctly 1`] = `
         href="/item"
       >
         <img
-          alt="Adromischus  clavifolius"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
         />
         <h1
           className="name"
-        >
-          Adromischus clavifolius Ų 24
-        </h1>
-        <div>
-          € 9,00
-        </div>
+        />
+        <div />
       </a>
       <button
         className="addToCart"
-      >
-        Aggiungi al carrello
-      </button>
+      />
     </article>
     <article
       className="product"
@@ -104,24 +82,16 @@ exports[`renders correctly 1`] = `
         href="/item"
       >
         <img
-          alt="Adromischus  clavifolius"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
         />
         <h1
           className="name"
-        >
-          Adromischus clavifolius Ų 24
-        </h1>
-        <div>
-          € 9,00
-        </div>
+        />
+        <div />
       </a>
       <button
         className="addToCart"
-      >
-        Aggiungi al carrello
-      </button>
+      />
     </article>
     <article
       className="product"
@@ -131,24 +101,16 @@ exports[`renders correctly 1`] = `
         href="/item"
       >
         <img
-          alt="Adromischus  clavifolius"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
         />
         <h1
           className="name"
-        >
-          Adromischus clavifolius Ų 24
-        </h1>
-        <div>
-          € 9,00
-        </div>
+        />
+        <div />
       </a>
       <button
         className="addToCart"
-      >
-        Aggiungi al carrello
-      </button>
+      />
     </article>
     <article
       className="product"
@@ -158,24 +120,16 @@ exports[`renders correctly 1`] = `
         href="/item"
       >
         <img
-          alt="Adromischus  clavifolius"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
         />
         <h1
           className="name"
-        >
-          Adromischus clavifolius Ų 24
-        </h1>
-        <div>
-          € 9,00
-        </div>
+        />
+        <div />
       </a>
       <button
         className="addToCart"
-      >
-        Aggiungi al carrello
-      </button>
+      />
     </article>
     <article
       className="product"
@@ -185,24 +139,16 @@ exports[`renders correctly 1`] = `
         href="/item"
       >
         <img
-          alt="Adromischus  clavifolius"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
         />
         <h1
           className="name"
-        >
-          Adromischus clavifolius Ų 24
-        </h1>
-        <div>
-          € 9,00
-        </div>
+        />
+        <div />
       </a>
       <button
         className="addToCart"
-      >
-        Aggiungi al carrello
-      </button>
+      />
     </article>
     <article
       className="product"
@@ -212,24 +158,16 @@ exports[`renders correctly 1`] = `
         href="/item"
       >
         <img
-          alt="Adromischus  clavifolius"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
         />
         <h1
           className="name"
-        >
-          Adromischus clavifolius Ų 24
-        </h1>
-        <div>
-          € 9,00
-        </div>
+        />
+        <div />
       </a>
       <button
         className="addToCart"
-      >
-        Aggiungi al carrello
-      </button>
+      />
     </article>
     <article
       className="product"
@@ -239,24 +177,16 @@ exports[`renders correctly 1`] = `
         href="/item"
       >
         <img
-          alt="Adromischus  clavifolius"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
         />
         <h1
           className="name"
-        >
-          Adromischus clavifolius Ų 24
-        </h1>
-        <div>
-          € 9,00
-        </div>
+        />
+        <div />
       </a>
       <button
         className="addToCart"
-      >
-        Aggiungi al carrello
-      </button>
+      />
     </article>
     <article
       className="product"
@@ -266,24 +196,16 @@ exports[`renders correctly 1`] = `
         href="/item"
       >
         <img
-          alt="Adromischus  clavifolius"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
         />
         <h1
           className="name"
-        >
-          Adromischus clavifolius Ų 24
-        </h1>
-        <div>
-          € 9,00
-        </div>
+        />
+        <div />
       </a>
       <button
         className="addToCart"
-      >
-        Aggiungi al carrello
-      </button>
+      />
     </article>
     <article
       className="product"
@@ -293,24 +215,16 @@ exports[`renders correctly 1`] = `
         href="/item"
       >
         <img
-          alt="Adromischus  clavifolius"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
         />
         <h1
           className="name"
-        >
-          Adromischus clavifolius Ų 24
-        </h1>
-        <div>
-          € 9,00
-        </div>
+        />
+        <div />
       </a>
       <button
         className="addToCart"
-      >
-        Aggiungi al carrello
-      </button>
+      />
     </article>
     <article
       className="product"
@@ -320,24 +234,16 @@ exports[`renders correctly 1`] = `
         href="/item"
       >
         <img
-          alt="Adromischus  clavifolius"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
         />
         <h1
           className="name"
-        >
-          Adromischus clavifolius Ų 24
-        </h1>
-        <div>
-          € 9,00
-        </div>
+        />
+        <div />
       </a>
       <button
         className="addToCart"
-      >
-        Aggiungi al carrello
-      </button>
+      />
     </article>
     <article
       className="product"
@@ -347,24 +253,16 @@ exports[`renders correctly 1`] = `
         href="/item"
       >
         <img
-          alt="Adromischus  clavifolius"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
         />
         <h1
           className="name"
-        >
-          Adromischus clavifolius Ų 24
-        </h1>
-        <div>
-          € 9,00
-        </div>
+        />
+        <div />
       </a>
       <button
         className="addToCart"
-      >
-        Aggiungi al carrello
-      </button>
+      />
     </article>
   </div>
 </main>

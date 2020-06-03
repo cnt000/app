@@ -11,9 +11,9 @@
   <br />
   Per questo motivo è essenziale conoscere a che specie appartengono gli
   esemplari che acquistiamo, per poter adattare le condizioni di
-  coltivazione a quella determinata pianta: Pungilandia offre{' '}
+  coltivazione a quella determinata pianta: Pungilandia offre
   <b>gratuitamente</b> il proprio parere sulla determinazione delle specie
-  (Basta iviare una foto della pianta{' '}
+  (Basta iviare una foto della pianta
   <a href="mailto:info@pungilandia.com">via email</a> con una semplice
   richiesta), ma è buona regola documentarsi anche in proprio, magari
   acquistando qualche buon libro o contattando le associazioni di
@@ -101,18 +101,18 @@
   portare in breve alla morte della pianta. Non si acquistino piante le
   cui estremità mostrano un evidente restringimento, con spine piccole o
   assenti: queste sono state coltivate in condizioni di luce insufficiente
-  ed hanno subito un processo che viene chiamato tecnicamente{' '}
+  ed hanno subito un processo che viene chiamato tecnicamente
   <b>eziolatura</b> e che ne modifica in modo irreversibile il portamento.
   <b>Le spedizioni di Pungilandia</b> sono caratterizzate dal cartone
   ricoperto con carta da <b>pacchi bianca</b>. Le piante al suo interno
   sono avvolte singolarmente con fogli di carta più leggera di colore
   bianco . E' importante controllare attentamente il contenuto del pacco
-  capita spesso infatti di <b>trovare una pianta in omaggio</b>{' '}
+  capita spesso infatti di <b>trovare una pianta in omaggio</b>
   gentilmente offerta da Pungilandia. Scartate delicatamente le piante ed
   eventualmente pressate leggermente la terra , per le piante spedite in
   vaso. Le piante appena arrivate non vanno esposte subito alla luce
   diretta, è buona regola tenerle per qualche giorno in una posizione
-  molto luminosa , ma non al sole. Passato questo{' '}
+  molto luminosa , ma non al sole. Passato questo
   <b>breve periodo di acclimatamento</b> è possibile a secondo della
   specie e delle sue esigenze, posizionarle nel posto scelto accuratamente
   nella collezione.
