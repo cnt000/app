@@ -43,6 +43,10 @@
 }
 
 .menu .close {
+  display: none;
+}
+
+.menu.open .close {
   appearance: button;
   background-color: transparent;
   text-decoration: none;

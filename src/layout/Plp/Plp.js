@@ -23,7 +23,7 @@ const Plp = ({
   <main className={styles.plpContent} role="main">
     <div className={styles.pageHeader}>
       <div className={styles.left}>
-        <h2 className={styles.left}>Le nostre piante</h2>
+        <h2 className={styles.title}>Le nostre piante</h2>
         <span className={styles.lastmodified}>02/04/2020</span>
       </div>
       <div className={styles.cercapiante}>

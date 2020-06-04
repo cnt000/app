@@ -9,36 +9,28 @@ const Menu = ({ isOpen }) => (
       </div>
       <ul className={styles.entries}>
         <li>
-          <a href="https://www.bitdegree.org/tag/gamified/">Chi siamo</a>
+          <a href="https://www.pungilandia.com">Chi siamo</a>
         </li>
         <li>
-          <a href="https://www.bitdegree.org/tutorials/">Lista piante</a>
+          <a href="https://www.pungilandia.com">Lista piante</a>
         </li>
         <li>
-          <a href="https://www.bitdegree.org/course/learn-solidity-space-doggos/">
-            Novità
-          </a>
+          <a href="https://www.pungilandia.com">Novità</a>
         </li>
         <li>
-          <a href="https://www.bitdegree.org/tag/game-dev/">
-            Prodotti speciali
-          </a>
+          <a href="https://www.pungilandia.com">Prodotti speciali</a>
         </li>
         <li>
-          <a href="https://www.bitdegree.org/tag/gamified/">
-            Consigli per coltivare
-          </a>
+          <a href="https://www.pungilandia.com">Consigli per coltivare</a>
         </li>
         <li>
-          <a href="https://www.bitdegree.org/tutorials/">Ordini</a>
+          <a href="https://www.pungilandia.com">Ordini</a>
         </li>
         <li>
-          <a href="https://www.bitdegree.org/course/learn-solidity-space-doggos/">
-            Foto-Show
-          </a>
+          <a href="https://www.pungilandia.com">Foto-Show</a>
         </li>
         <li>
-          <a href="https://www.bitdegree.org/tag/game-dev/">E-mail</a>
+          <a href="https://www.pungilandia.com">E-mail</a>
         </li>
       </ul>
     </nav>

@@ -83,7 +83,24 @@
   .header {
     grid-template-columns: 3rem 1fr 3rem;
   }
+
   .burger {
     display: none;
+  }
+
+  .content h1 {
+    font-size: 86px;
+    text-shadow: 2px 2px 16px var(--grey);
+  }
+
+  .content p {
+    font-size: 42px;
+    text-shadow: 2px 2px 16px var(--grey);
+  }
+
+  .cercapiante {
+    position: absolute;
+    right: 1rem;
+    line-height: 3.4;
   }
 }
