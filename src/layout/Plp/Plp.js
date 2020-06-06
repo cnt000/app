@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Plp.module.css';
 
-const Product = ({ productName, productImage, price, addToCart }) => (
-  <article className={styles.product}>
+const Product = ({ i, productName, productImage, price, addToCart }) => (
+  <article key={`${productName}_${i}`} className={styles.product}>
     <a href="/item" className={styles.imageContainer}>
       <img className={styles.image} src={productImage} alt={productName} />
       <h1 className={styles.name}>{productName}</h1>
@@ -36,7 +36,7 @@ const Plp = ({
     <div className={styles.products}>
       {Array(12)
         .fill(' ')
-        .map((_) => Product({ productName, productImage, price, addToCart }))}
+        .map((_, i) => Product({ i, productName, productImage, price, addToCart }))}
     </div>
   </main>
 );

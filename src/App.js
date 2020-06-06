@@ -3,8 +3,6 @@ import { Counter } from './features/counter/Counter';
 import Product from './features/product/Product';
 import ProductList from './features/product-list/ProductList';
 
-import './App.scss';
-
 function App() {
   return (
     <div className="App">

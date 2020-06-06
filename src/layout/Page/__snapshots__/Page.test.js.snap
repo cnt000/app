@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="pageLayout"
+>
+  <header
+    className="header"
+  >
+    <div>
+      <button
+        className="burger"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="logo"
+      >
+        <img
+          alt="pungilandia logo"
+          src="logo.png"
+        />
+      </div>
+      <div
+        className="title"
+      >
+        <h1 />
+        <p />
+      </div>
+    </div>
+    <div>
+      <button
+        className="cart"
+      />
+    </div>
+  </header>
+  <nav
+    className="menu "
+  >
+    <div
+      className="header"
+    >
+      <button
+        className="close"
+        onClick={[Function]}
+      >
+        chiudi il menu
+      </button>
+    </div>
+    <ul
+      className="entries"
+    >
+      <li>
+        <a
+          href="https://www.pungilandia.com"
+        >
+          Chi siamo
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.pungilandia.com"
+        >
+          Lista piante
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.pungilandia.com"
+        >
+          Novità
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.pungilandia.com"
+        >
+          Prodotti speciali
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.pungilandia.com"
+        >
+          Consigli per coltivare
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.pungilandia.com"
+        >
+          Ordini
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.pungilandia.com"
+        >
+          Foto-Show
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.pungilandia.com"
+        >
+          E-mail
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    className="overlay"
+  />
+  <footer
+    className="footer"
+  >
+    <p>
+      <span
+        className="copyright"
+      />
+       -
+       
+      <a
+        className="privacy"
+      />
+       
+      -
+       
+      <a
+        className="contactus"
+      />
+    </p>
+    <address>
+      <br />
+    </address>
+    <p
+      className="laws"
+    />
+  </footer>
+</div>
+`;
