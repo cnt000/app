@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
     <img />
   </div>
   <div
-    className="productInfo"
+    className="product"
   >
     <h2
       className="name"

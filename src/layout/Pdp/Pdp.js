@@ -7,7 +7,7 @@ const Pdp = ({ productName, productImage, vaseDiameter, price, addToCart }) => (
     <div className={styles.mainImage}>
       <img src={productImage} alt={productName} />
     </div>
-    <div className={styles.productInfo}>
+    <div className={styles.product}>
       <h2 className={styles.name}>{productName}</h2>
       <div className={styles.dimension}>{vaseDiameter}</div>
       <div className={styles.price}>{price}</div>

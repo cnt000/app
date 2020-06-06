@@ -17,6 +17,13 @@ exports[`renders correctly 1`] = `
       />
       <span />
     </div>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": undefined,
+        }
+      }
+    />
   </div>
 </main>
 `;

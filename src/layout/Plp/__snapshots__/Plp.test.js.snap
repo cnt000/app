@@ -12,7 +12,7 @@ exports[`renders correctly 1`] = `
       className="left"
     >
       <h2
-        className="left"
+        className="title"
       >
         Le nostre piante
       </h2>

@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Article from './Article';
-import labels from '../../labels/labels.json';
-import articleContent from '../../labels/articles/consigliColtivazione.md';
+import labels from '../../data/labels/labels.json';
+import articleContent from '../../data/articles/consigliColtivazione.md';
 
 export default {
   component: Article,

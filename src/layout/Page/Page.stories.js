@@ -5,17 +5,17 @@ import Plp from '../Plp/Plp';
 import Pdp from '../Pdp/Pdp';
 import Article from '../Article/Article';
 
-import labels from '../../labels/labels.json';
-import productInfo from '../../productData/productInfo.json';
-import articleContent from '../../labels/articles/consigliColtivazione.md';
+import labels from '../../data/labels/labels.json';
+import product from '../../data/products/clavifolius.json';
+import articleContent from '../../data/articles/consigliColtivazione.md';
 
 export default {
   component: Page,
   title: 'Page',
 };
 
-const plp = <Plp {...labels} {...productInfo} />;
-const pdp = <Pdp {...labels} {...productInfo} />;
+const plp = <Plp {...labels} {...product} />;
+const pdp = <Pdp {...labels} {...product} />;
 const article = <Article {...labels} articleContent={articleContent} />;
 
 
