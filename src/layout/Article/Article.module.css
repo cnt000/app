@@ -1,3 +1,7 @@
+.articleContent {
+  grid-area: content;
+  padding: 0.4rem;
+}
 
 .pageContent {
   padding: 1em;

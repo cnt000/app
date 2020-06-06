@@ -1,4 +1,5 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 
 import Menu from './Menu';
 
@@ -7,4 +8,8 @@ export default {
   title: 'Menu',
 };
 
-export const Default = () => <Menu isOpen={true} />;
+const actionsData = {
+  setMenuOpen: action('setMenuOpen(false)'),
+};
+
+export const Default = () => <Menu isOpen={true} {...actionsData} />;

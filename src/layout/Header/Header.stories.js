@@ -1,4 +1,5 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 
 import Header from './Header';
 import labels from '../../labels/labels.json'
@@ -10,4 +11,8 @@ export default {
   title: 'Header'
 };
 
-export const Default = () => <Header {...labels} />;
+const actionsData = {
+  setMenuOpen: action('setMenuOpen(true)'),
+};
+
+export const Default = () => <Header {...labels} {...actionsData} />;

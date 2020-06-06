@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from './Menu.module.css';
 
-const Menu = ({ isOpen }) => (
+const Menu = ({ isOpen, setMenuOpen }) => (
   <>
     <nav className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
       <div className={styles.header}>
-        <button className={styles.close}>chiudi il menu</button>
+        <button className={styles.close} onClick={setMenuOpen}>
+          chiudi il menu
+        </button>
       </div>
       <ul className={styles.entries}>
         <li>
