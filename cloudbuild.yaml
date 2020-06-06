@@ -3,6 +3,7 @@ steps:
   entrypoint: npm
   args: ["ci"]
 - name: node:10.15.1
+  entrypoint: npm
   args: ['run', 'test:unit']
 - name: node:10.15.1
   entrypoint: npm
