@@ -20,9 +20,10 @@
     "start:client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:unit": "react-scripts test",
+    "test:unit": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "styleguide:copy": "cp -R src/styleguide build/",
+    "storybook:copy": "cp -R storybook-static build/",
     "styleguide": "while true; do npm run styleguide:copy;date ; sleep 5; done;",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
