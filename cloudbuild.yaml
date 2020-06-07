@@ -12,6 +12,12 @@ steps:
     - 'MY_SECRET_KEY=${_MY_SECRET_KEY}'
 - name: node:10.15.1
   entrypoint: npm
+  args: ["run", "build-storybook"]
+- name: node:10.15.1
+  entrypoint: npm
+  args: ["run", "storybook:copy"]
+- name: node:10.15.1
+  entrypoint: npm
   args: ["run", "styleguide:copy"]
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy"]
