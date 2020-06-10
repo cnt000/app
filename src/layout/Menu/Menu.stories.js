@@ -13,3 +13,5 @@ const actionsData = {
 };
 
 export const Default = () => <Menu isOpen={true} {...actionsData} />;
+export const Closed = () => <Menu isOpen={false} {...actionsData} />;
+

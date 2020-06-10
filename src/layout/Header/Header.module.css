@@ -103,4 +103,8 @@
     right: 1rem;
     line-height: 3.4;
   }
+
+  .logo img {
+    height: 115px;
+  }
 }
