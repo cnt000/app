@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import styles from './Menu.module.css';
 
 const Menu = ({ isOpen, setMenuOpen }) => (
@@ -39,5 +41,10 @@ const Menu = ({ isOpen, setMenuOpen }) => (
     <div className={styles.overlay}></div>
   </>
 );
+
+Menu.propTypes = {
+  isOpen: PropTypes.bool,
+  setMenuOpen: PropTypes.func,
+};
 
 export default Menu;

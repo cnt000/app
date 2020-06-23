@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import styles from './Article.module.css';
 
 const Article = ({
@@ -18,5 +20,12 @@ const Article = ({
     </div>
   </main>
 );
+
+Article.propTypes = {
+  hintsFromPungilandiaTitle: PropTypes.string,
+  articleBy: PropTypes.string,
+  articleContent: PropTypes.string,
+  mimmoImage: PropTypes.string,
+};
 
 export default Article;

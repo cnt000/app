@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import styles from './Pdp.module.css';
 
 const Pdp = ({ productName, productImage, vaseDiameter, price, addToCart }) => (
@@ -15,5 +17,13 @@ const Pdp = ({ productName, productImage, vaseDiameter, price, addToCart }) => (
     </div>
   </main>
 );
+
+Pdp.propTypes = {
+  productName: PropTypes.string,
+  productImage: PropTypes.string,
+  vaseDiameter: PropTypes.string,
+  price: PropTypes.string,
+  addToCart: PropTypes.string,
+};
 
 export default Pdp;

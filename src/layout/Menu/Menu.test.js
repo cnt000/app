@@ -24,6 +24,14 @@ it('click close button call setMenuOpenMock', () => {
   expect(setMenuOpenMock).toHaveBeenCalled();
 });
 
+it('has class open if isOpen is true', () => {
+  const setMenuOpenMock = jest.fn();
+  const renderedComponent = shallow(
+    <Menu isOpen={true} setMenuOpen={setMenuOpenMock} />,
+  );
+  expect(renderedComponent.find('.open').length).toBe(1);
+});
+
 describe('Click without enzyme', () => {
   let container;
 

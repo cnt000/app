@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import styles from './Footer.module.css';
 
 const Footer = ({
@@ -30,5 +32,16 @@ const Footer = ({
     <p className={styles.laws}>{disclaimer}</p>
   </footer>
 );
+
+Footer.propTypes = {
+  copyright: PropTypes.string,
+  privacy: PropTypes.string,
+  contact: PropTypes.string,
+  company: PropTypes.string,
+  companyAddress: PropTypes.string,
+  disclaimer: PropTypes.string,
+  privacyLink: PropTypes.string,
+  mailToLink: PropTypes.string,
+};
 
 export default Footer;

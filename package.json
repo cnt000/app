@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "fastify": "^2.12.1",
     "fastify-static": "^2.6.0",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.2.0",
@@ -16,8 +17,9 @@
     "use-http": "^0.2.9"
   },
   "scripts": {
-    "start": "node src/server/index.js",
+    "start": "npm run start:server && npm run start:client",
     "start:client": "react-scripts start",
+    "start:server": "node src/server/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:unit": "react-scripts test --watchAll=false",

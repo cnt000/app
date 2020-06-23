@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import Header from '../Header/Header';
 import Menu from '../Menu/Menu';
 import Footer from '../Footer/Footer';
@@ -15,4 +16,5 @@ const Page = (props) => {
     </div>
   );
 };
+
 export default Page;

@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import logo from '../../images/logo.png';
 import styles from './Header.module.css';
 
@@ -30,6 +32,14 @@ const Header = ({
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  openMenuLabel: PropTypes.string,
+  title: PropTypes.string,
+  titleDescription: PropTypes.string,
+  goToCartLabel: PropTypes.string,
+  setMenuOpen: PropTypes.func,
 };
 
 export default Header;

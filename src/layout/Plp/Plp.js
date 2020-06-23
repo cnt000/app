@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import styles from './Plp.module.css';
 
 const Product = ({ i, productName, productImage, price, addToCart }) => (
@@ -11,6 +13,14 @@ const Product = ({ i, productName, productImage, price, addToCart }) => (
     <button className={styles.addToCart}>{addToCart}</button>
   </article>
 );
+
+Product.propTypes = {
+  i: PropTypes.number,
+  productName: PropTypes.string,
+  productImage: PropTypes.string,
+  price: PropTypes.string,
+  addToCart: PropTypes.string,
+};
 
 const Plp = ({
   productName,
@@ -40,5 +50,14 @@ const Plp = ({
     </div>
   </main>
 );
+
+Plp.propTypes = {
+  productName: PropTypes.string,
+  productImage: PropTypes.string,
+  price: PropTypes.string,
+  addToCart: PropTypes.string,
+  searchPlants: PropTypes.string,
+  searchPlantsImage: PropTypes.string,
+};
 
 export default Plp;
