@@ -14,17 +14,20 @@ const Header = ({
   return (
     <header className={styles.header}>
       <div>
-        <button className={styles.burger} onClick={setMenuOpen}>
+        <button
+          className="dn-ns button-reset::-moz-focus-inner input-reset overflow-hidden aspect-ratio ml2 .pointer:hover bg-transparent pt4"
+          onClick={setMenuOpen}
+        >
           {openMenuLabel}
         </button>
       </div>
-      <div className={styles.content}>
-        <div className={styles.logo}>
-          <img src={logo} alt="pungilandia logo" />
+      <div className="tc center flex dark-red">
+        <div className="pt1">
+          <img src={logo} alt="pungilandia logo" className="w-auto h3 h4-ns" />
         </div>
-        <div className={styles.title}>
-          <h1>{title}</h1>
-          <p>{titleDescription}</p>
+        <div className="pl2 pr2 pt0 pb0 lh-solid">
+          <h1 className="f1 f-5-ns">{title}</h1>
+          <p className="f4 f1-ns">{titleDescription}</p>
         </div>
       </div>
       <div>

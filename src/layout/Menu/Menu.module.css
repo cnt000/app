@@ -2,7 +2,7 @@
   grid-area: sidebar;
   width: 14rem;
   max-width: 14rem;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   top: 0;
   left: calc(-14rem - 2px);
@@ -87,7 +87,6 @@
   .menu {
     position: static;
     width: auto;
-    height: 100vh;
     z-index: 1;
     padding-top: 2em;
   }

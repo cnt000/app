@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <footer
-  className="footer"
+  className="footer tc pa2"
 >
   <p>
     <span
@@ -17,14 +17,14 @@ exports[`renders correctly 1`] = `
     -
      
     <a
-      className="contactus"
+      className="f5 mt2"
     />
   </p>
   <address>
     <br />
   </address>
   <p
-    className="laws"
+    className="center fw3 w-80 w-60-ns mt1 mt2-ns lh-title f7 dn db-ns"
   />
 </footer>
 `;

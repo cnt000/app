@@ -4,56 +4,18 @@
   grid-template-columns: 2.6rem 1fr 3rem;
 }
 
+.title {
+  font-family: 'Caveat Brush', sans-serif;
+}
+
 .burger {
-  webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
   background-color: transparent;
   text-decoration: none;
-  color: initial;
-  cursor: pointer;
   text-indent: 100%;
   white-space: nowrap;
-  overflow: hidden;
-  padding: 0;
-  border: 0;
   background-image: url('../../images/menu.svg');
   background-repeat: no-repeat;
   background-size: 2.3rem 3.3rem;
-  margin-left: 0.4rem;
-  height: 100%;
-}
-
-.logo {
-  padding-top: 0.1rem;
-}
-
-.content {
-  text-align: left;
-  display: flex;
-  margin: 0 auto;
-  color: var(--brown);
-}
-
-.content h1 {
-  font-size: 32px;
-  text-shadow: 2px 2px 16px var(--grey);
-}
-
-.content p {
-  font-size: 16px;
-  text-shadow: 2px 2px 16px var(--grey);
-}
-
-.title {
-  padding: 0 0.4rem;
-  font-family: 'Caveat Brush', sans-serif;
-  line-height: 0.9;
-}
-
-.logo img {
-  width: auto;
-  height: 42px;
 }
 
 .cart {
@@ -82,29 +44,5 @@
 @media only screen and (min-width: 1025px) {
   .header {
     grid-template-columns: 3rem 1fr 3rem;
-  }
-
-  .burger {
-    display: none;
-  }
-
-  .content h1 {
-    font-size: 86px;
-    text-shadow: 2px 2px 16px var(--grey);
-  }
-
-  .content p {
-    font-size: 42px;
-    text-shadow: 2px 2px 16px var(--grey);
-  }
-
-  .cercapiante {
-    position: absolute;
-    right: 1rem;
-    line-height: 3.4;
-  }
-
-  .logo img {
-    height: 115px;
   }
 }
