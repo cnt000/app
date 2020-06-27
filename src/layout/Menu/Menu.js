@@ -1,45 +1,45 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { Link, Router } from 'react-router-dom';
 import styles from './Menu.module.css';
 
 const Menu = ({ isOpen, setMenuOpen }) => (
-  <>
+  <Router>
     <nav className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
       <div className={styles.header}>
-        <button className={styles.close} onClick={(setMenuOpen)}>
+        <button className={styles.close} onClick={setMenuOpen}>
           chiudi il menu
         </button>
       </div>
       <ul className={styles.entries}>
         <li>
-          <a href="https://www.pungilandia.com">Chi siamo</a>
+          <Link to="/">Chi siamo</Link>
         </li>
         <li>
-          <a href="https://www.pungilandia.com">Lista piante</a>
+          <Link to="/plp">Lista piante</Link>
         </li>
         <li>
-          <a href="https://www.pungilandia.com">Novità</a>
+          <Link to="/pdp">Novità</Link>
         </li>
         <li>
-          <a href="https://www.pungilandia.com">Prodotti speciali</a>
+          <Link to="/">Prodotti speciali</Link>
         </li>
         <li>
-          <a href="https://www.pungilandia.com">Consigli per coltivare</a>
+          <Link to="/">Consigli per coltivare</Link>
         </li>
         <li>
-          <a href="https://www.pungilandia.com">Ordini</a>
+          <a href="#">Ordini</a>
         </li>
         <li>
-          <a href="https://www.pungilandia.com">Foto-Show</a>
+          <a href="#">Foto-Show</a>
         </li>
         <li>
-          <a href="https://www.pungilandia.com">E-mail</a>
+          <a href="#">E-mail</a>
         </li>
       </ul>
     </nav>
     <div className={styles.overlay}></div>
-  </>
+  </Router>
 );
 
 Menu.propTypes = {
