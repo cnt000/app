@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, Router } from 'react-router-dom';
+
 import styles from './Menu.module.css';
 
-const Menu = ({ isOpen, setMenuOpen }) => (
-  <Router>
+const Menu = ({ isOpen, setMenuOpen, Link }) => (
+  <>
     <nav className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
       <div className={styles.header}>
         <button className={styles.close} onClick={setMenuOpen}>
@@ -22,24 +22,24 @@ const Menu = ({ isOpen, setMenuOpen }) => (
           <Link to="/pdp">Novità</Link>
         </li>
         <li>
-          <Link to="/">Prodotti speciali</Link>
+          <Link to="/test1">Prodotti speciali</Link>
         </li>
         <li>
-          <Link to="/">Consigli per coltivare</Link>
+          <Link to="/test2">Consigli per coltivare</Link>
         </li>
         <li>
-          <a href="#">Ordini</a>
+          <Link to="/test3">Ordini</Link>
         </li>
         <li>
-          <a href="#">Foto-Show</a>
+          <Link to="/test4">Foto-Show</Link>
         </li>
         <li>
-          <a href="#">E-mail</a>
+          <Link to="/test5">E-mail</Link>
         </li>
       </ul>
     </nav>
     <div className={styles.overlay}></div>
-  </Router>
+  </>
 );
 
 Menu.propTypes = {

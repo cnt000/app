@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import Home from './layout/Home/Home';
 import Page from './layout/Page/Page';
@@ -26,13 +26,20 @@ ReactDOM.render(
     <Router>
       <Switch>
         <Route path="/plp">
-          <Page {...labels}>{plp}</Page>;
+          <Page {...labels} Link={Link}>
+            {plp}
+          </Page>
+          ;
         </Route>
         <Route path="/pdp">
-          <Page {...labels}>{pdp}</Page>
+          <Page {...labels} Link={Link}>
+            {pdp}
+          </Page>
         </Route>
         <Route path="/article">
-          <Page {...labels}>{article}</Page>
+          <Page {...labels} Link={Link}>
+            {article}
+          </Page>
         </Route>
         <Route path="/">
           <Home />

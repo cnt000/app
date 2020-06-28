@@ -2,6 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import Adapter from 'enzyme-adapter-react-16';
 import { configure, shallow } from 'enzyme';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 import Page from './Page';
 import Header from '../Header/Header';
@@ -12,7 +13,15 @@ import labels from '../../data/labels/labels.json';
 configure({ adapter: new Adapter() });
 
 it('renders correctly', () => {
-  const tree = renderer.create(<Page />).toJSON();
+  const tree = renderer
+    .create(
+      <Router>
+        <Page {...labels} Link={Link}>
+          {<p>test</p>}
+        </Page>
+      </Router>,
+    )
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -42,8 +51,6 @@ describe('Click without enzyme', () => {
     expect(wrapper.find(Header).length).toBe(1);
     expect(wrapper.find(Menu).length).toBe(1);
     expect(wrapper.find(Footer).length).toBe(1);
-    // expect(wrapper.find(Son)).toHaveLength(1); // Should be exactly 1 Son element
-    // expect(wrapper.find(Son).props().message1).toEqual('this is required');
   });
 
   it('render Header with setMenuOpen prop', () => {

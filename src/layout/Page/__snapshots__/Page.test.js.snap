@@ -11,7 +11,9 @@ exports[`renders correctly 1`] = `
       <button
         className="burger"
         onClick={[Function]}
-      />
+      >
+        apri il menu
+      </button>
     </div>
     <div
       className="content"
@@ -27,14 +29,20 @@ exports[`renders correctly 1`] = `
       <div
         className="title"
       >
-        <h1 />
-        <p />
+        <h1>
+          Pungilandia
+        </h1>
+        <p>
+          Piante grasse, strane ed insolite
+        </p>
       </div>
     </div>
     <div>
       <button
         className="cart"
-      />
+      >
+        vai al carrello
+      </button>
     </div>
   </header>
   <nav
@@ -55,56 +63,64 @@ exports[`renders correctly 1`] = `
     >
       <li>
         <a
-          href="https://www.pungilandia.com"
+          href="/"
+          onClick={[Function]}
         >
           Chi siamo
         </a>
       </li>
       <li>
         <a
-          href="https://www.pungilandia.com"
+          href="/plp"
+          onClick={[Function]}
         >
           Lista piante
         </a>
       </li>
       <li>
         <a
-          href="https://www.pungilandia.com"
+          href="/pdp"
+          onClick={[Function]}
         >
           Novità
         </a>
       </li>
       <li>
         <a
-          href="https://www.pungilandia.com"
+          href="/test1"
+          onClick={[Function]}
         >
           Prodotti speciali
         </a>
       </li>
       <li>
         <a
-          href="https://www.pungilandia.com"
+          href="/test2"
+          onClick={[Function]}
         >
           Consigli per coltivare
         </a>
       </li>
       <li>
         <a
-          href="https://www.pungilandia.com"
+          href="/test3"
+          onClick={[Function]}
         >
           Ordini
         </a>
       </li>
       <li>
         <a
-          href="https://www.pungilandia.com"
+          href="/test4"
+          onClick={[Function]}
         >
           Foto-Show
         </a>
       </li>
       <li>
         <a
-          href="https://www.pungilandia.com"
+          href="/test5"
+          onClick={[Function]}
         >
           E-mail
         </a>
@@ -114,31 +130,50 @@ exports[`renders correctly 1`] = `
   <div
     className="overlay"
   />
+  <p>
+    test
+  </p>
   <footer
     className="footer"
   >
     <p>
       <span
         className="copyright"
-      />
+      >
+        Copyright © 2020
+      </span>
        -
        
       <a
         className="privacy"
-      />
+        href="http://www.pungilandia.com"
+      >
+        privacy
+      </a>
        
       -
        
       <a
         className="contactus"
-      />
+        href="mailto:info@pungilandia.com"
+      >
+        contatti
+      </a>
     </p>
     <address>
+      Azienda Agricola Pungilandia Rocchi Domenico
       <br />
+      Via Isonzo 11, 65123 Pescara P.IVA 01203140684 CF RCCDNC59R30I712B
+Iscrizione REA Pescara Nr.97422
     </address>
     <p
       className="laws"
-    />
+    >
+      Azienda in possesso Registro di Detenzione di Specie Vegetali Incluse
+Negli Allegati CITES A e B del Regolamento (CE) 338/97 del Consiglio del 9
+Dicembre 1996 e Successive Modifiche e Attuazioni. Registro N.000001/2001
+VAB
+    </p>
   </footer>
 </div>
 `;

@@ -4,32 +4,47 @@ import renderer from 'react-test-renderer';
 import { act } from 'react-dom/test-utils';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 import Menu from './Menu';
 
 configure({ adapter: new Adapter() });
+const setMenuOpenMock = jest.fn();
+const menuComponent = (
+  <Menu isOpen={true} setMenuOpen={setMenuOpenMock} Link={Link} />
+);
 
-it('renders correctly', () => {
-  const tree = renderer.create(<Menu />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
+describe('Menu', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
 
-it('click close button call setMenuOpenMock', () => {
-  const setMenuOpenMock = jest.fn();
-  const renderedComponent = shallow(
-    <Menu isOpen={true} setMenuOpen={setMenuOpenMock} />,
-  );
+  it('renders correctly', () => {
+    const tree = renderer
+      .create(
+        <Router>
+          menuComponent
+        </Router>,
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
-  renderedComponent.find('button.close').first().simulate('click');
-  expect(setMenuOpenMock).toHaveBeenCalled();
-});
+  it('click close button call setMenuOpenMock', () => {
+    const renderedComponent = shallow(
+      menuComponent,
+    );
+    renderedComponent.find('button.close').first().simulate('click');
+    expect(setMenuOpenMock).toHaveBeenCalled();
+  });
 
-it('has class open if isOpen is true', () => {
-  const setMenuOpenMock = jest.fn();
-  const renderedComponent = shallow(
-    <Menu isOpen={true} setMenuOpen={setMenuOpenMock} />,
-  );
-  expect(renderedComponent.find('.open').length).toBe(1);
+  it('has class open if isOpen is true', () => {
+    const renderedComponent = shallow(
+      menuComponent,
+    );
+    expect(renderedComponent.find('.open').length).toBe(1);
+  });
+
 });
 
 describe('Click without enzyme', () => {
@@ -50,7 +65,9 @@ describe('Click without enzyme', () => {
     // Test first render and componentDidMount
     act(() => {
       ReactDOM.render(
-        <Menu isOpen={true} setMenuOpen={setMenuOpenMockWE} />,
+        <Router>
+          <Menu isOpen={true} setMenuOpen={setMenuOpenMockWE} Link={Link} />
+        </Router>,
         container,
       );
     });

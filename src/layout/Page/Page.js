@@ -10,7 +10,7 @@ const Page = (props) => {
   return (
     <div className={styles.pageLayout}>
       <Header {...props} setMenuOpen={() => setMenuOpen(true)} />
-      <Menu isOpen={menuOpen} setMenuOpen={() => setMenuOpen(false)} />
+      <Menu isOpen={menuOpen} setMenuOpen={() => setMenuOpen(false)} Link={props.Link}/>
       {props.children}
       <Footer {...props} />
     </div>
