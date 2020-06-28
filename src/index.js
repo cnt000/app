@@ -20,6 +20,7 @@ import './index.css';
 const plp = <Plp {...labels} {...product} />;
 const pdp = <Pdp {...labels} {...product} />;
 const article = <Article {...labels} articleContent={articleContent} />;
+const home = <Home {...labels} />;
 
 ReactDOM.render(
   <Provider store={store}>
@@ -42,7 +43,9 @@ ReactDOM.render(
           </Page>
         </Route>
         <Route path="/">
-          <Home />
+          <Page {...labels} Link={Link}>
+            {home}
+          </Page>
         </Route>
       </Switch>
     </Router>
