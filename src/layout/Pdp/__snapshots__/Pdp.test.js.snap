@@ -27,7 +27,9 @@ exports[`renders correctly 1`] = `
     />
     <button
       className="addToCart"
-    />
+    >
+      Aggiungi al carrello
+    </button>
   </div>
 </main>
 `;

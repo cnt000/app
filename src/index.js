@@ -14,41 +14,34 @@ import * as serviceWorker from './serviceWorker';
 import labels from './data/labels/labels.json';
 import product from './data/products/clavifolius.json';
 import articleContent from './data/articles/consigliColtivazione.md';
-
+import LabelsContext from './features/labels';
 import './index.css';
 
-const plp = <Plp {...labels} {...product} />;
-const pdp = <Pdp {...labels} {...product} />;
-const article = <Article {...labels} articleContent={articleContent} />;
-const home = <Home {...labels} />;
+const plp = <Plp {...product} />;
+const pdp = <Pdp {...product} />;
+const article = <Article articleContent={articleContent} />;
+const home = <Home />;
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router>
-      <Switch>
-        <Route path="/plp">
-          <Page {...labels} Link={Link}>
-            {plp}
-          </Page>
-          ;
-        </Route>
-        <Route path="/pdp">
-          <Page {...labels} Link={Link}>
-            {pdp}
-          </Page>
-        </Route>
-        <Route path="/article">
-          <Page {...labels} Link={Link}>
-            {article}
-          </Page>
-        </Route>
-        <Route path="/">
-          <Page {...labels} Link={Link}>
-            {home}
-          </Page>
-        </Route>
-      </Switch>
-    </Router>
+    <LabelsContext.Provider value={labels}>
+      <Router>
+        <Switch>
+          <Route path="/plp">
+            <Page Link={Link}>{plp}</Page>;
+          </Route>
+          <Route path="/pdp">
+            <Page Link={Link}>{pdp}</Page>
+          </Route>
+          <Route path="/article">
+            <Page Link={Link}>{article}</Page>
+          </Route>
+          <Route path="/">
+            <Page Link={Link}>{home}</Page>
+          </Route>
+        </Switch>
+      </Router>
+    </LabelsContext.Provider>
   </Provider>,
   document.getElementById('root'),
 );
