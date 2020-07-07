@@ -1,14 +1,30 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
 
 import Header from './Header';
 import labels from '../../data/labels/labels.json';
+import LabelsContext from '../../features/labels';
+
+const setMenuOpenMock = jest.fn();
+
+const header = (
+  <LabelsContext.Provider value={labels}>
+    <Header setMenuOpen={() => setMenuOpenMock(true)} />
+  </LabelsContext.Provider>
+);
 
 it('renders correctly', () => {
-  const tree = renderer.create(<Header />).toJSON();
+  const tree = renderer.create(header).toJSON();
   expect(tree).toMatchSnapshot();
+});
+
+test('renders Logo title and subtitle', () => {
+  const { getByText } = render(header);
+  expect(getByText(/Pungilandia/)).toBeInTheDocument();
+  expect(getByText(/Piante grasse, strane ed insolite/)).toBeInTheDocument();
 });
 
 describe('Click open menu without enzyme', () => {
@@ -17,6 +33,7 @@ describe('Click open menu without enzyme', () => {
   beforeEach(() => {
     container = document.createElement('div');
     document.body.appendChild(container);
+    jest.clearAllMocks();
   });
 
   afterEach(() => {
@@ -25,10 +42,9 @@ describe('Click open menu without enzyme', () => {
   });
 
   it('click open button call setMenuOpenMock without enzyme', () => {
-    const setMenuOpenMockWE = jest.fn();
     act(() => {
       ReactDOM.render(
-        <Header {...labels} setMenuOpen={setMenuOpenMockWE} />,
+        header,
         container,
       );
     });
@@ -37,6 +53,6 @@ describe('Click open menu without enzyme', () => {
     act(() => {
       button.dispatchEvent(new MouseEvent('click', { bubbles: true }));
     });
-    expect(setMenuOpenMockWE).toHaveBeenCalled();
+    expect(setMenuOpenMock).toHaveBeenCalled();
   });
 });

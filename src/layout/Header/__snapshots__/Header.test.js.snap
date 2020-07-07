@@ -7,7 +7,10 @@ exports[`renders correctly 1`] = `
   <div>
     <button
       className="burger"
-    />
+      onClick={[Function]}
+    >
+      apri il menu
+    </button>
   </div>
   <div
     className="content"
@@ -23,14 +26,20 @@ exports[`renders correctly 1`] = `
     <div
       className="title"
     >
-      <h1 />
-      <p />
+      <h1>
+        Pungilandia
+      </h1>
+      <p>
+        Piante grasse, strane ed insolite
+      </p>
     </div>
   </div>
   <div>
     <button
       className="cart"
-    />
+    >
+      vai al carrello
+    </button>
   </div>
 </header>
 `;

@@ -1,16 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
+import LabelsContext from '../../features/labels';
 import logo from '../../images/logo.png';
 import styles from './Header.module.css';
 
-const Header = ({
-  openMenuLabel,
-  title,
-  titleDescription,
-  goToCartLabel,
-  setMenuOpen,
-}) => {
+const Header = ({ setMenuOpen }) => {
+  const { openMenuLabel, title, titleDescription, goToCartLabel } = useContext(
+    LabelsContext,
+  );
   return (
     <header className={styles.header}>
       <div>

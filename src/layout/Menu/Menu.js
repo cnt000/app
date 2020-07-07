@@ -22,7 +22,7 @@ const Menu = ({ isOpen, setMenuOpen, Link }) => (
           <Link to="/pdp">Novità</Link>
         </li>
         <li>
-          <Link to="/test1">Prodotti speciali</Link>
+          <Link to="/article">Prodotti speciali</Link>
         </li>
         <li>
           <Link to="/test2">Consigli per coltivare</Link>

@@ -11,20 +11,29 @@ exports[`renders correctly 1`] = `
   <div
     className="mainImage"
   >
-    <img />
+    <img
+      alt="Adromischus clavifolius"
+      src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+    />
   </div>
   <div
     className="product"
   >
     <h2
       className="name"
-    />
+    >
+      Adromischus clavifolius
+    </h2>
     <div
       className="dimension"
-    />
+    >
+      Vaso 24cm
+    </div>
     <div
       className="price"
-    />
+    >
+      Prezzo: € 9,00
+    </div>
     <button
       className="addToCart"
     >
