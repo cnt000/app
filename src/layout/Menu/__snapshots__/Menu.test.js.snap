@@ -1,3 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Menu renders correctly 1`] = `"menuComponent"`;
+exports[`Menu renders correctly 1`] = `
+Array [
+  <nav
+    className="menu open"
+  >
+    <div
+      className="header"
+    >
+      <button
+        className="close"
+        onClick={[MockFunction]}
+      >
+        chiudi il menu
+      </button>
+    </div>
+    <ul
+      className="entries"
+    >
+      <li>
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Chi siamo
+        </a>
+      </li>
+      <li>
+        <a
+          href="/plp"
+          onClick={[Function]}
+        >
+          Lista piante
+        </a>
+      </li>
+      <li>
+        <a
+          href="/pdp"
+          onClick={[Function]}
+        >
+          Novità
+        </a>
+      </li>
+      <li>
+        <a
+          href="/article"
+          onClick={[Function]}
+        >
+          Prodotti speciali
+        </a>
+      </li>
+      <li>
+        <a
+          href="/test2"
+          onClick={[Function]}
+        >
+          Consigli per coltivare
+        </a>
+      </li>
+      <li>
+        <a
+          href="/test3"
+          onClick={[Function]}
+        >
+          Ordini
+        </a>
+      </li>
+      <li>
+        <a
+          href="/test4"
+          onClick={[Function]}
+        >
+          Foto-Show
+        </a>
+      </li>
+      <li>
+        <a
+          href="/test5"
+          onClick={[Function]}
+        >
+          E-mail
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <div
+    className="overlay"
+  />,
+]
+`;

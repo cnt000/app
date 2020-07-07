@@ -9,17 +9,18 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Menu from '../Menu/Menu';
 import labels from '../../data/labels/labels.json';
+import LabelsContext from '../../features/labels';
 
 configure({ adapter: new Adapter() });
 
 it('renders correctly', () => {
   const tree = renderer
     .create(
-      <Router>
-        <Page {...labels} Link={Link}>
-          {<p>test</p>}
-        </Page>
-      </Router>,
+      <LabelsContext.Provider value={labels}>
+        <Router>
+          <Page Link={Link}>{<p>test</p>}</Page>
+        </Router>
+      </LabelsContext.Provider>,
     )
     .toJSON();
   expect(tree).toMatchSnapshot();
@@ -77,5 +78,4 @@ describe('Click without enzyme', () => {
     );
     expect(wrapper.find(Menu).props().isOpen).toEqual(expect.any(Boolean));
   });
-
 });

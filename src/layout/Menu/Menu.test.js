@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { act } from 'react-dom/test-utils';
 import { configure, shallow } from 'enzyme';
@@ -7,11 +8,20 @@ import Adapter from 'enzyme-adapter-react-16';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 import Menu from './Menu';
+import labels from '../../data/labels/labels.json';
+import LabelsContext from '../../features/labels';
 
 configure({ adapter: new Adapter() });
 const setMenuOpenMock = jest.fn();
+
 const menuComponent = (
   <Menu isOpen={true} setMenuOpen={setMenuOpenMock} Link={Link} />
+);
+
+const menuComponentWithLabels = (
+  <LabelsContext.Provider value={labels}>
+    <Menu isOpen={true} setMenuOpen={setMenuOpenMock} Link={Link} />
+  </LabelsContext.Provider>
 );
 
 describe('Menu', () => {
@@ -21,30 +31,21 @@ describe('Menu', () => {
 
   it('renders correctly', () => {
     const tree = renderer
-      .create(
-        <Router>
-          menuComponent
-        </Router>,
-      )
+      .create(<Router>{menuComponentWithLabels}</Router>)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it('click close button call setMenuOpenMock', () => {
-    const renderedComponent = shallow(
-      menuComponent,
-    );
+    const renderedComponent = shallow(menuComponent);
     renderedComponent.find('button.close').first().simulate('click');
     expect(setMenuOpenMock).toHaveBeenCalled();
   });
 
   it('has class open if isOpen is true', () => {
-    const renderedComponent = shallow(
-      menuComponent,
-    );
+    const renderedComponent = shallow(menuComponent);
     expect(renderedComponent.find('.open').length).toBe(1);
   });
-
 });
 
 describe('Click without enzyme', () => {
@@ -62,7 +63,7 @@ describe('Click without enzyme', () => {
 
   it('click close button call setMenuOpenMock without enzyme', () => {
     const setMenuOpenMockWE = jest.fn();
-    // Test first render and componentDidMount
+
     act(() => {
       ReactDOM.render(
         <Router>
@@ -77,5 +78,10 @@ describe('Click without enzyme', () => {
       button.dispatchEvent(new MouseEvent('click', { bubbles: true }));
     });
     expect(setMenuOpenMockWE).toHaveBeenCalled();
+  });
+
+  test('renders chi siamo', () => {
+    const { getByText } = render(<Router>{menuComponentWithLabels}</Router>);
+    expect(getByText(/Chi siamo/)).toBeInTheDocument();
   });
 });

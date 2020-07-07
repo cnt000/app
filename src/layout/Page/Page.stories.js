@@ -8,6 +8,7 @@ import Article from '../Article/Article';
 import Home from '../Home/Home';
 
 import labels from '../../data/labels/labels.json';
+import LabelsContext from '../../features/labels';
 import product from '../../data/products/clavifolius.json';
 import articleContent from '../../data/articles/consigliColtivazione.md';
 
@@ -16,36 +17,45 @@ export default {
   title: 'Page',
 };
 
-const plp = <Plp {...labels} {...product} />;
-const pdp = <Pdp {...labels} {...product} />;
-const article = <Article {...labels} articleContent={articleContent} />;
-const home = <Home {...labels} articleContent={articleContent} />;
+const plp = <Plp {...product} />;
+const pdp = <Pdp {...product} />;
+const article = <Article articleContent={articleContent} />;
+const home = <Home />;
 
 export const PagePlp = () => (
-  <Router>
-    <Page {...labels} Link={Link}>
-      {plp}
-    </Page>
-  </Router>
+  <LabelsContext.Provider value={labels}>
+    <Router>
+      <Page Link={Link}>{plp}</Page>
+    </Router>
+  </LabelsContext.Provider>
 );
+
 export const PagePdp = () => (
-  <Router>
-    <Page {...labels} Link={Link}>
-      {pdp}
-    </Page>
-  </Router>
+  <LabelsContext.Provider value={labels}>
+    <Router>
+      <Page {...labels} Link={Link}>
+        {pdp}
+      </Page>
+    </Router>
+  </LabelsContext.Provider>
 );
+
 export const PageArticle = () => (
-  <Router>
-    <Page {...labels} Link={Link}>
-      {article}
-    </Page>
-  </Router>
+  <LabelsContext.Provider value={labels}>
+    <Router>
+      <Page {...labels} Link={Link}>
+        {article}
+      </Page>
+    </Router>
+  </LabelsContext.Provider>
 );
+
 export const PageHome = () => (
-  <Router>
-    <Page {...labels} Link={Link}>
-      {home}
-    </Page>
-  </Router>
+  <LabelsContext.Provider value={labels}>
+    <Router>
+      <Page {...labels} Link={Link}>
+        {home}
+      </Page>
+    </Router>
+  </LabelsContext.Provider>
 );
