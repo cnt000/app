@@ -1,19 +1,21 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 import Plp from './Plp';
 import LabelsContext from '../../features/labels';
 import labels from '../../data/labels/labels.json';
-import product from '../../data/products/clavifolius.json';
+import products from '../../data/products/searchpage.json';
 
 it('renders correctly', () => {
   const tree = renderer
     .create(
       <LabelsContext.Provider value={labels}>
-        <Plp {...product} />
+        <Router>
+          <Plp products={products} Link={Link} />
+        </Router>
       </LabelsContext.Provider>,
     )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
-

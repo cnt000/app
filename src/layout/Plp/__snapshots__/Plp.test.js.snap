@@ -47,20 +47,21 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="imageContainer"
-        href="/item"
+        href="/pdp/2078"
+        onClick={[Function]}
       >
         <img
-          alt="Adromischus clavifolius"
+          alt="Adromischus  clavifolius  � 24"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+          src="http://www.pungilandia.com/php/images/lo/adromischus-clavifolius.jpg"
         />
         <h1
           className="name"
         >
-          Adromischus clavifolius
+          Adromischus  clavifolius  � 24
         </h1>
         <div>
-          Prezzo: € 9,00
+          € 9,00
         </div>
       </a>
       <button
@@ -74,20 +75,21 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="imageContainer"
-        href="/item"
+        href="/pdp/2049"
+        onClick={[Function]}
       >
         <img
-          alt="Adromischus clavifolius"
+          alt="Adromischus  filicaulis�� � 10"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+          src="http://www.pungilandia.com/php/images/lo/adromischu_filica.jpg"
         />
         <h1
           className="name"
         >
-          Adromischus clavifolius
+          Adromischus  filicaulis�� � 10
         </h1>
         <div>
-          Prezzo: € 9,00
+          € 9,00
         </div>
       </a>
       <button
@@ -101,20 +103,21 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="imageContainer"
-        href="/item"
+        href="/pdp/2075"
+        onClick={[Function]}
       >
         <img
-          alt="Adromischus clavifolius"
+          alt="Adromischus   marianae F. Herrei  � 10"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+          src="http://www.pungilandia.com/php/images/lo/adromischus-herrei.jpg"
         />
         <h1
           className="name"
         >
-          Adromischus clavifolius
+          Adromischus   marianae F. Herrei  � 10
         </h1>
         <div>
-          Prezzo: € 9,00
+          € 38,00
         </div>
       </a>
       <button
@@ -128,20 +131,21 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="imageContainer"
-        href="/item"
+        href="/pdp/2052"
+        onClick={[Function]}
       >
         <img
-          alt="Adromischus clavifolius"
+          alt="Adromischus  sculdtianus juttae  � 10"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+          src="http://www.pungilandia.com/php/images/lo/adromischus schlud.jpg"
         />
         <h1
           className="name"
         >
-          Adromischus clavifolius
+          Adromischus  sculdtianus juttae  � 10
         </h1>
         <div>
-          Prezzo: € 9,00
+          € 9,00
         </div>
       </a>
       <button
@@ -155,20 +159,21 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="imageContainer"
-        href="/item"
+        href="/pdp/1750"
+        onClick={[Function]}
       >
         <img
-          alt="Adromischus clavifolius"
+          alt="Adromischus  truncatus  � 5,5"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+          src="http://www.pungilandia.com/php/images/lo/adrom_trun.jpg"
         />
         <h1
           className="name"
         >
-          Adromischus clavifolius
+          Adromischus  truncatus  � 5,5
         </h1>
         <div>
-          Prezzo: € 9,00
+          € 5,00
         </div>
       </a>
       <button
@@ -182,20 +187,21 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="imageContainer"
-        href="/item"
+        href="/pdp/2053"
+        onClick={[Function]}
       >
         <img
-          alt="Adromischus clavifolius"
+          alt="Adromischus  cristatus  zeyheri  � 10"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+          src="http://www.pungilandia.com/php/images/lo/adromi_cristzeye.jpg"
         />
         <h1
           className="name"
         >
-          Adromischus clavifolius
+          Adromischus  cristatus  zeyheri  � 10
         </h1>
         <div>
-          Prezzo: € 9,00
+          € 7,00
         </div>
       </a>
       <button
@@ -209,20 +215,21 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="imageContainer"
-        href="/item"
+        href="/pdp/2080"
+        onClick={[Function]}
       >
         <img
-          alt="Adromischus clavifolius"
+          alt="Aeonium  arboreum atropurpureum  � 10"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+          src="http://www.pungilandia.com/php/images/lo/aeonium-arboreum.jpg"
         />
         <h1
           className="name"
         >
-          Adromischus clavifolius
+          Aeonium  arboreum atropurpureum  � 10
         </h1>
         <div>
-          Prezzo: € 9,00
+          € 4,00
         </div>
       </a>
       <button
@@ -236,20 +243,21 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="imageContainer"
-        href="/item"
+        href="/pdp/831"
+        onClick={[Function]}
       >
         <img
-          alt="Adromischus clavifolius"
+          alt="Aeonium  Kiwi, ibrido di Aeonium haworthii  � 6"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+          src="http://www.pungilandia.com/php/images/lo/aeoni_tri.jpg"
         />
         <h1
           className="name"
         >
-          Adromischus clavifolius
+          Aeonium  Kiwi, ibrido di Aeonium haworthii  � 6
         </h1>
         <div>
-          Prezzo: € 9,00
+          € 3,00
         </div>
       </a>
       <button
@@ -263,20 +271,21 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="imageContainer"
-        href="/item"
+        href="/pdp/1694"
+        onClick={[Function]}
       >
         <img
-          alt="Adromischus clavifolius"
+          alt="Agave   attenuata  � 8"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+          src="http://www.pungilandia.com/php/images/lo/agave_attenuata8.jpg"
         />
         <h1
           className="name"
         >
-          Adromischus clavifolius
+          Agave   attenuata  � 8
         </h1>
         <div>
-          Prezzo: € 9,00
+          € 4,00
         </div>
       </a>
       <button
@@ -290,20 +299,21 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="imageContainer"
-        href="/item"
+        href="/pdp/1273"
+        onClick={[Function]}
       >
         <img
-          alt="Adromischus clavifolius"
+          alt="Agave  filifera  � 10"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+          src="http://www.pungilandia.com/php/images/lo/agave_filq.jpg"
         />
         <h1
           className="name"
         >
-          Adromischus clavifolius
+          Agave  filifera  � 10
         </h1>
         <div>
-          Prezzo: € 9,00
+          € 3,00
         </div>
       </a>
       <button
@@ -317,20 +327,21 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="imageContainer"
-        href="/item"
+        href="/pdp/2094"
+        onClick={[Function]}
       >
         <img
-          alt="Adromischus clavifolius"
+          alt="Agave   lophantha tricolor  � 10"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+          src="http://www.pungilandia.com/php/images/lo/agave_lophanta.jpg"
         />
         <h1
           className="name"
         >
-          Adromischus clavifolius
+          Agave   lophantha tricolor  � 10
         </h1>
         <div>
-          Prezzo: € 9,00
+          € 7,00
         </div>
       </a>
       <button
@@ -344,20 +355,525 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="imageContainer"
-        href="/item"
+        href="/pdp/1378"
+        onClick={[Function]}
       >
         <img
-          alt="Adromischus clavifolius"
+          alt="Agave  maculata  � 20"
           className="image"
-          src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
+          src="http://www.pungilandia.com/php/images/lo/agave_maculata.jpg"
         />
         <h1
           className="name"
         >
-          Adromischus clavifolius
+          Agave  maculata  � 20
         </h1>
         <div>
-          Prezzo: € 9,00
+          € 6,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/2090"
+        onClick={[Function]}
+      >
+        <img
+          alt="Agave  nigra  � 10"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/agave_nigra.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Agave  nigra  � 10
+        </h1>
+        <div>
+          € 9,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/1403"
+        onClick={[Function]}
+      >
+        <img
+          alt="Agave  victoriae-reginae  � 17"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/agave victoria.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Agave  victoriae-reginae  � 17
+        </h1>
+        <div>
+          € 18,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/1216"
+        onClick={[Function]}
+      >
+        <img
+          alt="Agave filifera  � 6"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/aga_fil5.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Agave filifera  � 6
+        </h1>
+        <div>
+          € 3,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/1215"
+        onClick={[Function]}
+      >
+        <img
+          alt="Agave stricta  � 10"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/agave_stric.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Agave stricta  � 10
+        </h1>
+        <div>
+          € 3,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/2111"
+        onClick={[Function]}
+      >
+        <img
+          alt="Albuca  humilis  � 5.5"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/albuca_humilis.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Albuca  humilis  � 5.5
+        </h1>
+        <div>
+          € 4,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/2110"
+        onClick={[Function]}
+      >
+        <img
+          alt="Albuca  spiralis  � 5.5"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/albuca5.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Albuca  spiralis  � 5.5
+        </h1>
+        <div>
+          € 4,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/1737"
+        onClick={[Function]}
+      >
+        <img
+          alt="Allaudia  procera  h 30"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/allaudia_pro.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Allaudia  procera  h 30
+        </h1>
+        <div>
+          € 9,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/1790"
+        onClick={[Function]}
+      >
+        <img
+          alt="Aloe  aloe x gasteria  � 12"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/aloexgasteria.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Aloe  aloe x gasteria  � 12
+        </h1>
+        <div>
+          € 6,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/1387"
+        onClick={[Function]}
+      >
+        <img
+          alt="Aloe  bakeri  � 6"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/aloe bakeri.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Aloe  bakeri  � 6
+        </h1>
+        <div>
+          € 3,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/1436"
+        onClick={[Function]}
+      >
+        <img
+          alt="Aloe  descoingsii pepe  � 5.5"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/aloe_pepe.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Aloe  descoingsii pepe  � 5.5
+        </h1>
+        <div>
+          € 3,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/1697"
+        onClick={[Function]}
+      >
+        <img
+          alt="Aloe  humilis   � 10"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/aloe_humilis.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Aloe  humilis   � 10
+        </h1>
+        <div>
+          € 4,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/1281"
+        onClick={[Function]}
+      >
+        <img
+          alt="Aloe   marlotti  � 5,5"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/aloe_marlo.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Aloe   marlotti  � 5,5
+        </h1>
+        <div>
+          € 2,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/2023"
+        onClick={[Function]}
+      >
+        <img
+          alt="Aloe  melanacantha  � 5"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/aloe_melana.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Aloe  melanacantha  � 5
+        </h1>
+        <div>
+          € 4,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/1913"
+        onClick={[Function]}
+      >
+        <img
+          alt="Aloe  pink blush  � 6"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/aloe_pink.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Aloe  pink blush  � 6
+        </h1>
+        <div>
+          € 2,50
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/2050"
+        onClick={[Function]}
+      >
+        <img
+          alt="Aloe  ramosissima  � 10"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/aloe_ramosisi.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Aloe  ramosissima  � 10
+        </h1>
+        <div>
+          € 5,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/1495"
+        onClick={[Function]}
+      >
+        <img
+          alt="Aloe  rauhii  � 8"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/aloe_rauhii.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Aloe  rauhii  � 8
+        </h1>
+        <div>
+          € 3,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/1310"
+        onClick={[Function]}
+      >
+        <img
+          alt="Aloe   squarrosa  � 8"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/aloe_sqarrosa.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Aloe   squarrosa  � 8
+        </h1>
+        <div>
+          € 3,00
+        </div>
+      </a>
+      <button
+        className="addToCart"
+      >
+        Aggiungi al carrello
+      </button>
+    </article>
+    <article
+      className="product"
+    >
+      <a
+        className="imageContainer"
+        href="/pdp/1575"
+        onClick={[Function]}
+      >
+        <img
+          alt="Aloe  variegata  � 10"
+          className="image"
+          src="http://www.pungilandia.com/php/images/lo/aloe_var10.jpg"
+        />
+        <h1
+          className="name"
+        >
+          Aloe  variegata  � 10
+        </h1>
+        <div>
+          € 4,00
         </div>
       </a>
       <button
