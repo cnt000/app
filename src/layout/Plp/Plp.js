@@ -26,7 +26,7 @@ Product.propTypes = {
   addToCart: PropTypes.string,
 };
 
-const Plp = ({ productName, productImage, price }) => {
+const Plp = ({ products }) => {
   const { searchPlants, searchPlantsImage } = useContext(LabelsContext);
   return (
     <main className={styles.plpContent} role="main">
@@ -43,9 +43,9 @@ const Plp = ({ productName, productImage, price }) => {
         </div>
       </div>
       <div className={styles.products}>
-        {Array(12)
-          .fill(' ')
-          .map((_, i) => Product({ i, productName, productImage, price }))}
+        {products.map((product, i) =>
+          Product({ product, i }),
+        )}
       </div>
     </main>
   );

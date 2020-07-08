@@ -71,7 +71,7 @@ Array [
           href="/test4"
           onClick={[Function]}
         >
-          Foto-Show
+          Foto show
         </a>
       </li>
       <li>
