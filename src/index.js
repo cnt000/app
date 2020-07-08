@@ -13,11 +13,12 @@ import * as serviceWorker from './serviceWorker';
 
 import labels from './data/labels/labels.json';
 import product from './data/products/clavifolius.json';
+import products from './data/products/searchpage.json';
 import articleContent from './data/articles/consigliColtivazione.md';
 import LabelsContext from './features/labels';
 import './index.css';
 
-const plp = <Plp {...product} />;
+const plp = <Plp products={products} Link={Link} />;
 const pdp = <Pdp {...product} />;
 const article = <Article articleContent={articleContent} />;
 const home = <Home />;

@@ -1,8 +1,9 @@
 import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 import Plp from './Plp';
 import labels from '../../data/labels/labels.json';
-import product from '../../data/products/clavifolius.json';
+import products from '../../data/products/searchpage.json';
 import LabelsContext from '../../features/labels';
 
 export default {
@@ -12,6 +13,8 @@ export default {
 
 export const Default = () => (
   <LabelsContext.Provider value={labels}>
-    <Plp {...product} />
+    <Router>
+      <Plp products={products} Link={Link} />
+    </Router>
   </LabelsContext.Provider>
 );

@@ -4,15 +4,20 @@ import PropTypes from 'prop-types';
 import LabelsContext from '../../features/labels';
 import styles from './Plp.module.css';
 
-const Product = ({ i, productName, productImage, price }) => {
+const Product = ({ href, i, image, name, price, Link }) => {
   const { addToCart } = useContext(LabelsContext);
+  const itemLink = `/pdp/${href.split('=')[1]}`
   return (
-    <article key={`${productName}_${i}`} className={styles.product}>
-      <a href="/item" className={styles.imageContainer}>
-        <img className={styles.image} src={productImage} alt={productName} />
-        <h1 className={styles.name}>{productName}</h1>
+    <article key={`${name}_${i}`} className={styles.product}>
+      <Link to={itemLink} className={styles.imageContainer}>
+        <img
+          className={styles.image}
+          src={image.replace('..', 'http://www.pungilandia.com')}
+          alt={name}
+        />
+        <h1 className={styles.name}>{name}</h1>
         <div>{price}</div>
-      </a>
+      </Link>
       <button className={styles.addToCart}>{addToCart}</button>
     </article>
   );
@@ -20,13 +25,13 @@ const Product = ({ i, productName, productImage, price }) => {
 
 Product.propTypes = {
   i: PropTypes.number,
-  productName: PropTypes.string,
-  productImage: PropTypes.string,
+  name: PropTypes.string,
+  image: PropTypes.string,
   price: PropTypes.string,
-  addToCart: PropTypes.string,
+  Link: PropTypes.object
 };
 
-const Plp = ({ products }) => {
+const Plp = ({ products, Link }) => {
   const { searchPlants, searchPlantsImage } = useContext(LabelsContext);
   return (
     <main className={styles.plpContent} role="main">
@@ -43,21 +48,15 @@ const Plp = ({ products }) => {
         </div>
       </div>
       <div className={styles.products}>
-        {products.map((product, i) =>
-          Product({ product, i }),
-        )}
+        {products.map((product, i) => Product({ ...product, i, Link }))}
       </div>
     </main>
   );
 };
 
 Plp.propTypes = {
-  productName: PropTypes.string,
-  productImage: PropTypes.string,
-  price: PropTypes.string,
-  addToCart: PropTypes.string,
-  searchPlants: PropTypes.string,
-  searchPlantsImage: PropTypes.string,
+  products: PropTypes.array,
+  Link: PropTypes.object
 };
 
 export default Plp;
