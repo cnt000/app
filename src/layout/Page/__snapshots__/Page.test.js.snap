@@ -71,7 +71,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          href="/plp"
+          href="/plp/1"
           onClick={[Function]}
         >
           Lista piante
@@ -79,7 +79,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          href="/pdp"
+          href="/pdp/768"
           onClick={[Function]}
         >
           Novità
@@ -95,7 +95,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          href="/test2"
+          href="/plp/2"
           onClick={[Function]}
         >
           Consigli per coltivare
@@ -103,7 +103,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          href="/test3"
+          href="/plp/3"
           onClick={[Function]}
         >
           Ordini
@@ -111,7 +111,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          href="/test4"
+          href="/plp/11"
           onClick={[Function]}
         >
           Foto show
@@ -119,7 +119,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          href="/test5"
+          href="/plp/222"
           onClick={[Function]}
         >
           E-mail

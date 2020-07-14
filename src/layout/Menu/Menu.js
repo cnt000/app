@@ -28,25 +28,25 @@ const Menu = ({ isOpen, setMenuOpen, Link }) => {
             <Link to="/">{menuChiSiamo}</Link>
           </li>
           <li>
-            <Link to="/plp">{menuListaPiante}</Link>
+            <Link to="/plp/1">{menuListaPiante}</Link>
           </li>
           <li>
-            <Link to="/pdp">{menuNovita}</Link>
+            <Link to="/pdp/768">{menuNovita}</Link>
           </li>
           <li>
             <Link to="/article">{menuProdottiSpeciali}</Link>
           </li>
           <li>
-            <Link to="/test2">{menuConsigliPerColtivare}</Link>
+            <Link to="/plp/2">{menuConsigliPerColtivare}</Link>
           </li>
           <li>
-            <Link to="/test3">{menuOrdini}</Link>
+            <Link to="/plp/3">{menuOrdini}</Link>
           </li>
           <li>
-            <Link to="/test4">{menuFotoShow}</Link>
+            <Link to="/plp/11">{menuFotoShow}</Link>
           </li>
           <li>
-            <Link to="/test5">{menuEmail}</Link>
+            <Link to="/plp/222">{menuEmail}</Link>
           </li>
         </ul>
       </nav>

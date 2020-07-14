@@ -33,6 +33,7 @@ Product.propTypes = {
 
 const Plp = ({ products, Link }) => {
   const { searchPlants, searchPlantsImage } = useContext(LabelsContext);
+
   return (
     <main className={styles.plpContent} role="main">
       <div className={styles.pageHeader}>

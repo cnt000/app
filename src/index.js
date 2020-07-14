@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import Home from './layout/Home/Home';
 import Page from './layout/Page/Page';
-import Plp from './layout/Plp/Plp';
+import PlpFetch from './layout/PlpFetch/PlpFetch';
 import Pdp from './layout/Pdp/Pdp';
 import Article from './layout/Article/Article';
 import store from './store';
@@ -13,12 +13,12 @@ import * as serviceWorker from './serviceWorker';
 
 import labels from './data/labels/labels.json';
 import product from './data/products/clavifolius.json';
-import products from './data/products/searchpage.json';
+// import products from './data/products/searchpage.json';
 import articleContent from './data/articles/consigliColtivazione.md';
 import LabelsContext from './features/labels';
 import './index.css';
 
-const plp = <Plp products={products} Link={Link} />;
+const plp = <PlpFetch Link={Link} />;
 const pdp = <Pdp {...product} />;
 const article = <Article articleContent={articleContent} />;
 const home = <Home />;
@@ -28,13 +28,13 @@ ReactDOM.render(
     <LabelsContext.Provider value={labels}>
       <Router>
         <Switch>
-          <Route path="/plp">
+          <Route path="/plp/:id">
             <Page Link={Link}>{plp}</Page>;
           </Route>
-          <Route path="/pdp">
+          <Route path="/pdp/:id">
             <Page Link={Link}>{pdp}</Page>
           </Route>
-          <Route path="/article">
+          <Route path="/article/:id">
             <Page Link={Link}>{article}</Page>
           </Route>
           <Route path="/">

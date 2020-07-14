@@ -6,6 +6,7 @@ import styles from './Pdp.module.css';
 
 const Pdp = ({ productName, productImage, vaseDiameter, price }) => {
   const { addToCart } = useContext(LabelsContext);
+
   return (
     <main className={styles.pdpContent} role="main">
       <div className={styles.header}></div>
