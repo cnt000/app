@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
-import LabelsContext from '../../features/labels';
+import LabelsContext from '../../features/Labels';
 import styles from './Article.module.css';
 
 const Article = ({ articleContent }) => {

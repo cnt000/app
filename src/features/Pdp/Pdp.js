@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
-import LabelsContext from '../../features/labels';
+import LabelsContext from '../Labels';
 import styles from './Pdp.module.css';
 
 const Pdp = ({ productName, productImage, vaseDiameter, price }) => {

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
-import LabelsContext from '../../features/labels';
+import LabelsContext from '../../features/Labels';
 import styles from './Menu.module.css';
 
 const Menu = ({ isOpen, setMenuOpen, Link }) => {
@@ -34,13 +34,13 @@ const Menu = ({ isOpen, setMenuOpen, Link }) => {
             <Link to="/pdp/768">{menuNovita}</Link>
           </li>
           <li>
-            <Link to="/article">{menuProdottiSpeciali}</Link>
+            <Link to="/article/1">{menuProdottiSpeciali}</Link>
           </li>
           <li>
             <Link to="/plp/2">{menuConsigliPerColtivare}</Link>
           </li>
           <li>
-            <Link to="/plp/3">{menuOrdini}</Link>
+            <Link to="/plp/3?1231=23132">{menuOrdini}</Link>
           </li>
           <li>
             <Link to="/plp/11">{menuFotoShow}</Link>

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Footer from './Footer';
 import labels from '../../data/labels/labels.json';
-import LabelsContext from '../../features/labels';
+import LabelsContext from '../../features/Labels';
 
 export default {
   component: Footer,

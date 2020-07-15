@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import LabelsContext from '../../features/labels';
+import LabelsContext from '../../features/Labels';
 import labels from '../../data/labels/labels.json';
 import Article from './Article';
 

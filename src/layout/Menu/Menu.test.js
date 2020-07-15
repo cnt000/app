@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 import Menu from './Menu';
 import labels from '../../data/labels/labels.json';
-import LabelsContext from '../../features/labels';
+import LabelsContext from '../../features/Labels';
 
 configure({ adapter: new Adapter() });
 const setMenuOpenMock = jest.fn();

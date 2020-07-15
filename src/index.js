@@ -5,17 +5,16 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import Home from './layout/Home/Home';
 import Page from './layout/Page/Page';
-import PlpFetch from './layout/PlpFetch/PlpFetch';
-import Pdp from './layout/Pdp/Pdp';
-import Article from './layout/Article/Article';
+import PlpFetch from './features/PlpFetch/PlpFetch';
+import Pdp from './features/Pdp/Pdp';
+import Article from './features/Article/Article';
 import store from './store';
-import * as serviceWorker from './serviceWorker';
+import LabelsContext from './features/Labels';
 
 import labels from './data/labels/labels.json';
 import product from './data/products/clavifolius.json';
-// import products from './data/products/searchpage.json';
 import articleContent from './data/articles/consigliColtivazione.md';
-import LabelsContext from './features/labels';
+import * as serviceWorker from './serviceWorker';
 import './index.css';
 
 const plp = <PlpFetch Link={Link} />;

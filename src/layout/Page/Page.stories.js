@@ -8,7 +8,7 @@ import Article from '../Article/Article';
 import Home from '../Home/Home';
 
 import labels from '../../data/labels/labels.json';
-import LabelsContext from '../../features/labels';
+import LabelsContext from '../../features/Labels';
 import product from '../../data/products/clavifolius.json';
 import articleContent from '../../data/articles/consigliColtivazione.md';
 

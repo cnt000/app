@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions';
 
 import Header from './Header';
 import labels from '../../data/labels/labels.json';
-import LabelsContext from '../../features/labels';
+import LabelsContext from '../../features/Labels';
 
 export default {
   component: Header,

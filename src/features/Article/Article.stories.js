@@ -2,7 +2,7 @@ import React from 'react';
 
 import Article from './Article';
 import labels from '../../data/labels/labels.json';
-import LabelsContext from '../../features/labels';
+import LabelsContext from '../../features/Labels';
 import articleContent from '../../data/articles/consigliColtivazione.md';
 
 export default {

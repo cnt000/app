@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import Footer from './Footer';
 import { render } from '@testing-library/react';
 import labels from '../../data/labels/labels.json';
-import LabelsContext from '../../features/labels';
+import LabelsContext from '../../features/Labels';
 
 const footer = (
   <LabelsContext.Provider value={labels}>

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
-import LabelsContext from '../../features/labels';
+import LabelsContext from '../Labels';
 import styles from './Plp.module.css';
 
 const Product = ({ href, i, image, name, price, Link }) => {
