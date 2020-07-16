@@ -12,7 +12,7 @@ it('renders correctly', () => {
     .create(
       <LabelsContext.Provider value={labels}>
         <Router>
-          <Plp products={products} Link={Link} />
+          <Plp products={products} />
         </Router>
       </LabelsContext.Provider>,
     )

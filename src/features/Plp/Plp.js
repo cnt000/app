@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import LabelsContext from '../Labels';
 import styles from './Plp.module.css';
 
-const Product = ({ href, i, image, name, price, Link }) => {
+const Product = ({ href, i, image, name, price }) => {
   const { addToCart } = useContext(LabelsContext);
-  const itemLink = `/pdp/${href.split('=')[1]}`
+  const itemLink = `/pdp/${href.split('=')[1]}`;
   return (
     <article key={`${name}_${i}`} className={styles.product}>
       <Link to={itemLink} className={styles.imageContainer}>
@@ -28,11 +29,12 @@ Product.propTypes = {
   name: PropTypes.string,
   image: PropTypes.string,
   price: PropTypes.string,
-  Link: PropTypes.object
+  Link: PropTypes.object,
 };
 
-const Plp = ({ products, Link }) => {
+const Plp = ({ products, page }) => {
   const { searchPlants, searchPlantsImage } = useContext(LabelsContext);
+  const hasResults = !products.code;
 
   return (
     <main className={styles.plpContent} role="main">
@@ -49,15 +51,18 @@ const Plp = ({ products, Link }) => {
         </div>
       </div>
       <div className={styles.products}>
-        {products.map((product, i) => Product({ ...product, i, Link }))}
+        {!hasResults && 'Nessun Risultato...'}
+        {hasResults &&
+          products.map((product, i) => Product({ ...product, i }))}
       </div>
+      {hasResults && <Link to={`/plp/${page + 2}`}>Next page ({page + 2})</Link>}
     </main>
   );
 };
 
 Plp.propTypes = {
   products: PropTypes.array,
-  Link: PropTypes.object
+  Link: PropTypes.object,
 };
 
 export default Plp;

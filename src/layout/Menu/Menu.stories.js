@@ -18,14 +18,14 @@ const actionsData = {
 export const Default = () => (
   <LabelsContext.Provider value={labels}>
     <Router>
-      <Menu isOpen={true} Link={Link} {...actionsData} />
+      <Menu isOpen={true} {...actionsData} />
     </Router>
   </LabelsContext.Provider>
 );
 export const Closed = () => (
   <LabelsContext.Provider value={labels}>
     <Router>
-      <Menu isOpen={false} Link={Link} {...actionsData} />
+      <Menu isOpen={false} {...actionsData} />
     </Router>
   </LabelsContext.Provider>
 );

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Home from './layout/Home/Home';
 import Page from './layout/Page/Page';
@@ -17,7 +17,6 @@ import articleContent from './data/articles/consigliColtivazione.md';
 import * as serviceWorker from './serviceWorker';
 import './index.css';
 
-const plp = <PlpFetch Link={Link} />;
 const pdp = <Pdp {...product} />;
 const article = <Article articleContent={articleContent} />;
 const home = <Home />;
@@ -28,16 +27,16 @@ ReactDOM.render(
       <Router>
         <Switch>
           <Route path="/plp/:id">
-            <Page Link={Link}>{plp}</Page>;
+            <Page children={<PlpFetch />} />
           </Route>
           <Route path="/pdp/:id">
-            <Page Link={Link}>{pdp}</Page>
+            <Page>{pdp}</Page>
           </Route>
           <Route path="/article/:id">
-            <Page Link={Link}>{article}</Page>
+            <Page>{article}</Page>
           </Route>
           <Route path="/">
-            <Page Link={Link}>{home}</Page>
+            <Page>{home}</Page>
           </Route>
         </Switch>
       </Router>

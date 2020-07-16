@@ -15,12 +15,12 @@ configure({ adapter: new Adapter() });
 const setMenuOpenMock = jest.fn();
 
 const menuComponent = (
-  <Menu isOpen={true} setMenuOpen={setMenuOpenMock} Link={Link} />
+  <Menu isOpen={true} setMenuOpen={setMenuOpenMock} />
 );
 
 const menuComponentWithLabels = (
   <LabelsContext.Provider value={labels}>
-    <Menu isOpen={true} setMenuOpen={setMenuOpenMock} Link={Link} />
+    <Menu isOpen={true} setMenuOpen={setMenuOpenMock} />
   </LabelsContext.Provider>
 );
 
@@ -67,7 +67,7 @@ describe('Click without enzyme', () => {
     act(() => {
       ReactDOM.render(
         <Router>
-          <Menu isOpen={true} setMenuOpen={setMenuOpenMockWE} Link={Link} />
+          <Menu isOpen={true} setMenuOpen={setMenuOpenMockWE} />
         </Router>,
         container,
       );

@@ -25,7 +25,7 @@ const home = <Home />;
 export const PagePlp = () => (
   <LabelsContext.Provider value={labels}>
     <Router>
-      <Page Link={Link}>{plp}</Page>
+      <Page>{plp}</Page>
     </Router>
   </LabelsContext.Provider>
 );
@@ -33,7 +33,7 @@ export const PagePlp = () => (
 export const PagePdp = () => (
   <LabelsContext.Provider value={labels}>
     <Router>
-      <Page {...labels} Link={Link}>
+      <Page {...labels}>
         {pdp}
       </Page>
     </Router>
@@ -43,7 +43,7 @@ export const PagePdp = () => (
 export const PageArticle = () => (
   <LabelsContext.Provider value={labels}>
     <Router>
-      <Page {...labels} Link={Link}>
+      <Page {...labels}>
         {article}
       </Page>
     </Router>
@@ -53,7 +53,7 @@ export const PageArticle = () => (
 export const PageHome = () => (
   <LabelsContext.Provider value={labels}>
     <Router>
-      <Page {...labels} Link={Link}>
+      <Page {...labels}>
         {home}
       </Page>
     </Router>

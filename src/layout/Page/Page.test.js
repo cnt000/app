@@ -18,7 +18,7 @@ it('renders correctly', () => {
     .create(
       <LabelsContext.Provider value={labels}>
         <Router>
-          <Page Link={Link}>{<p>test</p>}</Page>
+          <Page>{<p>test</p>}</Page>
         </Router>
       </LabelsContext.Provider>,
     )

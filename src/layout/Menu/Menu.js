@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import LabelsContext from '../../features/Labels';
 import styles from './Menu.module.css';
 
-const Menu = ({ isOpen, setMenuOpen, Link }) => {
+const Menu = ({ isOpen, setMenuOpen }) => {
   const {
     menuChiSiamo,
     menuListaPiante,
