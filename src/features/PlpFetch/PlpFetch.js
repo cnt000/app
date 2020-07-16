@@ -1,17 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useParams, useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import useFetch from 'use-http';
 
 import Plp from '../Plp/Plp';
 
 const PlpFetch = () => {
   const { id } = useParams();
-  const location = useLocation();
   const page = Math.max(id - 1, 0);
   const url = `https://pungilandia2020.appspot.com/api/v1/search/${page}`;
 
-  const { loading, data = [] } = useFetch(url, { cacheLife: 1 }, [id, location]);
+  const { loading, data = [] } = useFetch(url, { cacheLife: 1 }, [id]);
   return (
     <>
       {loading && 'Loading...'}
