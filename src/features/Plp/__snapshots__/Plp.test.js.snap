@@ -883,5 +883,13 @@ exports[`renders correctly 1`] = `
       </button>
     </article>
   </div>
+  <a
+    href="/plp/NaN"
+    onClick={[Function]}
+  >
+    Next page (
+    NaN
+    )
+  </a>
 </main>
 `;

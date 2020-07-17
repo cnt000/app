@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import Plp from './Plp';
 import labels from '../../data/labels/labels.json';
 import products from '../../data/products/searchpage.json';
-import LabelsContext from '../labels';
+import LabelsContext from '../Labels';
 
 export default {
   component: Plp,

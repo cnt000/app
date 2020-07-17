@@ -44,7 +44,7 @@ Array [
       </li>
       <li>
         <a
-          href="/article"
+          href="/article/1"
           onClick={[Function]}
         >
           Prodotti speciali
@@ -60,7 +60,7 @@ Array [
       </li>
       <li>
         <a
-          href="/plp/3"
+          href="/plp/3?1231=23132"
           onClick={[Function]}
         >
           Ordini

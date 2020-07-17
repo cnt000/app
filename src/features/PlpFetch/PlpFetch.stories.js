@@ -1,10 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import PlpFetch from './PlpFetch';
 import labels from '../../data/labels/labels.json';
-import products from '../../data/products/searchpage.json';
-import LabelsContext from '../../features/Labels';
+import LabelsContext from '../Labels';
 
 export default {
   component: PlpFetch,

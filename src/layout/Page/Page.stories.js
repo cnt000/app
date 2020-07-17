@@ -1,14 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import Page from './Page';
-import Plp from '../Plp/Plp';
-import Pdp from '../Pdp/Pdp';
-import Article from '../Article/Article';
-import Home from '../Home/Home';
+import Plp from '../../features/Plp/Plp';
+import Pdp from '../../features/Pdp/Pdp';
+import Article from '../../features/Article/Article';
+import Home from '../../layout/Home/Home';
 
-import labels from '../../data/labels/labels.json';
 import LabelsContext from '../../features/Labels';
+import labels from '../../data/labels/labels.json';
 import product from '../../data/products/clavifolius.json';
 import articleContent from '../../data/articles/consigliColtivazione.md';
 
@@ -33,9 +33,7 @@ export const PagePlp = () => (
 export const PagePdp = () => (
   <LabelsContext.Provider value={labels}>
     <Router>
-      <Page {...labels}>
-        {pdp}
-      </Page>
+      <Page {...labels}>{pdp}</Page>
     </Router>
   </LabelsContext.Provider>
 );
@@ -43,9 +41,7 @@ export const PagePdp = () => (
 export const PageArticle = () => (
   <LabelsContext.Provider value={labels}>
     <Router>
-      <Page {...labels}>
-        {article}
-      </Page>
+      <Page {...labels}>{article}</Page>
     </Router>
   </LabelsContext.Provider>
 );
@@ -53,9 +49,7 @@ export const PageArticle = () => (
 export const PageHome = () => (
   <LabelsContext.Provider value={labels}>
     <Router>
-      <Page {...labels}>
-        {home}
-      </Page>
+      <Page {...labels}>{home}</Page>
     </Router>
   </LabelsContext.Provider>
 );
