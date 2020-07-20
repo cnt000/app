@@ -5,16 +5,16 @@ fastify.register(require('fastify-static'), {
   root: path.join(__dirname, '../../', 'build')
 });
 
-fastify.get('/', function(req, reply) {
-  reply.sendFile('index.html');
-});
-
 fastify.get('/styleguide', function(req, reply) {
   reply.sendFile('styleguide/index.html');
 });
 
 fastify.get('/storybook', function (req, reply) {
   reply.sendFile('storybook/index.html');
+});
+
+fastify.get('/', function (req, reply) {
+  reply.sendFile('index.html');
 });
 
 const start = async () => {

@@ -2,14 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 import useFetch from 'use-http';
+import { conf } from '../../conf/api';
 
 import Plp from '../Plp/Plp';
 
 const PlpFetch = () => {
   const { id } = useParams();
-  const page = Math.max(id - 1, 0);
-  const url = `https://pungilandia2020.appspot.com/api/v1/search/${page ? page : 0}`;
-
+  const page = id ? Math.max(id - 1, 0) : 0;
+  const url = `${conf.apiEndpoint}${conf.plpUrl}${page}`;
+console.log(url);
   const { loading, data = [] } = useFetch(url, { cacheLife: 1 }, [id]);
   return (
     <>

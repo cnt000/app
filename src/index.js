@@ -38,6 +38,9 @@ ReactDOM.render(
           <Route path="/">
             <Page>{home}</Page>
           </Route>
+          <Route path="*">
+            <div>404</div>
+          </Route>
         </Switch>
       </Router>
     </LabelsContext.Provider>

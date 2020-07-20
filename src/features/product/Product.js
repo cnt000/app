@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import useFetch from 'use-http';
 
-const domain = process.env.REACT_APP_API_DOMAIN;
+const domain = process.env.REACT_APP_API_ENDPOINT || 'http://localhost:8080';
 const url = `${domain}/api/v1/item/628`;
 
 const product = ({ name, image, size, price, addToCartLink }) => (
@@ -19,7 +19,7 @@ const product = ({ name, image, size, price, addToCartLink }) => (
 
 const Product = () => {
   const [item, setItem] = useState([]);
-
+console.log(url);
   const [request, response] = useFetch(url);
 
   // componentDidMount
