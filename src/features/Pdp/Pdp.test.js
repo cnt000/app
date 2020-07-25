@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 
 import Pdp from './Pdp';
-import LabelsContext from '../labels';
+import LabelsContext from '../Labels';
 import labels from '../../data/labels/labels.json';
 import product from '../../data/products/clavifolius.json';
 
