@@ -13,7 +13,7 @@ fastify.get('/storybook', function (req, reply) {
   reply.sendFile('storybook/index.html');
 });
 
-fastify.get('/', function (req, reply) {
+fastify.get('/*', function (req, reply) {
   reply.sendFile('index.html');
 });
 
