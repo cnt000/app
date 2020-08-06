@@ -2,7 +2,8 @@ const path = require('path');
 const fastify = require('fastify')({ logger: true });
 
 fastify.register(require('fastify-static'), {
-  root: path.join(__dirname, '../../', 'build')
+  root: path.join(__dirname, '../../', 'build'),
+  wildcard: false
 });
 
 fastify.get('/styleguide', function(req, reply) {
@@ -13,7 +14,7 @@ fastify.get('/storybook', function (req, reply) {
   reply.sendFile('storybook/index.html');
 });
 
-fastify.get('*', function (req, reply) {
+fastify.get('/*', function (req, reply) {
   reply.sendFile('index.html');
 });
 
