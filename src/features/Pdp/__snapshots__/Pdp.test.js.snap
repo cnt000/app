@@ -36,7 +36,9 @@ exports[`renders correctly 1`] = `
     </div>
     <button
       className="addToCart"
-    />
+    >
+      Aggiungi al carrello
+    </button>
   </div>
 </main>
 `;

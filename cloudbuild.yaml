@@ -9,7 +9,7 @@ steps:
   entrypoint: npm
   args: ["run", "build"]
   env:
-    - 'MY_SECRET_KEY=${_MY_SECRET_KEY}'
+    - 'REACT_APP_API_DOMAIN=${_REACT_APP_API_DOMAIN}'
 - name: node:10.15.1
   entrypoint: npm
   args: ["run", "build-storybook"]
