@@ -11,6 +11,7 @@ import { withLabels } from '../../features/Labels/withLabels';
 import product from '../../data/products/clavifolius.json';
 import products from '../../data/products/searchpage.json';
 import articleContent from '../../data/articles/consigliColtivazione.md';
+import { withRouter } from '../../features/Router/withRouter';
 
 export default {
   component: Page,
@@ -22,31 +23,12 @@ const pdp = <Pdp {...product} />;
 const article = <Article articleContent={articleContent} />;
 const home = <Home />;
 
-export const PagePlp = () => (
-  <Router>
-    <Page>{plp}</Page>
-  </Router>
-);
+const PagePlp = () => <Page>{plp}</Page>;
+const PagePdp = () => <Page>{pdp}</Page>;
+const PageArticle = () => <Page>{article}</Page>;
+const PageHome = () => <Page>{home}</Page>;
 
-export const PagePdp = () => (
-  <Router>
-    <Page>{pdp}</Page>
-  </Router>
-);
-
-export const PageArticle = () => (
-  <Router>
-    <Page>{article}</Page>
-  </Router>
-);
-
-export const PageHome = () => (
-  <Router>
-    <Page>{home}</Page>
-  </Router>
-);
-
-export const pagePlp = withLabels(PagePlp);
-export const pagePdp = withLabels(PagePdp);
-export const pageArticle = withLabels(PageArticle);
-export const pageHome = withLabels(PageHome);
+export const pagePlp = withLabels(withRouter(PagePlp));
+export const pagePdp = withLabels(withRouter(PagePdp));
+export const pageArticle = withLabels(withRouter(PageArticle));
+export const pageHome = withLabels(withRouter(PageHome));
