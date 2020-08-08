@@ -1,16 +1,13 @@
 import React from 'react';
 
 import Footer from './Footer';
-import labels from '../../data/labels/labels.json';
-import LabelsContext from '../../features/Labels';
+import { withLabels } from '../../features/Labels/withLabels';
 
 export default {
   component: Footer,
   title: 'Footer',
 };
 
-export const Default = () => (
-  <LabelsContext.Provider value={labels}>
-    <Footer />
-  </LabelsContext.Provider>
-);
+const footer = () => <Footer />;
+
+export const Default = withLabels(footer);

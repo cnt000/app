@@ -7,9 +7,9 @@ import Pdp from '../../features/Pdp/Pdp';
 import Article from '../../features/Article/Article';
 import Home from '../../layout/Home/Home';
 
-import LabelsContext from '../../features/Labels';
-import labels from '../../data/labels/labels.json';
+import { withLabels } from '../../features/Labels/withLabels';
 import product from '../../data/products/clavifolius.json';
+import products from '../../data/products/searchpage.json';
 import articleContent from '../../data/articles/consigliColtivazione.md';
 
 export default {
@@ -17,39 +17,36 @@ export default {
   title: 'Page',
 };
 
-const plp = <Plp {...product} />;
+const plp = <Plp products={products} />;
 const pdp = <Pdp {...product} />;
 const article = <Article articleContent={articleContent} />;
 const home = <Home />;
 
 export const PagePlp = () => (
-  <LabelsContext.Provider value={labels}>
-    <Router>
-      <Page>{plp}</Page>
-    </Router>
-  </LabelsContext.Provider>
+  <Router>
+    <Page>{plp}</Page>
+  </Router>
 );
 
 export const PagePdp = () => (
-  <LabelsContext.Provider value={labels}>
-    <Router>
-      <Page {...labels}>{pdp}</Page>
-    </Router>
-  </LabelsContext.Provider>
+  <Router>
+    <Page>{pdp}</Page>
+  </Router>
 );
 
 export const PageArticle = () => (
-  <LabelsContext.Provider value={labels}>
-    <Router>
-      <Page {...labels}>{article}</Page>
-    </Router>
-  </LabelsContext.Provider>
+  <Router>
+    <Page>{article}</Page>
+  </Router>
 );
 
 export const PageHome = () => (
-  <LabelsContext.Provider value={labels}>
-    <Router>
-      <Page {...labels}>{home}</Page>
-    </Router>
-  </LabelsContext.Provider>
+  <Router>
+    <Page>{home}</Page>
+  </Router>
 );
+
+export const pagePlp = withLabels(PagePlp);
+export const pagePdp = withLabels(PagePdp);
+export const pageArticle = withLabels(PageArticle);
+export const pageHome = withLabels(PageHome);

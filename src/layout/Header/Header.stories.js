@@ -2,8 +2,7 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 
 import Header from './Header';
-import labels from '../../data/labels/labels.json';
-import LabelsContext from '../../features/Labels';
+import { withLabels } from '../../features/Labels/withLabels';
 
 export default {
   component: Header,
@@ -14,8 +13,6 @@ const actionsData = {
   setMenuOpen: action('setMenuOpen(true)'),
 };
 
-export const Default = () => (
-  <LabelsContext.Provider value={labels}>
-    <Header {...actionsData} />
-  </LabelsContext.Provider>
-);
+const header = () => <Header {...actionsData} />;
+
+export const Default = withLabels(header);

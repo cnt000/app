@@ -1,8 +1,7 @@
 import React from 'react';
 
 import Pdp from './Pdp';
-import labels from '../../data/labels/labels.json';
-import LabelsContext from '../../features/Labels';
+import { withLabels } from '../Labels/withLabels';
 import product from '../../data/products/clavifolius.json';
 
 export default {
@@ -10,8 +9,6 @@ export default {
   title: 'Pdp',
 };
 
-export const Default = () => (
-  <LabelsContext.Provider value={labels}>
-    <Pdp {...product} />
-  </LabelsContext.Provider>
-);
+const pdp = () => <Pdp {...product} />;
+
+export const Default = withLabels(pdp);

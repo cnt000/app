@@ -1,8 +1,7 @@
 import React from 'react';
 
 import Article from './Article';
-import labels from '../../data/labels/labels.json';
-import LabelsContext from '../../features/Labels';
+import { withLabels } from '../Labels/withLabels';
 import articleContent from '../../data/articles/consigliColtivazione.md';
 
 export default {
@@ -10,8 +9,6 @@ export default {
   title: 'Article',
 };
 
-export const Default = () => (
-  <LabelsContext.Provider value={labels}>
-    <Article articleContent={articleContent} />
-  </LabelsContext.Provider>
-);
+const article = () => <Article articleContent={articleContent} />;
+
+export const Default = withLabels(article);

@@ -1,6 +1,6 @@
 {
-  "productName": "Adromischus clavifolius",
-  "productImage": "http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg",
-  "vaseDiameter": "Vaso 24cm",
+  "name": "Adromischus clavifolius",
+  "image": "images/hi/adromischus-clavifolius.jpg",
+  "size": "Vaso 24cm",
   "price": "Prezzo: € 9,00"
 }
