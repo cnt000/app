@@ -36,7 +36,7 @@ Array [
       </li>
       <li>
         <a
-          href="/pdp/768"
+          href="/pdp/2049"
           onClick={[Function]}
         >
           Novità
@@ -60,7 +60,7 @@ Array [
       </li>
       <li>
         <a
-          href="/plp/3?1231=23132"
+          href="/plp/3"
           onClick={[Function]}
         >
           Ordini

@@ -19,7 +19,6 @@ const product = ({ name, image, size, price, addToCartLink }) => (
 
 const Product = () => {
   const [item, setItem] = useState([]);
-console.log(url);
   const [request, response] = useFetch(url);
 
   // componentDidMount

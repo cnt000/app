@@ -32,7 +32,7 @@ const Menu = ({ isOpen, setMenuOpen }) => {
             <Link to="/plp/1">{menuListaPiante}</Link>
           </li>
           <li>
-            <Link to="/pdp/768">{menuNovita}</Link>
+            <Link to="/pdp/2049">{menuNovita}</Link>
           </li>
           <li>
             <Link to="/article/1">{menuProdottiSpeciali}</Link>
@@ -41,7 +41,7 @@ const Menu = ({ isOpen, setMenuOpen }) => {
             <Link to="/plp/2">{menuConsigliPerColtivare}</Link>
           </li>
           <li>
-            <Link to="/plp/3?1231=23132">{menuOrdini}</Link>
+            <Link to="/plp/3">{menuOrdini}</Link>
           </li>
           <li>
             <Link to="/plp/11">{menuFotoShow}</Link>

@@ -12,7 +12,8 @@ exports[`renders correctly 1`] = `
     className="mainImage"
   >
     <img
-      src="http://www.pungilandia.com/php/undefined"
+      alt="Adromischus clavifolius"
+      src="http://www.pungilandia.com/php/images/hi/adromischus-clavifolius.jpg"
     />
   </div>
   <div
@@ -20,10 +21,14 @@ exports[`renders correctly 1`] = `
   >
     <h2
       className="name"
-    />
+    >
+      Adromischus clavifolius
+    </h2>
     <div
       className="dimension"
-    />
+    >
+      Vaso 24cm
+    </div>
     <div
       className="price"
     >
