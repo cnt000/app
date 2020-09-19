@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import Home from '../../layout/Home/Home';
 import Page from '../../layout/Page/Page';
@@ -13,23 +13,23 @@ const article = <Article articleContent={articleContent} />;
 const home = <Home />;
 
 const Router = () => (
-  <>
-    <Route path="/plp/:id">
+  <Switch>
+    <Route exact path="/">
+      <Page>{home}</Page>
+    </Route>
+    <Route exact path="/plp/:id">
       <Page children={<PlpFetch />} />
     </Route>
-    <Route path="/pdp/:id">
+    <Route exact path="/pdp/:id">
       <Page children={<PdpFetch />} />
     </Route>
-    <Route path="/article/:id">
+    <Route exact path="/article/:id">
       <Page>{article}</Page>
-    </Route>
-    <Route path="/">
-      <Page>{home}</Page>
     </Route>
     <Route path="*">
       <div>404</div>
     </Route>
-  </>
+  </Switch>
 );
 
 export default withRouter(Router);

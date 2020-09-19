@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 import useFetch from 'use-http';
-import { conf } from '../../conf/api';
+import { conf } from '../../conf/url';
 
 import Pdp from '../Pdp/Pdp';
 

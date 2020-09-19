@@ -2,16 +2,17 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
 import LabelsContext from '../Labels';
+import { getImageUrl } from '../../utils/images';
 import styles from './Pdp.module.css';
 
 const Pdp = ({ name, image, size, price }) => {
   const { addToCart } = useContext(LabelsContext);
-  const imageFullUrl = `http://www.pungilandia.com/php/${image}`;
+  const imageUrl = getImageUrl(image.split('/').pop(), 500);
   return (
     <main className={styles.pdpContent} role="main">
       <div className={styles.header}></div>
       <div className={styles.mainImage}>
-        <img src={imageFullUrl} alt={name} />
+        <img src={imageUrl} alt={name} />
       </div>
       <div className={styles.product}>
         <h2 className={styles.name}>{name}</h2>
