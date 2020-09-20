@@ -9,6 +9,11 @@ import labels from '../../data/labels/labels.json';
 import LabelsContext from '../../features/Labels';
 
 const setMenuOpenMock = jest.fn();
+jest.mock('react-router-dom', () => ({
+  useLocation: jest.fn().mockReturnValue({
+    pathname: '/',
+  }),
+}));
 
 const header = (
   <LabelsContext.Provider value={labels}>

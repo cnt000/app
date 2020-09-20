@@ -39,7 +39,7 @@ const Header = ({ setMenuOpen }) => {
       <div>
         <button className={styles.cart}>{goToCartLabel}</button>
       </div>
-    </header >
+    </header>
   );
 };
 
