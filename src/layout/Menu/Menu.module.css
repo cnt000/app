@@ -87,9 +87,8 @@
   .menu {
     position: static;
     width: auto;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
-    padding-top: 2em;
   }
 
   .menu header {
@@ -97,6 +96,6 @@
   }
 
   .menu .entries {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 }

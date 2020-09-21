@@ -51,15 +51,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Adromischus  clavifolius  � 24"
+          alt="Adromischus  clavifolius    ⌀24"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/adromischus-clavifolius.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/adromischus-clavifolius.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Adromischus  clavifolius  � 24
+          Adromischus  clavifolius    ⌀24
         </h1>
         <div>
           € 9,00
@@ -80,15 +80,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Adromischus  filicaulis�� � 10"
+          alt="Adromischus  filicaulis     ⌀10"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/adromischu_filica.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/adromischu_filica.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Adromischus  filicaulis�� � 10
+          Adromischus  filicaulis     ⌀10
         </h1>
         <div>
           € 9,00
@@ -109,15 +109,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Adromischus   marianae F. Herrei  � 10"
+          alt="Adromischus   marianae F. Herrei    ⌀10"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Adromischus   marianae F. Herrei  � 10
+          Adromischus   marianae F. Herrei    ⌀10
         </h1>
         <div>
           € 38,00
@@ -138,15 +138,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Adromischus  sculdtianus juttae  � 10"
+          alt="Adromischus  sculdtianus juttae    ⌀10"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/adromischus schlud.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/adromischus schlud.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Adromischus  sculdtianus juttae  � 10
+          Adromischus  sculdtianus juttae    ⌀10
         </h1>
         <div>
           € 9,00
@@ -167,15 +167,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Adromischus  truncatus  � 5,5"
+          alt="Adromischus  truncatus    5,⌀5"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/adrom_trun.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/adrom_trun.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Adromischus  truncatus  � 5,5
+          Adromischus  truncatus    5,⌀5
         </h1>
         <div>
           € 5,00
@@ -196,15 +196,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Adromischus  cristatus  zeyheri  � 10"
+          alt="Adromischus  cristatus  zeyheri    ⌀10"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/adromi_cristzeye.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/adromi_cristzeye.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Adromischus  cristatus  zeyheri  � 10
+          Adromischus  cristatus  zeyheri    ⌀10
         </h1>
         <div>
           € 7,00
@@ -225,15 +225,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Aeonium  arboreum atropurpureum  � 10"
+          alt="Aeonium  arboreum atropurpureum    ⌀10"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/aeonium-arboreum.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/aeonium-arboreum.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Aeonium  arboreum atropurpureum  � 10
+          Aeonium  arboreum atropurpureum    ⌀10
         </h1>
         <div>
           € 4,00
@@ -254,15 +254,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Aeonium  Kiwi, ibrido di Aeonium haworthii  � 6"
+          alt="Aeonium  Kiwi, ibrido di Aeonium haworthii    ⌀6"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/aeoni_tri.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/aeoni_tri.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Aeonium  Kiwi, ibrido di Aeonium haworthii  � 6
+          Aeonium  Kiwi, ibrido di Aeonium haworthii    ⌀6
         </h1>
         <div>
           € 3,00
@@ -283,15 +283,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Agave   attenuata  � 8"
+          alt="Agave   attenuata    ⌀8"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/agave_attenuata8.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/agave_attenuata8.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Agave   attenuata  � 8
+          Agave   attenuata    ⌀8
         </h1>
         <div>
           € 4,00
@@ -312,15 +312,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Agave  filifera  � 10"
+          alt="Agave  filifera    ⌀10"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/agave_filq.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/agave_filq.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Agave  filifera  � 10
+          Agave  filifera    ⌀10
         </h1>
         <div>
           € 3,00
@@ -341,15 +341,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Agave   lophantha tricolor  � 10"
+          alt="Agave   lophantha tricolor    ⌀10"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/agave_lophanta.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/agave_lophanta.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Agave   lophantha tricolor  � 10
+          Agave   lophantha tricolor    ⌀10
         </h1>
         <div>
           € 7,00
@@ -370,15 +370,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Agave  maculata  � 20"
+          alt="Agave  maculata    ⌀20"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/agave_maculata.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/agave_maculata.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Agave  maculata  � 20
+          Agave  maculata    ⌀20
         </h1>
         <div>
           € 6,00
@@ -399,15 +399,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Agave  nigra  � 10"
+          alt="Agave  nigra    ⌀10"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/agave_nigra.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/agave_nigra.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Agave  nigra  � 10
+          Agave  nigra    ⌀10
         </h1>
         <div>
           € 9,00
@@ -428,15 +428,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Agave  victoriae-reginae  � 17"
+          alt="Agave  victoriae-reginae    ⌀17"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/agave victoria.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/agave victoria.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Agave  victoriae-reginae  � 17
+          Agave  victoriae-reginae    ⌀17
         </h1>
         <div>
           € 18,00
@@ -457,15 +457,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Agave filifera  � 6"
+          alt="Agave filifera    ⌀6"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/aga_fil5.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/aga_fil5.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Agave filifera  � 6
+          Agave filifera    ⌀6
         </h1>
         <div>
           € 3,00
@@ -486,15 +486,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Agave stricta  � 10"
+          alt="Agave stricta    ⌀10"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/agave_stric.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/agave_stric.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Agave stricta  � 10
+          Agave stricta    ⌀10
         </h1>
         <div>
           € 3,00
@@ -515,15 +515,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Albuca  humilis  � 5.5"
+          alt="Albuca  humilis    5.⌀5"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/albuca_humilis.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/albuca_humilis.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Albuca  humilis  � 5.5
+          Albuca  humilis    5.⌀5
         </h1>
         <div>
           € 4,00
@@ -544,15 +544,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Albuca  spiralis  � 5.5"
+          alt="Albuca  spiralis    5.⌀5"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/albuca5.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/albuca5.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Albuca  spiralis  � 5.5
+          Albuca  spiralis    5.⌀5
         </h1>
         <div>
           € 4,00
@@ -573,15 +573,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Allaudia  procera  h 30"
+          alt="Allaudia  procera  h ⌀30"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/allaudia_pro.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/allaudia_pro.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Allaudia  procera  h 30
+          Allaudia  procera  h ⌀30
         </h1>
         <div>
           € 9,00
@@ -602,15 +602,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Aloe  aloe x gasteria  � 12"
+          alt="Aloe  aloe x gasteria    ⌀12"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/aloexgasteria.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/aloexgasteria.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Aloe  aloe x gasteria  � 12
+          Aloe  aloe x gasteria    ⌀12
         </h1>
         <div>
           € 6,00
@@ -631,15 +631,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Aloe  bakeri  � 6"
+          alt="Aloe  bakeri    ⌀6"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/aloe bakeri.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/aloe bakeri.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Aloe  bakeri  � 6
+          Aloe  bakeri    ⌀6
         </h1>
         <div>
           € 3,00
@@ -660,15 +660,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Aloe  descoingsii pepe  � 5.5"
+          alt="Aloe  descoingsii pepe    5.⌀5"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/aloe_pepe.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/aloe_pepe.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Aloe  descoingsii pepe  � 5.5
+          Aloe  descoingsii pepe    5.⌀5
         </h1>
         <div>
           € 3,00
@@ -689,15 +689,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Aloe  humilis   � 10"
+          alt="Aloe  humilis     ⌀10"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/aloe_humilis.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/aloe_humilis.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Aloe  humilis   � 10
+          Aloe  humilis     ⌀10
         </h1>
         <div>
           € 4,00
@@ -718,15 +718,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Aloe   marlotti  � 5,5"
+          alt="Aloe   marlotti    5,⌀5"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/aloe_marlo.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/aloe_marlo.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Aloe   marlotti  � 5,5
+          Aloe   marlotti    5,⌀5
         </h1>
         <div>
           € 2,00
@@ -747,15 +747,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Aloe  melanacantha  � 5"
+          alt="Aloe  melanacantha    ⌀5"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/aloe_melana.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/aloe_melana.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Aloe  melanacantha  � 5
+          Aloe  melanacantha    ⌀5
         </h1>
         <div>
           € 4,00
@@ -776,15 +776,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Aloe  pink blush  � 6"
+          alt="Aloe  pink blush    ⌀6"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/aloe_pink.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/aloe_pink.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Aloe  pink blush  � 6
+          Aloe  pink blush    ⌀6
         </h1>
         <div>
           € 2,50
@@ -805,15 +805,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Aloe  ramosissima  � 10"
+          alt="Aloe  ramosissima    ⌀10"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/aloe_ramosisi.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/aloe_ramosisi.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Aloe  ramosissima  � 10
+          Aloe  ramosissima    ⌀10
         </h1>
         <div>
           € 5,00
@@ -834,15 +834,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Aloe  rauhii  � 8"
+          alt="Aloe  rauhii    ⌀8"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/aloe_rauhii.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/aloe_rauhii.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Aloe  rauhii  � 8
+          Aloe  rauhii    ⌀8
         </h1>
         <div>
           € 3,00
@@ -863,15 +863,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Aloe   squarrosa  � 8"
+          alt="Aloe   squarrosa    ⌀8"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/aloe_sqarrosa.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/aloe_sqarrosa.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Aloe   squarrosa  � 8
+          Aloe   squarrosa    ⌀8
         </h1>
         <div>
           € 3,00
@@ -892,15 +892,15 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          alt="Aloe  variegata  � 10"
+          alt="Aloe  variegata    ⌀10"
           className="image"
           loading="lazy"
-          src="https://qp2dljrm.twic.pics/aloe_var10.jpg?twic=v1/resize=300"
+          src="https://qp2dljrm.twic.pics/aloe_var10.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
         />
         <h1
           className="name"
         >
-          Aloe  variegata  � 10
+          Aloe  variegata    ⌀10
         </h1>
         <div>
           € 4,00

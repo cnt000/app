@@ -3,23 +3,25 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import LabelsContext from '../Labels';
-import { getImageUrl } from '../../utils/images';
+import { getImageUrlCropped } from '../../utils/images';
+import { cleanProductName } from '../../utils/clean';
 import styles from './Plp.module.css';
 
 const Product = ({ href, i, image, name, price }) => {
   const { addToCart } = useContext(LabelsContext);
   const itemLink = `/pdp/${href.split('=')[1]}`;
-  const itemImage = getImageUrl(image.split('/').pop(), 300);
+  const itemImage = getImageUrlCropped(image.split('/').pop(), 300);
+  const productName = cleanProductName(name);
   return (
-    <article key={`${name}_${i}`} className={styles.product}>
+    <article key={`${productName}_${i}`} className={styles.product}>
       <Link to={itemLink} className={styles.imageContainer}>
         <img
           className={styles.image}
           src={itemImage}
-          alt={name}
+          alt={productName}
           loading="lazy"
         />
-        <h1 className={styles.name}>{name}</h1>
+        <h1 className={styles.name}>{productName}</h1>
         <div>{price}</div>
       </Link>
       <button className={styles.addToCart}>{addToCart}</button>

@@ -9,12 +9,12 @@
 }
 
 .product {
-  height: 320px;
-  width: auto;
+  height: auto;
+  width: 25%;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 
 .product .name {
