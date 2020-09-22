@@ -1,0 +1,19 @@
+
+.cercapiante {
+  display: flex;
+}
+
+.cercapiante span ,
+.searchInput input {
+  margin-bottom: 0.1rem;
+}
+
+.searchInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.searchInput input {
+  width: 6rem;
+}

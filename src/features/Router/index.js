@@ -5,6 +5,7 @@ import Home from '../../layout/Home/Home';
 import Page from '../../layout/Page/Page';
 import PlpFetch from '../../features/PlpFetch/PlpFetch';
 import PdpFetch from '../../features/PdpFetch/PdpFetch';
+import PlpFetchSearch from '../../features/PlpFetchSearch/PlpFetchSearch';
 import Article from '../../features/Article/Article';
 import articleContent from '../../data/articles/consigliColtivazione.md';
 import { withRouter } from './withRouter';
@@ -19,6 +20,9 @@ const Router = () => (
     </Route>
     <Route exact path="/plp/:id">
       <Page children={<PlpFetch />} />
+    </Route>
+    <Route exact path="/search">
+      <Page children={<PlpFetchSearch />} />
     </Route>
     <Route exact path="/pdp/:id">
       <Page children={<PdpFetch />} />

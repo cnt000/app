@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import LabelsContext from '../Labels';
 import { getImageUrlCropped } from '../../utils/images';
 import { cleanProductName } from '../../utils/clean';
+import CercaPiante from '../CercaPiante/CercaPiante';
 import styles from './Plp.module.css';
 
 const Product = ({ href, i, image, name, price }) => {
@@ -38,8 +39,7 @@ Product.propTypes = {
 };
 
 const Plp = ({ products, page }) => {
-  const { searchPlants, searchPlantsImage } = useContext(LabelsContext);
-  const hasResults = !products.code;
+  const hasResults = !products.error && !products.code;
 
   return (
     <main className={styles.plpContent} role="main">
@@ -48,12 +48,7 @@ const Plp = ({ products, page }) => {
           <h2 className={styles.title}>Le nostre piante</h2>
           <span className={styles.lastmodified}>02/04/2020</span>
         </div>
-        <div className={styles.cercapiante}>
-          <a href="/search" title={searchPlants}>
-            <img src={searchPlantsImage} alt={searchPlants} />
-            <span>{searchPlants}</span>
-          </a>
-        </div>
+        <CercaPiante />
       </div>
       <div className={styles.products}>
         {!hasResults && 'Nessun Risultato...'}
