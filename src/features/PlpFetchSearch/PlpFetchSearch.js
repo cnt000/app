@@ -6,7 +6,7 @@ import { conf } from '../../conf/url';
 
 import Plp from '../Plp/Plp';
 
-const PlpSearch = () => {
+const PlpFetchSearch = () => {
   const { query } = useParams();
   const page = 0;
   const url = `${conf.apiEndpoint}${conf.plpUrl}?q=${query}`;
@@ -19,4 +19,4 @@ const PlpSearch = () => {
   );
 };
 
-export default PlpSearch;
+export default PlpFetchSearch;

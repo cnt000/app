@@ -4,14 +4,14 @@ import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 import LabelsContext from '../../features/Labels';
 import labels from '../../data/labels/labels.json';
-import PlpFecth from './PlpFetch';
+import PlpFetchSearch from './PlpFetchSearch';
 
 it('renders correctly', () => {
   const tree = renderer
     .create(
       <LabelsContext.Provider value={labels}>
         <Router>
-          <PlpFecth />
+          <PlpFetchSearch />
         </Router>
       </LabelsContext.Provider>,
     )

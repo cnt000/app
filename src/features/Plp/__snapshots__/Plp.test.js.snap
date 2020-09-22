@@ -25,18 +25,28 @@ exports[`renders correctly 1`] = `
     <div
       className="cercapiante"
     >
-      <a
-        href="/search"
-        title="Cerca piante"
+      <img
+        alt="Cerca piante"
+        src="http://www.pungilandia.com/php/images/lo/cotyl_mediop.jpg"
+      />
+      <div
+        className="searchInput"
       >
-        <img
-          alt="Cerca piante"
-          src="http://www.pungilandia.com/php/images/lo/cotyl_mediop.jpg"
-        />
         <span>
           Cerca piante
         </span>
-      </a>
+        <input
+          onChange={[Function]}
+          placeholder="cerca"
+          type="text"
+          value=""
+        />
+        <button
+          onClick={[Function]}
+        >
+          Cerca
+        </button>
+      </div>
     </div>
   </div>
   <div
