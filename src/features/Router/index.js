@@ -21,7 +21,7 @@ const Router = () => (
     <Route exact path="/plp/:id">
       <Page children={<PlpFetch />} />
     </Route>
-    <Route exact path="/search">
+    <Route path="/search">
       <Page children={<PlpFetchSearch />} />
     </Route>
     <Route exact path="/pdp/:id">

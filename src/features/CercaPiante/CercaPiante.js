@@ -1,16 +1,27 @@
 import React, { useContext, useState } from 'react';
 import LabelsContext from '../Labels';
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import PropTypes from 'prop-types';
 
 import styles from './CercaPiante.module.css';
 
 const CercaPiante = () => {
   const history = useHistory();
-  const [query, setQuery] = useState('');
+  const initialQuery = new URLSearchParams(useLocation().search).get('q') || '';
+  const [query, setQuery] = useState(initialQuery);
 
-  function handleClick(e) {
+  function handleClick() {
     history.push(`/search?q=${query}`);
+  }
+
+  function handleKeypress(e) {
+    if (e.key === 'Enter') {
+      handleClick();
+    }
+  }
+
+  function handleChange(e) {
+    setQuery(e.target.value);
   }
 
   const { searchPlants, searchPlantsImage } = useContext(LabelsContext);
@@ -18,7 +29,7 @@ const CercaPiante = () => {
     <img src={searchPlantsImage} alt={searchPlants} />
     <div className={styles.searchInput}>
       <span>{searchPlants}</span>
-      <input type="text" placeholder="cerca" value={query} onChange={(e) => setQuery(e.target.value)} />
+      <input type="text" placeholder="cerca" value={query} onChange={handleChange} onKeyPress={handleKeypress} />
       <button onClick={handleClick}>Cerca</button>
     </div>
   </div>;

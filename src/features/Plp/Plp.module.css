@@ -9,8 +9,8 @@
 }
 
 .product {
-  height: auto;
-  width: 25%;
+  height: 340px;
+  width: auto;
   text-align: center;
   display: flex;
   flex-direction: column;

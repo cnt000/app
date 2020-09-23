@@ -38,8 +38,9 @@ Product.propTypes = {
   Link: PropTypes.object,
 };
 
-const Plp = ({ products, page }) => {
+const Plp = ({ products, page, isSearch }) => {
   const hasResults = !products.error && !products.code;
+  const hasPages = page < 12 && !isSearch;
 
   return (
     <main className={styles.plpContent} role="main">
@@ -55,7 +56,7 @@ const Plp = ({ products, page }) => {
         {hasResults &&
           products.map((product, i) => Product({ ...product, i }))}
       </div>
-      {hasResults && <Link to={`/plp/${page + 2}`}>Next page ({page + 2})</Link>}
+      {hasPages && <Link to={`/plp/${page + 2}`}>Next page ({page + 2})</Link>}
     </main>
   );
 };
