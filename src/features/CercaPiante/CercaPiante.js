@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react';
 import LabelsContext from '../Labels';
 import { useHistory, useLocation } from "react-router-dom";
-import PropTypes from 'prop-types';
 
 import styles from './CercaPiante.module.css';
 
