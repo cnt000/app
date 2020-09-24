@@ -37,6 +37,7 @@ exports[`renders correctly 1`] = `
         </span>
         <input
           onChange={[Function]}
+          onKeyPress={[Function]}
           placeholder="cerca"
           type="text"
           value=""
@@ -923,13 +924,5 @@ exports[`renders correctly 1`] = `
       </button>
     </article>
   </div>
-  <a
-    href="/plp/NaN"
-    onClick={[Function]}
-  >
-    Next page (
-    NaN
-    )
-  </a>
 </main>
 `;
