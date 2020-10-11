@@ -1,6 +1,7 @@
 {
-  "name": "Adromischus clavifolius",
-  "image": "images/hi/adromischus-clavifolius.jpg",
-  "size": "Vaso 24cm",
-  "price": "Prezzo: € 9,00"
+  "size": "⌀10",
+  "name": "Adromischus marianae F. Herrei ",
+  "addToCartLink": "../php/cart_it.php?action=add_item&id=2075&qty=1",
+  "image": "images/hi/adromischus-herrei.jpg",
+  "price": "38,00"
 }
