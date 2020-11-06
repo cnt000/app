@@ -9,25 +9,27 @@
 }
 
 .product {
-  height: 340px;
-  width: auto;
+  height: auto;
+  width: calc(50% - 0.2rem);
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  border: 1px solid #74c69d;
+  padding: 0.4rem 0 0 0;
+  margin: 0.1rem;
+  box-sizing: border-box;
 }
 
 .product .name {
   margin: 0.6rem auto;
-  width: 300px;
+  height: 2rem;
+  padding: 0 0.4rem;
   line-height: 1.2;
 }
 
 .addToCart {
-  margin: 0 auto;
-  margin: 1rem auto 2rem auto;
-  width: 50%;
-  height: 2rem;
+  margin: 1rem auto 0.5rem auto;
 }
 
 .pageHeader {
@@ -44,10 +46,20 @@
 }
 
 .product .image {
-  width: 50%;
+  width: 90%;
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 768px) {
+  .product {
+    width: calc(33% - 0.2rem);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .product {
+    width: calc(25% - 0.2rem);
+  }
+
   .plp-content {
     grid-area: content;
     padding: 2rem;

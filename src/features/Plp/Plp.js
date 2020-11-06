@@ -21,7 +21,7 @@ const Product = ({ addToCartLink, i, image, name, price }) => {
           loading="lazy"
         />
         <h1 className={styles.name}>{name}</h1>
-        <div>{price}</div>
+        <div>€ {price}</div>
       </Link>
       <button className={styles.addToCart}>{addToCart}</button>
     </article>
