@@ -57,16 +57,19 @@ exports[`renders correctly 1`] = `
       className="product"
     >
       <a
-        className="imageContainer"
         href="/pdp/2075"
         onClick={[Function]}
       >
-        <img
-          alt="Adromischus marianae F. Herrei "
-          className="image"
-          loading="lazy"
-          src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
-        />
+        <div
+          className="imageContainer"
+        >
+          <img
+            alt="Adromischus marianae F. Herrei "
+            className="image"
+            loading="lazy"
+            src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
+          />
+        </div>
         <h1
           className="name"
         >
@@ -87,16 +90,19 @@ exports[`renders correctly 1`] = `
       className="product"
     >
       <a
-        className="imageContainer"
         href="/pdp/2075"
         onClick={[Function]}
       >
-        <img
-          alt="Adromischus marianae F. Herrei "
-          className="image"
-          loading="lazy"
-          src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
-        />
+        <div
+          className="imageContainer"
+        >
+          <img
+            alt="Adromischus marianae F. Herrei "
+            className="image"
+            loading="lazy"
+            src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
+          />
+        </div>
         <h1
           className="name"
         >
