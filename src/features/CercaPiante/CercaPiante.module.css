@@ -1,6 +1,7 @@
 
 .cercapiante {
   display: flex;
+  color: var(--green);
 }
 
 .cercapiante span ,

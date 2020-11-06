@@ -27,7 +27,7 @@ exports[`renders correctly 1`] = `
     >
       <img
         alt="Cerca piante"
-        src="http://www.pungilandia.com/php/images/lo/cotyl_mediop.jpg"
+        src="https://storage.googleapis.com/pungi-assets/assets/cotyl_mediop.jpg"
       />
       <div
         className="searchInput"
@@ -73,6 +73,7 @@ exports[`renders correctly 1`] = `
           Adromischus marianae F. Herrei 
         </h1>
         <div>
+          € 
           38,00
         </div>
       </a>
@@ -102,6 +103,7 @@ exports[`renders correctly 1`] = `
           Adromischus marianae F. Herrei 
         </h1>
         <div>
+          € 
           38,00
         </div>
       </a>

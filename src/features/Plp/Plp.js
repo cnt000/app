@@ -13,13 +13,15 @@ const Product = ({ addToCartLink, i, image, name, price }) => {
   const itemImage = getImageUrlCropped(image.split('/').pop(), 300);
   return (
     <article key={`${name}_${i}`} className={styles.product}>
-      <Link to={itemLink} className={styles.imageContainer}>
-        <img
-          className={styles.image}
-          src={itemImage}
-          alt={name}
-          loading="lazy"
-        />
+      <Link to={itemLink}>
+        <div className={styles.imageContainer}>
+          <img
+            className={styles.image}
+            src={itemImage}
+            alt={name}
+            loading="lazy"
+          />
+        </div>
         <h1 className={styles.name}>{name}</h1>
         <div>€ {price}</div>
       </Link>
@@ -39,7 +41,9 @@ Product.propTypes = {
 const Plp = ({ products, page, isSearch, searchQuery }) => {
   const hasResults = !products.error && !products.code;
   const hasPages = page < 12; // TODO
-  const nextPageLink = isSearch ? `/search/${page + 2}?q=${searchQuery}` : `/plp/${page + 2}`;
+  const nextPageLink = isSearch
+    ? `/search/${page + 2}?q=${searchQuery}`
+    : `/plp/${page + 2}`;
 
   return (
     <main className={styles.plpContent} role="main">
@@ -52,8 +56,7 @@ const Plp = ({ products, page, isSearch, searchQuery }) => {
       </div>
       <div className={styles.products}>
         {!hasResults && 'Nessun Risultato...'}
-        {hasResults &&
-          products.map((product, i) => Product({ ...product, i }))}
+        {hasResults && products.map((product, i) => Product({ ...product, i }))}
       </div>
       {hasPages && <Link to={nextPageLink}>Next page ({page + 2})</Link>}
     </main>
