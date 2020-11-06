@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import LabelsContext from '../Labels';
+import Pagination from '../Pagination/Pagination';
 import { getImageUrlCropped } from '../../utils/images';
 import CercaPiante from '../CercaPiante/CercaPiante';
 import styles from './Plp.module.css';
@@ -40,10 +41,6 @@ Product.propTypes = {
 
 const Plp = ({ products, page, isSearch, searchQuery }) => {
   const hasResults = !products.error && !products.code;
-  const hasPages = page < 12; // TODO
-  const nextPageLink = isSearch
-    ? `/search/${page + 2}?q=${searchQuery}`
-    : `/plp/${page + 2}`;
 
   return (
     <main className={styles.plpContent} role="main">
@@ -58,7 +55,7 @@ const Plp = ({ products, page, isSearch, searchQuery }) => {
         {!hasResults && 'Nessun Risultato...'}
         {hasResults && products.map((product, i) => Product({ ...product, i }))}
       </div>
-      {hasPages && <Link to={nextPageLink}>Next page ({page + 2})</Link>}
+      {<Pagination isSearch={isSearch} page={page} searchQuery={searchQuery} />}
     </main>
   );
 };
