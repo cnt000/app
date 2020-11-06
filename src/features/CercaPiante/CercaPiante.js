@@ -10,7 +10,7 @@ const CercaPiante = () => {
   const [query, setQuery] = useState(initialQuery);
 
   function handleClick() {
-    history.push(`/search?q=${query}`);
+    history.push(`/search/1?q=${query}`);
   }
 
   function handleKeypress(e) {
