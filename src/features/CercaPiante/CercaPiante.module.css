@@ -4,7 +4,11 @@
   color: var(--green);
 }
 
-.cercapiante span ,
+.cercapiante img {
+  height: 55px;
+}
+
+.cercapiante span,
 .searchInput input {
   margin-bottom: 0.1rem;
 }
