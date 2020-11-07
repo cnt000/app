@@ -9,7 +9,7 @@ import styles from './Header.module.css';
 const ConditionalWrapper = ({ condition, wrapper, children }) =>
   condition ? wrapper(children) : children;
 
-const Header = ({ setMenuOpen }) => {
+const Header = ({ setMenuOpen, setCartOpen }) => {
   const { openMenuLabel, title, titleDescription, goToCartLabel } = useContext(
     LabelsContext,
   );
@@ -24,7 +24,7 @@ const Header = ({ setMenuOpen }) => {
       </div>
       <ConditionalWrapper
         condition={!isHomepage}
-        wrapper={children => <Link to="/">{children}</Link>}
+        wrapper={(children) => <Link to="/">{children}</Link>}
       >
         <div className={styles.content}>
           <div className={styles.logo}>
@@ -37,7 +37,9 @@ const Header = ({ setMenuOpen }) => {
         </div>
       </ConditionalWrapper>
       <div>
-        <button className={styles.cart}>{goToCartLabel}</button>
+        <button className={styles.cart} onClick={setCartOpen}>
+          {goToCartLabel}
+        </button>
       </div>
     </header>
   );

@@ -12,7 +12,6 @@ const Menu = ({ isOpen, setMenuOpen }) => {
     menuProdottiSpeciali,
     menuConsigliPerColtivare,
     menuOrdini,
-    menuFotoShow,
     menuEmail,
   } = useContext(LabelsContext);
   return (
@@ -44,7 +43,7 @@ const Menu = ({ isOpen, setMenuOpen }) => {
           </li>
         </ul>
       </nav>
-      <div className={styles.overlay}></div>
+      <div className={styles.overlay} onClick={setMenuOpen}></div>
     </>
   );
 };
