@@ -4,20 +4,8 @@ import { Link } from 'react-router-dom';
 
 import styles from './Pagination.module.css';
 
-const PaginationFetch = () => {
-  // const url = ``;
-  // const { loading, data = {} } = useFetch(url, { cacheLife: 1 }, [id]);
-  // return (
-  //   <>
-  //     {loading && 'Loading...'}
-  //     {!loading && <Pagination isSearch={isSearch} page={page} searchQuery={'searchQuery} />}
-  //   </>
-  // );
-}
-
-const Pagination = ({ page, isSearch, searchQuery }) => {
-  const totalPages = 5;
-  const hasPages = page < totalPages; // TODO
+const Pagination = ({ page, isSearch, searchQuery, totalPages }) => {
+  const hasPages = page < totalPages;
   const prevPageLink = isSearch
     ? `/search/${page}?q=${searchQuery}`
     : `/plp/${page}`;

@@ -9,7 +9,6 @@ const Menu = ({ isOpen, setMenuOpen }) => {
   const {
     menuChiSiamo,
     menuListaPiante,
-    menuNovita,
     menuProdottiSpeciali,
     menuConsigliPerColtivare,
     menuOrdini,
@@ -32,22 +31,16 @@ const Menu = ({ isOpen, setMenuOpen }) => {
             <Link to="/plp/1">{menuListaPiante}</Link>
           </li>
           <li>
-            <Link to="/pdp/2049">{menuNovita}</Link>
+            <Link to="/">{menuProdottiSpeciali}</Link>
           </li>
           <li>
-            <Link to="/article/1">{menuProdottiSpeciali}</Link>
+            <Link to="/">{menuConsigliPerColtivare}</Link>
           </li>
           <li>
-            <Link to="/plp/2">{menuConsigliPerColtivare}</Link>
+            <Link to="/">{menuOrdini}</Link>
           </li>
           <li>
-            <Link to="/plp/3">{menuOrdini}</Link>
-          </li>
-          <li>
-            <Link to="/plp/11">{menuFotoShow}</Link>
-          </li>
-          <li>
-            <Link to="/plp/222">{menuEmail}</Link>
+            <Link to="/">{menuEmail}</Link>
           </li>
         </ul>
       </nav>

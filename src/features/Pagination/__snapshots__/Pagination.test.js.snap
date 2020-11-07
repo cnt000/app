@@ -1,24 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
-<div
-  className="pagination"
->
-  <span
-    className="page"
-  >
-    Pagina 
-    1
-  </span>
-  <span>
-    <a
-      href="/plp/2"
-      onClick={[Function]}
-    >
-      Pagina succ.(
-      2
-      )
-    </a>
-  </span>
-</div>
-`;
+exports[`renders correctly 1`] = `null`;

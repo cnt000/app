@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import LabelsContext from '../Labels';
-import Pagination from '../Pagination/Pagination';
+import PaginationFetch from '../PaginationFetch/PaginationFetch';
+import EmptyResults from '../EmptyResults/EmptyResults';
 import { getImageUrlCropped } from '../../utils/images';
 import CercaPiante from '../CercaPiante/CercaPiante';
 import styles from './Plp.module.css';
@@ -40,7 +41,7 @@ Product.propTypes = {
 };
 
 const Plp = ({ products, page, isSearch, searchQuery }) => {
-  const hasResults = !products.error && !products.code;
+  const hasResults = !products.error && !products.code && products.message !== 'not found';
 
   return (
     <main className={styles.plpContent} role="main">
@@ -52,10 +53,10 @@ const Plp = ({ products, page, isSearch, searchQuery }) => {
         <CercaPiante />
       </div>
       <div className={styles.products}>
-        {!hasResults && 'Nessun Risultato...'}
+        {!hasResults && <EmptyResults />}
         {hasResults && products.map((product, i) => Product({ ...product, i }))}
       </div>
-      {<Pagination isSearch={isSearch} page={page} searchQuery={searchQuery} />}
+      {<PaginationFetch isSearch={isSearch} page={page} searchQuery={searchQuery} />}
     </main>
   );
 };
