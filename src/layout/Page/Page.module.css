@@ -3,7 +3,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 9rem 1fr;
-  grid-template-rows: 3.2rem 1fr 5rem;
+  grid-template-rows: 3.2rem 1fr 1fr;
   grid-template-areas:
     'header  header'
     'content  content'
@@ -12,7 +12,7 @@
 
 @media only screen and (min-width: 1025px) {
   .pageLayout {
-    grid-template-rows: 9rem 1fr 7rem;
+    grid-template-rows: 9rem 1fr 1fr;
     grid-template-columns: 12rem 1fr;
     grid-template-areas:
       'sidebar  header'

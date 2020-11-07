@@ -1,7 +1,10 @@
 .footer {
   grid-area: footer;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
   text-align: center;
+  border-top: 2px solid #f00;
+  margin-top: 2rem;
+  border-image: linear-gradient(90deg, var(--green), var(--orange) 30em) 20;
 }
 
 .contactus {

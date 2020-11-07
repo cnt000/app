@@ -70,6 +70,7 @@ Array [
   </nav>,
   <div
     className="overlay"
+    onClick={[MockFunction]}
   />,
 ]
 `;

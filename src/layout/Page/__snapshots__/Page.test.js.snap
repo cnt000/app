@@ -40,6 +40,7 @@ exports[`renders correctly 1`] = `
     <div>
       <button
         className="cart"
+        onClick={[Function]}
       >
         vai al carrello
       </button>
@@ -113,6 +114,26 @@ exports[`renders correctly 1`] = `
   </nav>
   <div
     className="overlay"
+    onClick={[Function]}
+  />
+  <nav
+    className="minicart "
+  >
+    <div
+      className="header"
+    >
+      <button
+        className="close"
+        onClick={[Function]}
+      >
+        chiudi il menu
+      </button>
+    </div>
+    Minicart
+  </nav>
+  <div
+    className="overlay"
+    onClick={[Function]}
   />
   <p>
     test
