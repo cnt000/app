@@ -5,12 +5,23 @@ import { Link } from 'react-router-dom';
 import LabelsContext from '../../features/Labels';
 import styles from './MiniCart.module.css';
 
-const MiniCart = ({ isOpen, setMenuOpen }) => {
-  return <div>STURIA</div>;
-};
+const MiniCart = ({ isOpen, setCartOpen }) => (
+  <>
+    <nav className={`${styles.minicart} ${isOpen ? styles.open : ''}`}>
+      <div className={styles.header}>
+        <button className={styles.close} onClick={setCartOpen}>
+          chiudi il menu
+        </button>
+      </div>
+      Minicart
+    </nav>
+    <div className={styles.overlay} onClick={setCartOpen}></div>
+  </>
+);
 
 MiniCart.propTypes = {
+  isOpen: PropTypes.bool,
+  setCartOpen: PropTypes.func,
+};
 
-}
-
-export default MiniCart
+export default MiniCart;
