@@ -14,7 +14,9 @@ const Product = ({ addToCartLink, i, image, name, price }) => {
   // se > 1024 outerWidth - 190 / 4
   const { addToCart } = useContext(LabelsContext);
   const itemLink = `/pdp/${addToCartLink.split('=')[2].split('&')[0]}`;
-  const itemImage = width => getImageUrlCropped(image.split('/').pop(), width);
+  const imageUrl = image.split('/').pop();
+  const itemImage = (width) =>
+    getImageUrlCropped(imageUrl, width);
   return (
     <article key={`${name}_${i}`} className={styles.product}>
       <Link to={itemLink}>
