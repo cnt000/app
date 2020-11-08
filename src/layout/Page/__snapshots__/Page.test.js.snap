@@ -61,6 +61,7 @@ exports[`renders correctly 1`] = `
     </div>
     <ul
       className="entries"
+      onClick={[Function]}
     >
       <li>
         <a
@@ -129,7 +130,11 @@ exports[`renders correctly 1`] = `
         chiudi il menu
       </button>
     </div>
-    Minicart
+    <div
+      className="content"
+    >
+      Nessun prodotto nel carrello
+    </div>
   </nav>
   <div
     className="overlay"

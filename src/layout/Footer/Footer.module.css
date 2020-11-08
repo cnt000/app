@@ -2,8 +2,8 @@
   grid-area: footer;
   padding: 1rem 0.5rem;
   text-align: center;
-  border-top: 2px solid #f00;
-  margin-top: 2rem;
+  border-top: 2px solid var(--red);
+  margin: 0 auto;
   border-image: linear-gradient(90deg, var(--green), var(--orange) 30em) 20;
 }
 
@@ -31,6 +31,9 @@
 
 
 @media only screen and (min-width: 1025px) {
+  .footer {
+    margin: 1rem auto;
+  }
   .laws {
     display: block;
     margin-top: 0.4rem;

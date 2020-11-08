@@ -17,6 +17,7 @@ Array [
     </div>
     <ul
       className="entries"
+      onClick={[Function]}
     >
       <li>
         <a

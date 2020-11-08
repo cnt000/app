@@ -16,11 +16,6 @@ exports[`renders correctly 1`] = `
       >
         Le nostre piante
       </h2>
-      <span
-        className="lastmodified"
-      >
-        02/04/2020
-      </span>
     </div>
     <div
       className="cercapiante"
@@ -75,7 +70,9 @@ exports[`renders correctly 1`] = `
         >
           Adromischus marianae F. Herrei 
         </h1>
-        <div>
+        <div
+          className="price"
+        >
           € 
           38,00
         </div>
@@ -108,7 +105,9 @@ exports[`renders correctly 1`] = `
         >
           Adromischus marianae F. Herrei 
         </h1>
-        <div>
+        <div
+          className="price"
+        >
           € 
           38,00
         </div>

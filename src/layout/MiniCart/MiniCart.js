@@ -13,7 +13,9 @@ const MiniCart = ({ isOpen, setCartOpen }) => (
           chiudi il menu
         </button>
       </div>
-      Minicart
+      <div className={styles.content}>
+        Nessun prodotto nel carrello
+      </div>
     </nav>
     <div className={styles.overlay} onClick={setCartOpen}></div>
   </>

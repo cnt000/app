@@ -22,7 +22,7 @@ const Menu = ({ isOpen, setMenuOpen }) => {
             chiudi il menu
           </button>
         </div>
-        <ul className={styles.entries}>
+        <ul className={styles.entries} onClick={(e) => setMenuOpen(false)}>
           <li>
             <Link to="/">{menuChiSiamo}</Link>
           </li>

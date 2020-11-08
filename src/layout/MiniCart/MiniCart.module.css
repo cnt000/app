@@ -1,12 +1,11 @@
 .minicart {
-  grid-area: sidebar;
   width: 14rem;
   max-width: 14rem;
   height: 100vh;
   position: absolute;
   top: 0;
   right: calc(-14rem - 2px);
-  transition: left 0.4s;
+  transition: right 0.4s;
   display: grid;
   grid-template-rows: 3.2rem 1fr;
   grid-template-areas:
@@ -65,15 +64,13 @@
   z-index: 1;
 }
 
-@media only screen and (min-width: 1025px) {
-  .minicart {
-    position: static;
-    width: auto;
-    height: 100%;
-    z-index: 1;
-  }
+.content {
+  width: 90%;
+  padding: calc(var(--base-gap) * 4);
+  border-top: 3px dotted var(--black);
+  margin: 0 auto;
+  text-align: center;
+}
 
-  .minicart header {
-    display: none;
-  }
+@media only screen and (min-width: 1025px) {
 }

@@ -276,7 +276,7 @@ body {
 }
 
 .menu {
-  grid-area: sidebar;
+  grid-area: sidebarmenu;
   width: 14rem;
   height: 100vh;
   position: absolute;
@@ -511,9 +511,9 @@ body {
     grid-template-rows: 9rem 1fr 7rem;
     grid-template-columns: 12rem 1fr;
     grid-template-areas:
-      'sidebar  header'
-      'sidebar  content'
-      'sidebar  footer';
+      'sidebarmenu  header'
+      'sidebarmenu  content'
+      'sidebarmenu  footer';
   }
   .menu {
     position: static;

@@ -25,7 +25,7 @@ const Product = ({ addToCartLink, i, image, name, price }) => {
           />
         </div>
         <h1 className={styles.name}>{name}</h1>
-        <div>€ {price}</div>
+        <div className={styles.price}>€ {price}</div>
       </Link>
       <button className={styles.addToCart}>{addToCart}</button>
     </article>
@@ -48,7 +48,6 @@ const Plp = ({ products, page, isSearch, searchQuery }) => {
       <div className={styles.pageHeader}>
         <div className={styles.left}>
           <h2 className={styles.title}>Le nostre piante</h2>
-          <span className={styles.lastmodified}>02/04/2020</span>
         </div>
         <CercaPiante />
       </div>

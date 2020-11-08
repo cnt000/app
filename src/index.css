@@ -138,9 +138,12 @@ table {
   --ochre: #e8dc7b;
   --brown: #7e3407;
   --orange: #ff6633;
+  --red: #f00;
   --light-orange: #ffbc00;
   --green: #008000;
-  --green2: #008200;
+  --dark-green: #1b4332;
+  --medium-green: #387a5c;
+  --light-green: #74c69d;
   --white: #ffffff;
   --grey: #ccc;
   --base-gap: 0.2rem;

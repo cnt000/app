@@ -1,19 +1,20 @@
 .pageLayout {
   position: relative;
   height: 100vh;
+  overflow-x: hidden;
   display: grid;
-  grid-template-columns: 9rem 1fr;
-  grid-template-rows: 3.2rem 1fr 1fr;
+  grid-template-columns: 9rem 1fr 10rem;
+  grid-template-rows: 2.5rem 1fr minmax(7rem, auto);
   grid-template-areas:
-    'header  header'
-    'content  content'
-    'footer  footer';
+    'header  header header'
+    'content  content content'
+    'footer  footer footer';
 }
 
 @media only screen and (min-width: 1025px) {
   .pageLayout {
-    grid-template-rows: 9rem 1fr 1fr;
     grid-template-columns: 12rem 1fr;
+    grid-template-rows: 7rem 1fr minmax(9rem, auto);
     grid-template-areas:
       'sidebar  header'
       'sidebar  content'
