@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import LabelsContext from '../Labels';
-
+import listUnit from '../../state';
 import { getImageUrlCropped } from '../../utils/images';
 import styles from './Product.module.css';
 
@@ -14,9 +14,13 @@ const Product = ({ addToCartLink, i, image, name, price }) => {
   // se > 1024 outerWidth - 190 / 4
   const { addToCart } = useContext(LabelsContext);
   const itemLink = `/pdp/${addToCartLink.split('=')[2].split('&')[0]}`;
-  const imageUrl = image.split('/').pop();
-  const itemImage = (width) =>
-    getImageUrlCropped(imageUrl, width);
+  const imageUrl = image.split('/').pop().replace(' ', '%20');
+  const itemImage = (width) => getImageUrlCropped(imageUrl, width);
+
+  function handleAdd(product) {
+    listUnit.push(product);
+  }
+
   return (
     <article key={`${name}_${i}`} className={styles.product}>
       <Link to={itemLink}>
@@ -38,7 +42,7 @@ const Product = ({ addToCartLink, i, image, name, price }) => {
         <h1 className={styles.name}>{name}</h1>
         <div className={styles.price}>€ {price}</div>
       </Link>
-      <button className={styles.addToCart}>{addToCart}</button>
+      <button className={styles.addToCart} onClick={e => handleAdd({ addToCartLink, i, image, name, price })}>{addToCart}</button>
     </article>
   );
 };

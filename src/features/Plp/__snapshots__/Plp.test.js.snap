@@ -58,12 +58,34 @@ exports[`renders correctly 1`] = `
         <div
           className="imageContainer"
         >
-          <img
-            alt="Adromischus marianae F. Herrei "
-            className="image"
-            loading="lazy"
-            src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
-          />
+          <picture>
+            <source
+              media="(min-width: 376px)"
+              srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=168x223.99439999999998/quality=100"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=223x297.3259/quality=100"
+            />
+            <source
+              media="(min-width: 1025px)"
+              srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=256x341.3248/quality=100"
+            />
+            <source
+              media="(min-width: 1201px)"
+              srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=252x335.9916/quality=100"
+            />
+            <source
+              media="(min-width: 1601px)"
+              srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=378x503.9874/quality=100"
+            />
+            <img
+              alt="Adromischus marianae F. Herrei "
+              className="image"
+              loading="lazy"
+              src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
+            />
+          </picture>
         </div>
         <h1
           className="name"
@@ -79,6 +101,7 @@ exports[`renders correctly 1`] = `
       </a>
       <button
         className="addToCart"
+        onClick={[Function]}
       >
         Aggiungi al carrello
       </button>
@@ -93,12 +116,34 @@ exports[`renders correctly 1`] = `
         <div
           className="imageContainer"
         >
-          <img
-            alt="Adromischus marianae F. Herrei "
-            className="image"
-            loading="lazy"
-            src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
-          />
+          <picture>
+            <source
+              media="(min-width: 376px)"
+              srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=168x223.99439999999998/quality=100"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=223x297.3259/quality=100"
+            />
+            <source
+              media="(min-width: 1025px)"
+              srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=256x341.3248/quality=100"
+            />
+            <source
+              media="(min-width: 1201px)"
+              srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=252x335.9916/quality=100"
+            />
+            <source
+              media="(min-width: 1601px)"
+              srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=378x503.9874/quality=100"
+            />
+            <img
+              alt="Adromischus marianae F. Herrei "
+              className="image"
+              loading="lazy"
+              src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
+            />
+          </picture>
         </div>
         <h1
           className="name"
@@ -114,6 +159,7 @@ exports[`renders correctly 1`] = `
       </a>
       <button
         className="addToCart"
+        onClick={[Function]}
       >
         Aggiungi al carrello
       </button>
