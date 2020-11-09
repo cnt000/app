@@ -7,6 +7,8 @@ import listUnit from '../../state';
 import { getImageUrlCropped } from '../../utils/images';
 import styles from './Product.module.css';
 
+const imageUrl = image => image.split('/').pop().replace(' ', '%20');
+
 const Product = ({ addToCartLink, i, image, name, price }) => {
   // outerWitdh / 2
   // se > 375 outerWidth / 3
@@ -14,8 +16,8 @@ const Product = ({ addToCartLink, i, image, name, price }) => {
   // se > 1024 outerWidth - 190 / 4
   const { addToCart } = useContext(LabelsContext);
   const itemLink = `/pdp/${addToCartLink.split('=')[2].split('&')[0]}`;
-  const imageUrl = image.split('/').pop().replace(' ', '%20');
-  const itemImage = (width) => getImageUrlCropped(imageUrl, width);
+
+  const itemImage = (width) => getImageUrlCropped(imageUrl(image), width);
 
   function handleAdd(product) {
     listUnit.push(product);
