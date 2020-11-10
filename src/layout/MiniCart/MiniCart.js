@@ -73,7 +73,7 @@ const MiniCart = ({ isOpen, setCartOpen }) => {
               {products.length > 0 &&
                 products.map((product, i) => (
                   <li key={`${i}_${product.name}`} className={styles.listItem}>
-                    <MiniCartProduct product={product} />
+                    <MiniCartProduct product={product} i={i} />
                   </li>
                 ))}
             </ul>
