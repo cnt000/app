@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import LabelsContext from '../Labels';
-import listUnit from '../../state';
+import { boolUnit, listUnit } from '../../state';
 import { getImageUrlCropped } from '../../utils/images';
 import styles from './Product.module.css';
 
@@ -21,6 +21,8 @@ const Product = ({ addToCartLink, i, image, name, price }) => {
 
   function handleAdd(product) {
     listUnit.push(product);
+    boolUnit.dispatch(true);
+    setTimeout(() => boolUnit.dispatch(false), 2000);
   }
 
   return (

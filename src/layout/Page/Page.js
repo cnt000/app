@@ -5,10 +5,12 @@ import Menu from '../Menu/Menu';
 import MiniCart from '../MiniCart/MiniCart';
 import Footer from '../Footer/Footer';
 import styles from './Page.module.css';
+import { boolUnit } from '../../state';
 
 const Page = ({ children }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [cartOpen, setCartOpen] = useState(false);
+  // const [cartOpen, setCartOpen] = useState(false);
+  const setCartOpen = (value) => boolUnit.dispatch(value);
   return (
     <div className={styles.pageLayout}>
       <Header
@@ -16,7 +18,7 @@ const Page = ({ children }) => {
         setCartOpen={() => setCartOpen(true)}
       />
       <Menu isOpen={menuOpen} setMenuOpen={() => setMenuOpen(false)} />
-      <MiniCart isOpen={cartOpen} setCartOpen={() => setCartOpen(false)} />
+      <MiniCart setCartOpen={() => setCartOpen(false)} />
       {children}
       <Footer />
     </div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-import listUnit from '../../state';
+import { listUnit, boolUnit } from '../../state';
 import { getImageUrlCropped } from '../../utils/images';
 import styles from './MiniCart.module.css';
 
@@ -16,6 +16,7 @@ function handleRemove({ currentTarget }) {
 const imageUrl = (image) => image.split('/').pop().replace(' ', '%20');
 
 const MiniCartProduct = ({ product, i }) => (
+  //todo: scrollbar e messaggio di aggiunta, se entri dentro annullare la autochiusura (o messaggio di aggiunta e link per aprire?)
   <div className={styles.product}>
     <img
       src={getImageUrlCropped(imageUrl(product.image), 80)}
@@ -45,19 +46,25 @@ const MiniCartProduct = ({ product, i }) => (
   </div>
 );
 
-const MiniCart = ({ isOpen, setCartOpen }) => {
+const MiniCart = ({ setCartOpen }) => {
   const [products, setProducts] = useState([]);
+  const [isMiniCartOpen, setMCO] = useState(false);
 
   useEffect(() => {
     listUnit.subscribe((value) => {
       setProducts(value);
     });
-    return () => listUnit.clearPersistedValue();
+  });
+
+  useEffect(() => {
+    boolUnit.subscribe((value) => {
+      setMCO (value);
+    });
   });
 
   return (
     <>
-      <nav className={`${styles.minicart} ${isOpen ? styles.open : ''}`}>
+      <nav className={`${styles.minicart} ${isMiniCartOpen ? styles.open : ''}`}>
         <div className={styles.header}>
           <button className={styles.close} onClick={setCartOpen}>
             chiudi il menu
@@ -77,6 +84,7 @@ const MiniCart = ({ isOpen, setCartOpen }) => {
                   </li>
                 ))}
             </ul>
+            {products.length > 0 && <div className={styles.content}>Totale: {products.reduce((acc, curr) => parseInt(curr.price) + acc, 0)} €</div>}
           </>
         )}
       </nav>

@@ -1,4 +1,4 @@
-import { ListUnit } from "@activejs/core";
+import { ListUnit, BoolUnit } from "@activejs/core";
 
 // initialize the Unit
 const listUnit = new ListUnit({
@@ -9,7 +9,9 @@ const listUnit = new ListUnit({
   initialValue: []
 });
 
-export default listUnit;
+const boolUnit = new BoolUnit({ initialValue: false });
+
+export { listUnit, boolUnit };
 
 // // visualize the value
 // listUnit.subscribe(
