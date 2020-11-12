@@ -22,7 +22,7 @@ const Product = ({ addToCartLink, i, image, name, price }) => {
   function handleAdd(product) {
     listUnit.push(product);
     boolUnit.dispatch(true);
-    setTimeout(() => boolUnit.dispatch(false), 2000);
+    // setTimeout(() => boolUnit.dispatch(false), 2000);
   }
 
   return (

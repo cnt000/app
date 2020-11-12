@@ -1,11 +1,11 @@
 .minicart {
   width: 14rem;
   max-width: 14rem;
-  height: 100vh;
-  position: absolute;
+  height: 100%;
+  position: fixed;
   top: 0;
   right: calc(-14rem - 2px);
-  transition: right 0.4s;
+  transition: all 0.4s;
   background: var(--ochre);
   border-left: 2px dotted;
   border-image: linear-gradient(180deg, var(--green), var(--orange) 30em) 20;
@@ -72,7 +72,7 @@
   width: 90%;
   padding: calc(var(--base-gap) * 2) 0;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   list-style: none;
 }
 
@@ -101,9 +101,48 @@
 
 .productDescription {
   margin-left: calc(var(--base-gap) * 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .qty {
   margin-top: calc(var(--base-gap) * 2);
   margin-bottom: var(--base-gap);
+}
+
+.addButton,
+.removeButton {
+  margin-right: var(--base-gap);
+  background-color: var(--white);
+  padding: var(--base-gap) calc(var(--base-gap)  * 2);
+  border-width: 1px;
+  border-style: outset;
+  border-color: var(--black);
+  width: 1.4rem;
+  border-radius: var(--base-gap);
+}
+
+.goToCartWrapper {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: calc(var(--base-gap) * 2);
+}
+
+.goToCart {
+  width: 90%;
+  padding: 0.4rem;
+  margin-right: var(--base-gap);
+  background-color: var(--white);
+  border-width: 1px;
+  border-style: outset;
+  border-color: var(--black);
+  border-radius: var(--base-gap);
+}
+
+.addedMessage {
+  text-align: center;
+  font-weight: bold;
+  margin: 0.4em 0;
+  text-decoration: underline;
 }
