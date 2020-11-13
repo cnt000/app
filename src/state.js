@@ -10,8 +10,9 @@ const listUnit = new ListUnit({
 });
 
 const boolUnit = new BoolUnit({ initialValue: false });
+const productAdded = new BoolUnit({ initialValue: false });
 
-export { listUnit, boolUnit };
+export { listUnit, boolUnit, productAdded };
 
 // // visualize the value
 // listUnit.subscribe(

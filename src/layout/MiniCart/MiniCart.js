@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import { listUnit, boolUnit } from '../../state';
+import { listUnit, productAdded, boolUnit } from '../../state';
 import { getImageUrlCropped } from '../../utils/images';
 import styles from './MiniCart.module.css';
 
@@ -54,7 +54,6 @@ const MiniCartProduct = ({ product, i }) => (
 const MiniCart = ({ setCartOpen }) => {
   const [products, setProducts] = useState([]);
   const [isMiniCartOpen, setMCO] = useState(false);
-  const [message, setAddMessage] = useState('');
   const history = useHistory();
 
   function goToCart() {
@@ -64,9 +63,6 @@ const MiniCart = ({ setCartOpen }) => {
   useEffect(() => {
     listUnit.subscribe((value) => {
       setProducts(value);
-      setAddMessage('Prodotto aggiunto al carrello');
-      // setTimeout(() => setAddMessage(''), 2000);
-      console.log('subscribe ' + value);
     });
   });
 
@@ -86,44 +82,51 @@ const MiniCart = ({ setCartOpen }) => {
             chiudi il menu
           </button>
         </div>
-        {products.length === 0 && (
-          <div className={styles.contentEmpty}>
-            Nessun prodotto nel carrello
-          </div>
-        )}
-        {products.length > 0 && (
-          <>
-            <div className={styles.content}>Prodotti nel tuo carrello:</div>
-            <ul className={styles.productList}>
-              {products.length > 0 &&
-                products.map((product, i) => (
-                  <li key={`${i}_${product.name}`} className={styles.listItem}>
-                    {i === products.length - 1 && (
-                      <div className={styles.addedMessage}>{message}</div>
-                    )}
-                    <MiniCartProduct product={product} i={i} />
-                  </li>
-                ))}
-            </ul>
-            {products.length > 0 && (
-              <>
-                <div className={styles.content}>
-                  Totale:{' '}
-                  {products.reduce(
-                    (acc, curr) => parseInt(curr.price) + acc,
-                    0,
-                  )}{' '}
-                  €
-                </div>
-                <div className={styles.goToCartWrapper}>
-                  <button onClick={goToCart} className={styles.goToCart}>
-                    Procedi all'ordine
-                  </button>
-                </div>
-              </>
-            )}
-          </>
-        )}
+        <div className={styles.content}>
+          {products.length === 0 && (
+            <div className={styles.contentEmpty}>
+              Nessun prodotto nel carrello
+            </div>
+          )}
+          {products.length > 0 && (
+            <>
+              <div className={styles.label}>Prodotti nel tuo carrello:</div>
+              <ul className={styles.productList}>
+                {products.length > 0 &&
+                  products.map((product, i) => (
+                    <li
+                      key={`${i}_${product.name}`}
+                      className={styles.listItem}
+                    >
+                      {i === products.length - 1 && productAdded.value() && (
+                        <div className={styles.addedMessage}>
+                          Prodotto aggiunto al carrello:
+                        </div>
+                      )}
+                      <MiniCartProduct product={product} i={i} />
+                    </li>
+                  ))}
+              </ul>
+              {products.length > 0 && (
+                <>
+                  <div className={styles.label}>
+                    Totale:{' '}
+                    {products.reduce(
+                      (acc, curr) => parseInt(curr.price) + acc,
+                      0,
+                    )}{' '}
+                    €
+                  </div>
+                  <div className={styles.goToCartWrapper}>
+                    <button onClick={goToCart} className={styles.goToCart}>
+                      Procedi all'ordine
+                    </button>
+                  </div>
+                </>
+              )}
+            </>
+          )}
+        </div>
       </nav>
       <div className={styles.overlay} onClick={setCartOpen}></div>
     </>
