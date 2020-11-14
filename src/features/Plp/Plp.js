@@ -17,14 +17,28 @@ const Plp = ({ products, page, isSearch, searchQuery }) => {
     threshold: 0.1,
   });
 
-  const [fetched, setFetched] = useState(false);
-
   const hasResults =
     !products.error && !products.code && products.message !== 'not found';
 
+  const MemoizedPaginationFetch = React.memo(
+    () =>
+      entry.intersectionRatio > 0.1 && (
+        <MyErrorBoundary>
+          <Suspense
+            fallback={<div className={styles.paginationBox}>Loading...</div>}
+          >
+            <PaginationFetch
+              isSearch={isSearch}
+              page={page}
+              searchQuery={searchQuery}
+            />
+          </Suspense>
+        </MyErrorBoundary>
+      ),
+  );
+
   return (
     <main className={styles.plpContent} role="main">
-      {fetched && 'true'}
       <div className={styles.pageHeader}>
         <div className={styles.left}>
           <h2 className={styles.title}>Le nostre piante</h2>
@@ -40,20 +54,7 @@ const Plp = ({ products, page, isSearch, searchQuery }) => {
         ratio={entry.intersectionRatio}
         className={styles.paginationBox}
       >
-        {entry.intersectionRatio > 0.1 && (
-          <MyErrorBoundary>
-            <Suspense
-              fallback={<div className={styles.paginationBox}>Loading...</div>}
-            >
-              <PaginationFetch
-                isSearch={isSearch}
-                page={page}
-                searchQuery={searchQuery}
-                setFetched={setFetched}
-              />
-            </Suspense>
-          </MyErrorBoundary>
-        )}
+        <MemoizedPaginationFetch />
       </div>
     </main>
   );
