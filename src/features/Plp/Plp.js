@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense } from 'react';
 import PropTypes from 'prop-types';
 
 import useIntersect from '../../hook/useIntersect';
