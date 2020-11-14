@@ -22,6 +22,12 @@
   color: var(--green);
 }
 
+.paginationBox {
+  height: 36px;
+  text-align: center;
+  line-height: 2.4;
+}
+
 @media only screen and (min-width: 768px) {
   .product {
     width: calc(33% - var(--base-gap));
