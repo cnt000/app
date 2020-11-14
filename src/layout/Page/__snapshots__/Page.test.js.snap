@@ -131,9 +131,13 @@ exports[`renders correctly 1`] = `
       </button>
     </div>
     <div
-      className="contentEmpty"
+      className="content"
     >
-      Nessun prodotto nel carrello
+      <div
+        className="contentEmpty"
+      >
+        Nessun prodotto nel carrello
+      </div>
     </div>
   </nav>
   <div

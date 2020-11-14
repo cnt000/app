@@ -165,8 +165,8 @@ exports[`renders correctly 1`] = `
       </button>
     </article>
   </div>
-  <div>
-    Loading...
-  </div>
+  <div
+    className="paginationBox"
+  />
 </main>
 `;
