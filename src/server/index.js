@@ -6,10 +6,6 @@ fastify.register(require('fastify-static'), {
   wildcard: false
 });
 
-fastify.get('/styleguide', function(req, reply) {
-  reply.sendFile('styleguide/index.html');
-});
-
 fastify.get('/storybook', function (req, reply) {
   reply.sendFile('storybook/index.html');
 });

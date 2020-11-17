@@ -12,28 +12,33 @@ exports[`renders correctly 1`] = `
       apri il menu
     </button>
   </div>
-  <div
-    className="content"
+  <a
+    href="/"
+    onClick={[Function]}
   >
     <div
-      className="logo"
+      className="content"
     >
-      <img
-        alt="pungilandia logo"
-        src="logo.png"
-      />
+      <div
+        className="logo"
+      >
+        <img
+          alt="pungilandia logo"
+          src="logo.png"
+        />
+      </div>
+      <div
+        className="title"
+      >
+        <h1>
+          Pungilandia
+        </h1>
+        <p>
+          Piante grasse, strane ed insolite
+        </p>
+      </div>
     </div>
-    <div
-      className="title"
-    >
-      <h1>
-        Pungilandia
-      </h1>
-      <p>
-        Piante grasse, strane ed insolite
-      </p>
-    </div>
-  </div>
+  </a>
   <div>
     <button
       className="cart"

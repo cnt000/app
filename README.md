@@ -24,7 +24,6 @@ open localhost on http://localhost:9009
 
 -----------------------------------------------------------------------------------------------
 
-Styleguide -> npm run styleguide (layotu test, temporary)
 Storybook -> npm run storybook
 Test -> npm test
 App -> npm start && npm start:client
@@ -32,5 +31,4 @@ App -> npm start && npm start:client
 # Links
 - [build](https://console.cloud.google.com/cloud-build/builds?project=pungilandia2020-app)
 - [app](https://pungilandia2020-app.appspot.com/)
-- [styleguide](https://pungilandia2020-app.appspot.com/styleguide/)
 - [storybook](https://pungilandia2020-app.appspot.com/storybook/)

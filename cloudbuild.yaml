@@ -1,24 +1,21 @@
 steps:
-- name: node:10.15.1
+- name: node:12.19.1
   entrypoint: npm
   args: ["ci"]
-- name: node:10.15.1
+- name: node:12.19.1
   entrypoint: npm
   args: ['run', 'test:unit']
-- name: node:10.15.1
+- name: node:12.19.1
   entrypoint: npm
   args: ["run", "build"]
   env:
     - 'REACT_APP_API_DOMAIN=${_REACT_APP_API_DOMAIN}'
-- name: node:10.15.1
+- name: node:12.19.1
   entrypoint: npm
   args: ["run", "build-storybook"]
-- name: node:10.15.1
+- name: node:12.19.1
   entrypoint: npm
   args: ["run", "storybook:copy"]
-- name: node:10.15.1
-  entrypoint: npm
-  args: ["run", "styleguide:copy"]
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy"]
 timeout: "1600s"
