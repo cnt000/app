@@ -20,7 +20,7 @@
     "use-http": "^1.0.15"
   },
   "scripts": {
-    "start": "npm run start:server && npm run start:client",
+    "start": "npm run start:server",
     "start:client": "react-scripts start",
     "start:server": "node src/server/index.js",
     "build": "react-scripts build",
