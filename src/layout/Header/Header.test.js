@@ -1,5 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { render } from '@testing-library/react';
 import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
@@ -10,15 +11,18 @@ import LabelsContext from '../../features/Labels';
 
 const setMenuOpenMock = jest.fn();
 jest.mock('react-router-dom', () => ({
-  useLocation: jest.fn().mockReturnValue({
-    pathname: '/',
+  ...jest.requireActual('react-router-dom'),
+  useLocation: () => ({
+    pathname: 'localhost:3000/example/path',
   }),
 }));
 
 const header = (
-  <LabelsContext.Provider value={labels}>
-    <Header setMenuOpen={() => setMenuOpenMock(true)} />
-  </LabelsContext.Provider>
+  <Router>
+    <LabelsContext.Provider value={labels}>
+      <Header setMenuOpen={() => setMenuOpenMock(true)} />
+    </LabelsContext.Provider>
+  </Router>
 );
 
 it('renders correctly', () => {
@@ -48,10 +52,7 @@ describe('Click open menu without enzyme', () => {
 
   it('click open button call setMenuOpenMock without enzyme', () => {
     act(() => {
-      ReactDOM.render(
-        header,
-        container,
-      );
+      ReactDOM.render(header, container);
     });
     const button = container.querySelector('button.burger');
 

@@ -17,11 +17,12 @@ function handleRemove({ currentTarget }) {
 const imageUrl = (image) => image.split('/').pop().replace(' ', '%20');
 
 const MiniCartProduct = ({ product, i }) => (
-  //todo: scrollbar e messaggio di aggiunta,
   <div className={styles.product}>
     <img
       src={getImageUrlCropped(imageUrl(product.image), 80)}
       alt={product.name}
+      width="80"
+      height="107"
     />
     <div className={styles.productDescription}>
       <div className={styles.productName}>{product.name}</div>
