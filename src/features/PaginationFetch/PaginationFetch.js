@@ -5,7 +5,7 @@ import Pagination from '../Pagination/Pagination';
 
 const PaginationFetch = ({ page, isSearch, searchQuery }) => {
   const url = `${conf.apiEndpoint}/api/v1/total-pages`;
-  const { loading, data = 0, cache } = useFetch(url, { persist: true }, []);
+  const { loading, data = 0 } = useFetch(url, { persist: true }, []);
   return (
     <>
       {loading && 'Fetching...'}

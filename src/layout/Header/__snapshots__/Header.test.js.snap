@@ -13,6 +13,7 @@ exports[`renders correctly 1`] = `
     </button>
   </div>
   <a
+    className="logoLink"
     href="/"
     onClick={[Function]}
   >
