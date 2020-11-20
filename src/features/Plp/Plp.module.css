@@ -12,13 +12,12 @@
 .pageHeader {
   display: flex;
   justify-content: space-between;
-  height: 3rem;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
 .pageHeader .title {
   font-family: 'Caveat Brush', sans-serif;
-  font-size: 32px;
+  font-size: 34px;
   color: var(--green);
 }
 
@@ -28,9 +27,20 @@
   line-height: 2.4;
 }
 
+.pageHeader .left {
+  text-align: left;
+  line-height: 1.6;
+}
+
 @media only screen and (min-width: 768px) {
   .product {
     width: calc(33% - var(--base-gap));
+  }
+  .pageHeader .left {
+    line-height: 1.4;
+  }
+  .pageHeader .title {
+    font-size: 44px;
   }
 }
 
@@ -40,14 +50,9 @@
     padding: 2rem;
   }
 
-  .pageHeader .left {
-    text-align: left;
-  }
-
   .pageHeader {
     display: flex;
     justify-content: space-between;
-    height: 4rem;
-    margin: calc(var(--base-gap) * 3) auto;
+    margin: 0 auto;
   }
 }

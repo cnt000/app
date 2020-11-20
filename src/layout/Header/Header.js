@@ -24,7 +24,7 @@ const Header = ({ setMenuOpen, setCartOpen }) => {
       </div>
       <ConditionalWrapper
         condition={!isHomepage}
-        wrapper={(children) => <Link to="/">{children}</Link>}
+        wrapper={(children) => <Link className={styles.logoLink} to="/">{children}</Link>}
       >
         <div className={styles.content}>
           <div className={styles.logo}>
