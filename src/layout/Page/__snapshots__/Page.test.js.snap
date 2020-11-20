@@ -23,7 +23,7 @@ exports[`renders correctly 1`] = `
       >
         <img
           alt="pungilandia logo"
-          src="logo.png"
+          src="https://storage.googleapis.com/pungi-assets/assets/logo.png"
         />
       </div>
       <div
