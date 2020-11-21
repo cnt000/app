@@ -62,12 +62,13 @@ exports[`renders correctly 1`] = `
             alt="Adromischus marianae F. Herrei "
             className="image"
             loading="lazy"
-            sizes="(min-width: 375px) 50vw, 25vw"
-            src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
-            srcset="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=168x223.99439999999998/quality=100 168w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=223x297.3259/quality=100 223w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=256x341.3248/quality=100 256w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=378x503.9874/quality=100 378w"
+            sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x400/quality=100"
+            srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=200x267/quality=100 200w,
+              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=256x341/quality=100 256w,
+              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=450x600/quality=100 450w,
+              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=650x867/quality=100 580w,
+              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=650x867/quality=100 660w"
           />
         </div>
         <h1
@@ -103,12 +104,13 @@ exports[`renders correctly 1`] = `
             alt="Adromischus marianae F. Herrei "
             className="image"
             loading="lazy"
-            sizes="(min-width: 375px) 50vw, 25vw"
-            src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x399.98999999999995/quality=100"
-            srcset="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=168x223.99439999999998/quality=100 168w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=223x297.3259/quality=100 223w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=256x341.3248/quality=100 256w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=378x503.9874/quality=100 378w"
+            sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x400/quality=100"
+            srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=200x267/quality=100 200w,
+              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=256x341/quality=100 256w,
+              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=450x600/quality=100 450w,
+              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=650x867/quality=100 580w,
+              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=650x867/quality=100 660w"
           />
         </div>
         <h1
