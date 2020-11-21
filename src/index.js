@@ -6,6 +6,7 @@ import router from './features/Router';
 import store from './store';
 import { withLabels } from './features/Labels/withLabels';
 import * as serviceWorker from './serviceWorker';
+import { attachSrcSetDebug } from './attachSrcSetDebug';
 import './index.css';
 
 const RouterWithLabels = withLabels(router);
@@ -16,6 +17,10 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root'),
 );
+
+if (/debug=1/.test(document.location.search)) {
+  setTimeout(() => attachSrcSetDebug('img'), 1500);
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

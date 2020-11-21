@@ -34,8 +34,8 @@ const debug = (selector) => {
     .forEach((a) => printSrcSetDebug(a, printInDom(a)));
 };
 
-export const attachDebug = (imagesSelector) => {
+export const attachSrcSetDebug = (imagesSelector) => {
   debug(imagesSelector);
   window.addEventListener('resize', () => debug(imagesSelector));
 };
-// attachDebug('article img');
+// attachSrcSetDebug('article img');
