@@ -15,6 +15,7 @@
 .name {
   margin: calc(var(--base-gap) * 3) auto;
 }
+
 .price {
   font-style: italic;
 }
@@ -43,7 +44,7 @@
   position: relative;
   height: 0;
   overflow: hidden;
-  padding-top: calc(1.3333 * 100%);
+  padding-top: calc(1.33333333 * 100%);
   border-radius: var(--base-gap);
 }
 
