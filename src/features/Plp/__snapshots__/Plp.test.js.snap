@@ -62,13 +62,12 @@ exports[`renders correctly 1`] = `
             alt="Adromischus marianae F. Herrei "
             className="image"
             loading="lazy"
-            sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            sizes="(min-width: 1025px) 20vw, (min-width: 768px) 33vw, 50vw"
             src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x400/quality=100"
             srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=200x267/quality=100 200w,
               https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=256x341/quality=100 256w,
               https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=450x600/quality=100 450w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=650x867/quality=100 580w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=650x867/quality=100 660w"
+              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=580x773/quality=100 580w"
           />
         </div>
         <h1
@@ -104,13 +103,12 @@ exports[`renders correctly 1`] = `
             alt="Adromischus marianae F. Herrei "
             className="image"
             loading="lazy"
-            sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            sizes="(min-width: 1025px) 20vw, (min-width: 768px) 33vw, 50vw"
             src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x400/quality=100"
             srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=200x267/quality=100 200w,
               https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=256x341/quality=100 256w,
               https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=450x600/quality=100 450w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=650x867/quality=100 580w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=650x867/quality=100 660w"
+              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=580x773/quality=100 580w"
           />
         </div>
         <h1
