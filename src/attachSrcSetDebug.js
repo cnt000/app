@@ -1,13 +1,23 @@
-const printSrcSetDebug = (elm, showFn) =>
-  showFn(`
-src: ${elm.src},
-currentSrc: ${elm.currentSrc},
-width: ${getComputedStyle(elm).width}
-height: ${getComputedStyle(elm).height}
-parent width: ${getComputedStyle(elm.parentNode).width},
-parent height: ${getComputedStyle(elm.parentNode).height},
-devicePixelRatio: ${window.devicePixelRatio}
-`);
+const getRealWidth = (src, cb) => {
+  const img = new Image();
+  img.src = src;
+  img.onload = cb;
+};
+
+const printSrcSetDebug = (elm, showFn) => {
+  getRealWidth(elm.currentSrc, function () {
+    showFn(`
+      src: ${elm.src},
+      currentSrc: ${elm.currentSrc},
+      width: ${getComputedStyle(elm).width}
+      height: ${getComputedStyle(elm).height}
+      CurrentSrcWidth: ${this.naturalWidth}px
+      parent width: ${getComputedStyle(elm.parentNode).width},
+      parent height: ${getComputedStyle(elm.parentNode).height},
+      devicePixelRatio: ${window.devicePixelRatio}
+    `);
+  });
+};
 
 const printInDom = (elm) => (str) => {
   var span = document.createElement('span');
