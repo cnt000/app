@@ -36,10 +36,9 @@ const Product = ({ addToCartLink, i, image, name, price }) => {
             srcSet={`${itemImage(200)} 200w,
               ${itemImage(256)} 256w,
               ${itemImage(450)} 450w,
-              ${itemImage(650)} 580w,
-              ${itemImage(650)} 660w`}
+              ${itemImage(580)} 580w`}
             alt={name}
-            sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            sizes="(min-width: 1025px) 20vw, (min-width: 768px) 33vw, 50vw"
             loading="lazy"
           />
         </div>
