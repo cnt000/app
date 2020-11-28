@@ -58,17 +58,33 @@ exports[`renders correctly 1`] = `
         <div
           className="imageContainer"
         >
-          <img
-            alt="Adromischus marianae F. Herrei "
+          <picture
+            alt="adromischus-herrei.jpg"
             className="image"
-            loading="lazy"
-            sizes="(min-width: 1025px) 20vw, (min-width: 768px) 33vw, 50vw"
-            src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x400/quality=100"
-            srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=200x267/quality=100 200w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=256x341/quality=100 256w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=450x600/quality=100 450w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=580x773/quality=100 580w"
-          />
+          >
+            <source
+              media="(min-width: 1024px)"
+              sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+              srcset="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=200x267/quality=100 200w,
+            https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=400x533/quality=100 400w,
+            https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=600x800/quality=100 600w,
+            https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=800x1067/quality=100 800w"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=500x667/quality=100 2x"
+            />
+            <source
+              media="(min-width: 414px)"
+              srcset="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=500x667/quality=100 2x"
+            />
+            <img
+              alt="Adromischus marianae F. Herrei "
+              loading="lazy"
+              src="{getImageUrlCropped(image, 200)}"
+              srcset="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=400x533/quality=100 2x"
+            />
+          </picture>
         </div>
         <h1
           className="name"
@@ -99,17 +115,33 @@ exports[`renders correctly 1`] = `
         <div
           className="imageContainer"
         >
-          <img
-            alt="Adromischus marianae F. Herrei "
+          <picture
+            alt="adromischus-herrei.jpg"
             className="image"
-            loading="lazy"
-            sizes="(min-width: 1025px) 20vw, (min-width: 768px) 33vw, 50vw"
-            src="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=300x400/quality=100"
-            srcSet="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=200x267/quality=100 200w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=256x341/quality=100 256w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=450x600/quality=100 450w,
-              https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=580x773/quality=100 580w"
-          />
+          >
+            <source
+              media="(min-width: 1024px)"
+              sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+              srcset="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=200x267/quality=100 200w,
+            https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=400x533/quality=100 400w,
+            https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=600x800/quality=100 600w,
+            https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=800x1067/quality=100 800w"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=500x667/quality=100 2x"
+            />
+            <source
+              media="(min-width: 414px)"
+              srcset="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=500x667/quality=100 2x"
+            />
+            <img
+              alt="Adromischus marianae F. Herrei "
+              loading="lazy"
+              src="{getImageUrlCropped(image, 200)}"
+              srcset="https://qp2dljrm.twic.pics/adromischus-herrei.jpg?twic=v1/cover=400x533/quality=100 2x"
+            />
+          </picture>
         </div>
         <h1
           className="name"

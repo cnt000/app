@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom';
 
 import LabelsContext from '../Labels';
 import { boolUnit, productAdded, listUnit } from '../../state';
-import { getImageUrlCropped } from '../../utils/images';
+import { imageUrl } from '../../utils/images';
 import styles from './Product.module.css';
-
-const imageUrl = (image) => image.split('/').pop().replace(' ', '%20');
+import PictureTagProduct from '../PictureTagProduct/PictureTagProduct';
 
 const Product = ({ addToCartLink, i, image, name, price }) => {
   // outerWitdh / 2
@@ -16,8 +15,6 @@ const Product = ({ addToCartLink, i, image, name, price }) => {
   // se > 1024 outerWidth - 190 / 4
   const { addToCart } = useContext(LabelsContext);
   const itemLink = `/pdp/${addToCartLink.split('=')[2].split('&')[0]}`;
-
-  const itemImage = (width) => getImageUrlCropped(imageUrl(image), width);
 
   function handleAdd(product) {
     listUnit.push(product);
@@ -30,7 +27,7 @@ const Product = ({ addToCartLink, i, image, name, price }) => {
     <article key={`${name}_${i}`} className={styles.product}>
       <Link to={itemLink}>
         <div className={styles.imageContainer}>
-          <img
+          {/* <img
             className={styles.image}
             src={itemImage(300)}
             srcSet={`${itemImage(200)} 200w,
@@ -40,6 +37,11 @@ const Product = ({ addToCartLink, i, image, name, price }) => {
             alt={name}
             sizes="(min-width: 1025px) 20vw, (min-width: 768px) 33vw, 50vw"
             loading="lazy"
+          /> */}
+          <PictureTagProduct
+            className={styles.image}
+            alt={name}
+            image={imageUrl(image)}
           />
         </div>
         <h1 className={styles.name}>{name}</h1>
