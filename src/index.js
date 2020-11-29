@@ -6,7 +6,7 @@ import router from './features/Router';
 import store from './store';
 import { withLabels } from './features/Labels/withLabels';
 import * as serviceWorker from './serviceWorker';
-import { attachSrcSetDebug } from './attachSrcSetDebug';
+import { attachSrcSetDebug } from './utils/attachSrcSetDebug';
 import './index.css';
 
 const RouterWithLabels = withLabels(router);

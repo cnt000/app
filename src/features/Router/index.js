@@ -3,9 +3,8 @@ import { Route, Switch } from 'react-router-dom';
 
 import Home from '../../layout/Home/Home';
 import Page from '../../layout/Page/Page';
-import PlpFetch from '../../features/PlpFetch/PlpFetch';
+import Plp from '../../features/Plp/Plp';
 import PdpFetch from '../../features/PdpFetch/PdpFetch';
-import PlpFetchSearch from '../../features/PlpFetchSearch/PlpFetchSearch';
 import Article from '../../features/Article/Article';
 import articleContent from '../../data/articles/consigliColtivazione.md';
 import { withRouter } from './withRouter';
@@ -19,10 +18,10 @@ const Router = () => (
       <Page>{home}</Page>
     </Route>
     <Route exact path="/plp/:id">
-      <Page children={<PlpFetch />} />
+      <Page children={<Plp />} />
     </Route>
     <Route path="/search/:id">
-      <Page children={<PlpFetchSearch />} />
+      <Page children={<Plp />} />
     </Route>
     <Route exact path="/pdp/:id">
       <Page children={<PdpFetch />} />

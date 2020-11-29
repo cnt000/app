@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+import withFetch from './withFetch';
 import styles from './Pagination.module.css';
 
 const Pagination = ({ page, isSearch, searchQuery, totalPages }) => {
@@ -37,4 +38,4 @@ Pagination.propTypes = {
   searchQuery: PropTypes.string,
 };
 
-export default Pagination;
+export default withFetch(Pagination);

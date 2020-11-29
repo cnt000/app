@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import LabelsContext from '../Labels';
 import { getImageUrl } from '../../utils/images';
+import withFetch from './withFetch';
 import styles from './Pdp.module.css';
 
 const Pdp = ({ name, image, size, price }) => {
@@ -32,4 +33,4 @@ Pdp.propTypes = {
   addToCart: PropTypes.string,
 };
 
-export default Pdp;
+export default withFetch(Pdp);

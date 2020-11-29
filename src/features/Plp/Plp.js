@@ -6,13 +6,11 @@ import Product from '../Product/Product';
 import EmptyResults from '../EmptyResults/EmptyResults';
 import CercaPiante from '../CercaPiante/CercaPiante';
 import MyErrorBoundary from '../ErrorBoundary/ErrorBoundary';
+import withFetch from './withFetch';
+import Pagination from '../Pagination/Pagination';
 import styles from './Plp.module.css';
 
-const PaginationFetch = React.lazy(() =>
-  import('../PaginationFetch/PaginationFetch'),
-);
-
-const Plp = ({ products, page, isSearch, searchQuery }) => {
+const Plp = ({ products }) => {
   const [ref, entry] = useIntersect({
     threshold: 0.1,
   });
@@ -20,18 +18,14 @@ const Plp = ({ products, page, isSearch, searchQuery }) => {
   const hasResults =
     !products.error && !products.code && products.message !== 'not found';
 
-  const MemoizedPaginationFetch = React.memo(
+  const MemoizedPagination = React.memo(
     () =>
       entry.intersectionRatio > 0.1 && (
         <MyErrorBoundary>
           <Suspense
             fallback={<div className={styles.paginationBox}>Loading...</div>}
           >
-            <PaginationFetch
-              isSearch={isSearch}
-              page={page}
-              searchQuery={searchQuery}
-            />
+            <Pagination />
           </Suspense>
         </MyErrorBoundary>
       ),
@@ -54,7 +48,7 @@ const Plp = ({ products, page, isSearch, searchQuery }) => {
         ratio={entry.intersectionRatio}
         className={styles.paginationBox}
       >
-        <MemoizedPaginationFetch />
+        <MemoizedPagination />
       </div>
     </main>
   );
@@ -65,4 +59,4 @@ Plp.propTypes = {
   Link: PropTypes.object,
 };
 
-export default Plp;
+export default withFetch(Plp);
