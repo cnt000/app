@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from '../../layout/Home/Home';
 import Page from '../../layout/Page/Page';
 import Plp from '../../features/Plp/Plp';
-import PdpFetch from '../../features/PdpFetch/PdpFetch';
+import Pdp from '../../features/Pdp/Pdp';
 import Article from '../../features/Article/Article';
 import articleContent from '../../data/articles/consigliColtivazione.md';
 import { withRouter } from './withRouter';
@@ -24,7 +24,7 @@ const Router = () => (
       <Page children={<Plp />} />
     </Route>
     <Route exact path="/pdp/:id">
-      <Page children={<PdpFetch />} />
+      <Page children={<Pdp/>} />
     </Route>
     <Route exact path="/article/:id">
       <Page>{article}</Page>
