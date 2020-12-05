@@ -80,8 +80,8 @@ describe('Click without enzyme', () => {
     expect(setMenuOpenMockWE).toHaveBeenCalled();
   });
 
-  test('renders chi siamo', () => {
+  test('renders home', () => {
     const { getByText } = render(<Router>{menuComponentWithLabels}</Router>);
-    expect(getByText(/Chi siamo/)).toBeInTheDocument();
+    expect(getByText(/Home/)).toBeInTheDocument();
   });
 });
