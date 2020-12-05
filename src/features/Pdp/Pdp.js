@@ -8,7 +8,7 @@ import styles from './Pdp.module.css';
 
 const Pdp = ({ name, image, size, price }) => {
   const { addToCart } = useContext(LabelsContext);
-  const imageUrl = getImageUrl(image.split('/').pop(), 500);
+  const imageUrl = getImageUrl(image.split('/').pop(), 800);
   return (
     <main className={styles.pdpContent} role="main">
       <div className={styles.header}></div>
@@ -17,8 +17,10 @@ const Pdp = ({ name, image, size, price }) => {
       </div>
       <div className={styles.product}>
         <h2 className={styles.name}>{name}</h2>
-        <div className={styles.dimension}>{size}</div>
-        <div className={styles.price}>{price} €</div>
+        <div className={styles.infoBox}>
+          <div className={styles.dimension}>Diametro vaso: {size}</div>
+          <div className={styles.price}>Prezzo: {price} €</div>
+        </div>
         <button className={styles.addToCart}>{addToCart}</button>
       </div>
     </main>

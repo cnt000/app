@@ -4,6 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.product {
+  width: 100%;
+  margin-bottom: 1.6rem;
 }
 
 .name,
@@ -16,9 +23,10 @@
 
 .name {
   font-size: 22px;
+  margin-bottom: 1.6rem;
 }
 
-.price {
+.infoBox {
   font-size: 16px;
 }
 
@@ -38,15 +46,56 @@
 }
 
 .addToCart {
-  margin: 0 auto;
-  margin: 1rem auto 2rem auto;
-  width: 50%;
-  height: 2rem;
+  margin: var(--base-gap) auto calc(var(--base-gap) * 2) auto;
+  background-color: var(--medium-green);
+  color: white;
+  padding: calc(var(--base-gap) * 4);
+  border-radius: 3px;
+  border: 1px solid white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.infoBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+ .pdpContent {
+   width: 500px;
+  }
+  .infoBox {
+    margin-bottom: 1.4rem;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
  .pdpContent {
     display: grid;
-    grid-template-columns: 10px 1fr 30%;
+    grid-template-columns: 10% 60% 30%;
+    width: 100%;
+  }
+  .mainImage {
+    margin-left: 0;
+    margin-right: 2rem;
+  }
+  .mainImage img {
+    max-width: 800px;
+  }
+  .product {
+    width: 80%;
+  }
+  .name {
+    font-size: 2.4rem;
+  }
+  .infoBox {
+    font-size: 1.4rem;
+  }
+  .addToCart {
+    font-size: 1.2rem;
+  }
+  .infoBox {
+    flex-direction: column;
   }
 }
