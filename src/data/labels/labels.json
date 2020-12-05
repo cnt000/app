@@ -19,10 +19,9 @@
   "articleBy": "A cura del dott. Mimmo Rocchi",
   "articleContent": "consigliColtivazione.md",
   "mimmoImage": "http://www.pungilandia.com/media/MIMMO.JPG",
-  "menuChiSiamo": "Chi siamo",
-  "menuListaPiante": "Lista piante",
-  "menuProdottiSpeciali": "Prodotti speciali",
+  "home": "Home",
+  "menuListaPiante": "Le nostre piante",
   "menuConsigliPerColtivare": "Consigli per coltivare",
   "menuOrdini": "Ordini",
-  "menuEmail": "E-mail"
+  "menuContatti": "Contatti"
 }

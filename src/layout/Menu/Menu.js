@@ -7,12 +7,11 @@ import styles from './Menu.module.css';
 
 const Menu = ({ isOpen, setMenuOpen }) => {
   const {
-    menuChiSiamo,
+    home,
     menuListaPiante,
-    menuProdottiSpeciali,
     menuConsigliPerColtivare,
     menuOrdini,
-    menuEmail,
+    menuContatti,
   } = useContext(LabelsContext);
   return (
     <>
@@ -24,22 +23,19 @@ const Menu = ({ isOpen, setMenuOpen }) => {
         </div>
         <ul className={styles.entries} onClick={(e) => setMenuOpen(false)}>
           <li>
-            <Link to="/">{menuChiSiamo}</Link>
+            <Link to="/">{home}</Link>
           </li>
           <li>
             <Link to="/plp/1">{menuListaPiante}</Link>
           </li>
           <li>
-            <Link to="/">{menuProdottiSpeciali}</Link>
+            <Link to="/consigli">{menuConsigliPerColtivare}</Link>
           </li>
           <li>
-            <Link to="/">{menuConsigliPerColtivare}</Link>
+            <Link to="/ordini">{menuOrdini}</Link>
           </li>
           <li>
-            <Link to="/">{menuOrdini}</Link>
-          </li>
-          <li>
-            <Link to="/">{menuEmail}</Link>
+            <Link to="/contatti">{menuContatti}</Link>
           </li>
         </ul>
       </nav>
