@@ -63,7 +63,7 @@
 
 @media only screen and (min-width: 768px) {
  .pdpContent {
-   width: 500px;
+   width: 460px;
   }
   .infoBox {
     margin-bottom: 1.4rem;
@@ -81,19 +81,19 @@
     margin-right: 2rem;
   }
   .mainImage img {
-    max-width: 800px;
+    max-width: 580px;
   }
   .product {
     width: 80%;
   }
   .name {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .infoBox {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .addToCart {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .infoBox {
     flex-direction: column;
