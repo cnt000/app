@@ -24,7 +24,7 @@ Array [
           href="/"
           onClick={[Function]}
         >
-          Chi siamo
+          Home
         </a>
       </li>
       <li>
@@ -32,20 +32,12 @@ Array [
           href="/plp/1"
           onClick={[Function]}
         >
-          Lista piante
+          Le nostre piante
         </a>
       </li>
       <li>
         <a
-          href="/"
-          onClick={[Function]}
-        >
-          Prodotti speciali
-        </a>
-      </li>
-      <li>
-        <a
-          href="/"
+          href="/consigli"
           onClick={[Function]}
         >
           Consigli per coltivare
@@ -53,7 +45,7 @@ Array [
       </li>
       <li>
         <a
-          href="/"
+          href="/ordini"
           onClick={[Function]}
         >
           Ordini
@@ -61,10 +53,10 @@ Array [
       </li>
       <li>
         <a
-          href="/"
+          href="/contatti"
           onClick={[Function]}
         >
-          E-mail
+          Contatti
         </a>
       </li>
     </ul>
