@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Pagination from './Pagination';
-import { withLabels } from '../Labels/withLabels';
-import { withRouter } from '../Router/withRouter';
+import { withLabels } from '../../Labels/withLabels';
+import { withRouter } from '../../Router/withRouter';
 
 export default {
   component: Pagination,
