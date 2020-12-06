@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { conf } from '../../conf/url';
-import { useQuery } from '../../hook/useQuery';
+import { conf } from '../../../conf/url';
+import { useQuery } from '../../../hook/useQuery';
 import useFetch from 'use-http';
 
 const withFetch = (Component) => ({ children, ...props }) => {

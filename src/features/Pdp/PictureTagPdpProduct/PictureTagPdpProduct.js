@@ -1,5 +1,5 @@
 import React from 'react';
-import { getImageUrl } from '../../utils/images';
+import { getImageUrl } from '../../../utils/images';
 
 const PictureTagProduct = ({ className, alt, image }) => (
   <picture className={className} alt={image}>

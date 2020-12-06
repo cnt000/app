@@ -2,12 +2,12 @@ import React, { Suspense } from 'react';
 import PropTypes from 'prop-types';
 
 import useIntersect from '../../hook/useIntersect';
-import Product from '../Product/Product';
-import EmptyResults from '../EmptyResults/EmptyResults';
-import CercaPiante from '../CercaPiante/CercaPiante';
+import Product from './Product/Product';
+import EmptyResults from './EmptyResults/EmptyResults';
+import CercaPiante from './CercaPiante/CercaPiante';
 import MyErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 import withFetch from './withFetch';
-import Pagination from '../Pagination/Pagination';
+import Pagination from './Pagination/Pagination';
 import styles from './Plp.module.css';
 
 const Plp = ({ products }) => {

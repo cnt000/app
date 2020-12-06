@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import LabelsContext from '../Labels';
 import { imageUrl } from '../../utils/images';
-import PictureTagPdpProduct from '../PictureTagPdpProduct/PictureTagPdpProduct'
+import PictureTagPdpProduct from './PictureTagPdpProduct/PictureTagPdpProduct'
 import withFetch from './withFetch';
 import styles from './Pdp.module.css';
 

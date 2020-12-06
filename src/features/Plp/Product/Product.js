@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-import LabelsContext from '../Labels';
-import { boolUnit, productAdded, listUnit } from '../../state';
-import { imageUrl } from '../../utils/images';
+import LabelsContext from '../../Labels';
+import { boolUnit, productAdded, listUnit } from '../../../state';
+import { imageUrl } from '../../../utils/images';
 import styles from './Product.module.css';
 import PictureTagProduct from '../PictureTagProduct/PictureTagProduct';
 
