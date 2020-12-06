@@ -36,7 +36,7 @@ test('renders Logo title and subtitle', () => {
   expect(getByText(/Piante grasse, strane ed insolite/)).toBeInTheDocument();
 });
 
-describe('Click open menu without enzyme', () => {
+describe('Click open menu', () => {
   let container;
 
   beforeEach(() => {
@@ -50,7 +50,7 @@ describe('Click open menu without enzyme', () => {
     container = null;
   });
 
-  it('click open button call setMenuOpenMock without enzyme', () => {
+  it('click open button call setMenuOpenMock', () => {
     act(() => {
       ReactDOM.render(header, container);
     });

@@ -1,17 +1,12 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import Adapter from 'enzyme-adapter-react-16';
-import { configure, shallow } from 'enzyme';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { act } from 'react-dom/test-utils';
 
 import Page from './Page';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import Menu from '../Menu/Menu';
 import labels from '../../data/labels/labels.json';
 import LabelsContext from '../../features/Labels';
-
-configure({ adapter: new Adapter() });
 
 it('renders correctly', () => {
   const tree = renderer
@@ -26,7 +21,7 @@ it('renders correctly', () => {
   expect(tree).toMatchSnapshot();
 });
 
-describe('Click without enzyme', () => {
+describe('Click', () => {
   let container;
   const setState = jest.fn();
   const useStateSpy = jest.spyOn(React, 'useState');
@@ -44,38 +39,18 @@ describe('Click without enzyme', () => {
   });
 
   it('render Header, Menu, Footer', () => {
-    const wrapper = shallow(
-      <Page {...labels}>
-        <span>abc</span>
-      </Page>,
-    );
-    expect(wrapper.find(Header).length).toBe(1);
-    expect(wrapper.find(Menu).length).toBe(1);
-    expect(wrapper.find(Footer).length).toBe(1);
-  });
-
-  it('render Header with setMenuOpen prop', () => {
-    const wrapper = shallow(
-      <Page {...labels}>
-        <span>abc</span>
-      </Page>,
-    );
-    expect(wrapper.find(Header).length).toBe(1);
-    expect(wrapper.find(Header).props().setMenuOpen).toEqual(
-      expect.any(Function),
-    );
-  });
-
-  it('render Menu with setMenuOpen prop', () => {
-    const wrapper = shallow(
-      <Page {...labels}>
-        <span>abc</span>
-      </Page>,
-    );
-    expect(wrapper.find(Menu).length).toBe(1);
-    expect(wrapper.find(Menu).props().setMenuOpen).toEqual(
-      expect.any(Function),
-    );
-    expect(wrapper.find(Menu).props().isOpen).toEqual(expect.any(Boolean));
+    act(() => {
+      ReactDOM.render(
+        <Router>
+          <Page {...labels}>
+            <span>abc</span>
+          </Page>
+        </Router>,
+        container,
+      );
+    });
+    expect(container.querySelectorAll('header').length).toBe(1);
+    expect(container.querySelectorAll('.menu').length).toBe(1);
+    expect(container.querySelectorAll('footer').length).toBe(1);
   });
 });
