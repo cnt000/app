@@ -27,11 +27,16 @@ const printInDom = (elm) => (str) => {
     left: 0;
     color: #000;
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.4rem;
     width: 100%;
-    background-color: #ffffff80;`;
+    background-color: #ffffff80;
+    overflow: scroll;
+    z-index: 101;`;
   span.innerText = str;
-  elm.parentNode.insertBefore(span, null);
+  const parent = elm.parentNode.parentNode;
+  const grandparent = elm.parentNode.parentNode.parentNode;
+  grandparent.style.position = 'relative';
+  parent.insertBefore(span, null);
   console.log(str);
 };
 
