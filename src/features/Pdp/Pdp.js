@@ -2,18 +2,22 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
 import LabelsContext from '../Labels';
-import { getImageUrl } from '../../utils/images';
+import { imageUrl } from '../../utils/images';
+import PictureTagPdpProduct from '../PictureTagPdpProduct/PictureTagPdpProduct'
 import withFetch from './withFetch';
 import styles from './Pdp.module.css';
 
 const Pdp = ({ name, image, size, price }) => {
   const { addToCart } = useContext(LabelsContext);
-  const imageUrl = getImageUrl(image.split('/').pop(), 800);
   return (
     <main className={styles.pdpContent} role="main">
       <div className={styles.header}></div>
       <div className={styles.mainImage}>
-        <img src={imageUrl} alt={name} />
+        <PictureTagPdpProduct
+          className={styles.image}
+          alt={name}
+          image={imageUrl(image)}
+        />
       </div>
       <div className={styles.product}>
         <h2 className={styles.name}>{name}</h2>

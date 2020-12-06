@@ -70,7 +70,7 @@
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
  .pdpContent {
     display: grid;
     grid-template-columns: 10% 60% 30%;

@@ -4,6 +4,6 @@ exports[`renders correctly 1`] = `
 <div
   className="homepage"
 >
-  Homepage
+  Homepage Chi siamo Dove siamo Contatti I nostri prodotti
 </div>
 `;

@@ -24,7 +24,7 @@ const PictureTagProduct = ({ className, alt, image }) => (
     />
     {/* <!-- Smallest smartphone --> */}
     <img
-      src="{getImageUrlCropped(image, 200)}"
+      src={getImageUrlCropped(image, 200)}
       srcSet={`${getImageUrlCropped(image, 400)} 2x`}
       alt={alt}
       loading="lazy"
