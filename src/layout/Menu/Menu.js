@@ -21,7 +21,7 @@ const Menu = ({ isOpen, setMenuOpen }) => {
             chiudi il menu
           </button>
         </div>
-        <ul className={styles.entries} onClick={(e) => setMenuOpen(false)}>
+        <ul className={styles.entries}>
           <li>
             <Link to="/">{home}</Link>
           </li>

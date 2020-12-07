@@ -27,17 +27,6 @@ const Product = ({ addToCartLink, i, image, name, price }) => {
     <article key={`${name}_${i}`} className={styles.product}>
       <Link to={itemLink}>
         <div className={styles.imageContainer}>
-          {/* <img
-            className={styles.image}
-            src={itemImage(300)}
-            srcSet={`${itemImage(200)} 200w,
-              ${itemImage(256)} 256w,
-              ${itemImage(450)} 450w,
-              ${itemImage(580)} 580w`}
-            alt={name}
-            sizes="(min-width: 1025px) 20vw, (min-width: 768px) 33vw, 50vw"
-            loading="lazy"
-          /> */}
           <PictureTagProduct
             className={styles.image}
             alt={name}
