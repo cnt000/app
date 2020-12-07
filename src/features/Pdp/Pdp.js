@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
+import { useHistory } from 'react-router-dom';
 
 import LabelsContext from '../Labels';
 import { imageUrl } from '../../utils/images';
@@ -15,32 +16,46 @@ function handleAdd(product) {
   setTimeout(() => boolUnit.dispatch(false), 2000);
 }
 
+function BackButton({ children }) {
+  let history = useHistory();
+  return (
+    <button type="button" className={styles.backButton} onClick={() => history.goBack()}>
+      {children}
+    </button>
+  )
+}
+
 const Pdp = ({ name, image, size, price }) => {
   const { addToCart } = useContext(LabelsContext);
   return (
-    <main className={styles.pdpContent} role="main">
-      <div className={styles.header}></div>
-      <div className={styles.mainImage}>
-        <PictureTagPdpProduct
-          className={styles.image}
-          alt={name}
-          image={imageUrl(image)}
-        />
-      </div>
-      <div className={styles.product}>
-        <h2 className={styles.name}>{name}</h2>
-        <div className={styles.infoBox}>
-          <div className={styles.dimension}>Diametro vaso: {size}</div>
-          <div className={styles.price}>Prezzo: {price} €</div>
+    <>
+      <main className={styles.pdpContent} role="main">
+        <div className={styles.header}></div>
+        <div className={styles.backTo}><BackButton>&lt;- Torna alla lista piante</BackButton></div>
+        <div className={styles.header}></div>
+        <div className={styles.header}></div>
+        <div className={styles.mainImage}>
+          <PictureTagPdpProduct
+            className={styles.image}
+            alt={name}
+            image={imageUrl(image)}
+          />
         </div>
-        <button className={styles.addToCart}
-          onClick={(e) =>
-            handleAdd({ image, name, price })
-          }>
-          {addToCart}
-        </button>
-      </div>
-    </main>
+        <div className={styles.product}>
+          <h2 className={styles.name}>{name}</h2>
+          <div className={styles.infoBox}>
+            <div className={styles.dimension}>Diametro vaso: {size}</div>
+            <div className={styles.price}>Prezzo: {price} €</div>
+          </div>
+          <button className={styles.addToCart}
+            onClick={(e) =>
+              handleAdd({ image, name, price })
+            }>
+            {addToCart}
+          </button>
+        </div>
+      </main>
+    </>
   );
 };
 

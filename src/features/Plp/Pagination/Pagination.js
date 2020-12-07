@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 import withFetch from './withFetch';
 import styles from './Pagination.module.css';
 
-const Pagination = ({ page, isSearch, searchQuery, totalPages }) => {
+const Pagination = ({ page, searchQuery, totalPages }) => {
   const hasPages = page < totalPages;
-  const prevPageLink = isSearch
+  const prevPageLink = searchQuery
     ? `/search/${page}?q=${searchQuery}`
     : `/plp/${page}`;
-  const nextPageLink = isSearch
+  const nextPageLink = searchQuery
     ? `/search/${page + 2}?q=${searchQuery}`
     : `/plp/${page + 2}`;
   return (

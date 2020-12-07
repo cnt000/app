@@ -5,6 +5,7 @@
   border-top: 2px solid var(--red);
   margin: 0 auto;
   border-image: linear-gradient(90deg, var(--green), var(--orange) 30em) 20;
+  line-height: 1.4;
 }
 
 .contactus {

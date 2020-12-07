@@ -25,7 +25,6 @@ const withFetch = (Component) => ({ children, ...props }) => {
         <Component
           products={data}
           page={page}
-          isSearch
           searchQuery={searchQuery}
           {...props}
         >

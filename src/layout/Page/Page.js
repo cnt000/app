@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Header from '../Header/Header';
 import Menu from '../Menu/Menu';
@@ -14,6 +14,10 @@ const Page = ({ children }) => {
     boolUnit.dispatch(value);
     productAdded.dispatch(false);
   }
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [children]);
+
   return (
     <div className={styles.pageLayout}>
       <Header
